@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
+        <meta name="author" content="Jhon sebastián Rodríguez">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Página Web Educativa de aprendizaje de Programación por bloques - I.E. Gustavo Jiménez</title>
+        <link rel="shortcut icon" href="icons\logo.png">
+        <!--Relación con documentos externos-->
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/animsition.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/exploratorios.css">
+        <link rel="stylesheet" href="css/login.css"> <!-- Revisado diseño login -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Revisado biblioteca de iconos (botones) -->
+        <script async="" src="js/analytics.js.descarga"></script>
+        <script src="js/jquery.min.js.descarga"></script>
+        <script src="js/animate.js.descarga"></script>
+        <script src="js/bootstrap.min.js.descarga"></script>    
+        <script src="js/locache.min.js.descarga"></script>
+        <script src="js/localstoragedb.min.js.descarga"></script>
+        <script src="js/holder.min.js.descarga"></script>
+        <script src="js/jquery.animsition.min.js.descarga"></script>
+        <script src="js/utilidades.js"></script>
+        <script src="js/login.js"></script> <!-- Revisado javascript formulario -->
+    </head>
+
+    <body>
+        <div id="audio">
+            <audio controls="controls" id="player" preload="auto"></audio>
+        </div>
+        <header class="container">
+            <img class="proyecto animated zoomInDown animated-delay" data-delay="0.1s" src="img/nombre-proyecto.gif" alt="Página web apendizaje programación por bloques" style="animation-delay: 1.5s;">
+        </header>
+        <div class="content">
+            <div class="grupo-ingreso">
+                <div class="avatar-wrap animated bounceInLeft animated-delay" data-delay="0.8s" style="animation-delay: 0.8s;">
+                    <div id="img-avatar" class="avatar avatar-2"></div>
+                    <div class="selector-imagen">
+                        <a id="btn-prev" href="javascript:void(0);">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-arrow-left fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a id="btn-next" href="javascript:void(0);">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-arrow-right fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <p>Escoge tu avatar de programación</p>
+                    </div>
+
+                </div>
+                <div class="ingreso animated flipInX animated-delay" data-delay="1.4s" style="animation-delay: 1.4s;">
+                    <div class="panel">
+                        <form role="form" id="form_ingreso">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="nombre">Usuario:</label>
+                                    <input id="nombre" class="form-control" placeholder="Ingresa tu usuario" name="nombre" type="text" autofocus="true">
+                                    <p class="help-text">* Este campo es requerido</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="documento">Contraseña:</label>
+                                    <input id="documento" class="form-control" placeholder="Ingresa el código institucional" name="documento" type="text" value="">
+                                    <p class="help-text">* Una contraseña o código es requerido</p>
+                                </div>
+                                <input type="submit" value="Ingresar" class="btn btn-primary pull-right">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div id="img-logos" class="panel animated bounceIn animated-delay" data-delay="2.2s" style="animation-delay: 2.2s;">
+                        <img class="img-responsive " src="img/institucion.png" alt="institucion educativa Gustavo Jiménez">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body></html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
+        <meta name="author" content="Jhon sebastián Rodríguez">
+        <title>Página Web Educativa de aprendizaje de Programación por bloques - I.E. Gustavo Jiménez</title>
+        <link rel="shortcut icon" href="icons\logo.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Revisado biblioteca de iconos (botones) -->
+        <link rel="stylesheet" href="css/animsition.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/exploratorios.css">
+        <link rel="stylesheet" href="css/home.css"> <!-- Revisado diseño niveles -->
+        <script src="js/jquery.min.js.descarga"></script>
+        <script src="js/bootstrap.min.js.descarga"></script>
+        <script src="js/locache.min.js.descarga"></script>
+        <script src="js/localstoragedb.min.js.descarga"></script>
+        <script src="js/animate.js.descarga"></script>
+        <script src="js/jquery.animsition.min.js.descarga"></script>
+        <script src="js/utilidades.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js\login.js"></script>
+        <script>
+            $(document).on('ready',inicioHome);
+            function inicioHome(){
+                var img= avatares[locache.session.get("usuario").avatar].src;
+                $('.icono-usuario').css('background-image','url('+img+')');
+                $('.icono-usuario').attr('title',locache.session.get("usuario").nombre);
+                $('.icono-usuario').attr('alt','');
+            }
+        </script>
+    <style>.nav-roundslide a.next:hover { width: 60px; }
+.nav-roundslide a.prev:hover { width: 60px; }</style></head>
+    <body>
+        <header class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="sahgsh" alt="" style="animation-delay: 0.1s; background-image: url(&quot;img/usuario-imagen-04.png&quot;);"></div>
+                    <a class="animated bounceIn animated-delay" data-delay="1.5s" href="index.html" title="Salir" style="animation-delay: 1.5s;">
+                        <div class="icono-salir">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </a>                    
+                    <img class="img-curriculos animated zoomInDown animated-delay" data-delay="0.1s" src="img/nombre-proyecto.gif" alt="Proyecto GJ" style="animation-delay: 0.1s;">
+                </div>
+                <div class="col-sm-5 text-end animated bounceInRight animated-delay" data-delay="1.2s" style="animation-delay: 1.2s;">
+                    <img class="img-escudo" src="img/Escudo colegio.png" alt="Gustavo Jiménez">
+                </div>
+            </div>            
+        </header>
+        <div>
+            <!-- <div class="animated slideInUp animated-delay" data-delay="2s"> -->
+            <div class="content">
+                <div class="columna-nivel uno">
+                    <h2>Nivel 1: Fundamentos</h2>
+                    <img src="./img/inicio-nivel-1.gif" alt="Nivel 1">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="Pensamiento computacional.html">Pensamiento computacional</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel1/programacion/home-fundamentos.html">Algoritmos y secuencias</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel1/fisica/home-fisica.html">Bloques de programación</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel1/fisica/home-fisica.html">Eventos y acciones</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel1/fisica/home-fisica.html">Software de programación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna-nivel dos">
+                    <h2>Nivel 2: Grado décimo</h2>
+                    <img src="./img/inicio-nivel-2.gif" alt="Nivel 2">
+                    <div class="panel-group" id="accordion-nivel-2" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel2/web1/home-web1.html">Condicionales</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel2/ciencias/home-ciencias.html">Bucles y repeticiones</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel2/proyectos/home-proyectos.html">Variables básicas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel2/proyectos/home-proyectos.html">Animaciones y juegos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel2/proyectos/home-proyectos.html">Proyectos TIC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna-nivel tres">
+                    <h2>Nivel 3: Grado Undécimo</h2>
+                    <img src="./img/inicio-nivel-3.gif" alt="Nivel 3">
+                    <div class="panel-group" id="accordionNivel3" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel3/dispositivos/home-dispositivos.html">
+                                        Variables avanzadas
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel3/redes/home-redes.html">
+                                        Mensajes y eventos
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel3/web2/home-web2.html">
+                                        Control de objetos
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel3/web2/home-web2.html">
+                                        Simulación de procesos
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel3/web2/home-web2.html">
+                                        Desarrollo de Apps Móviles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna-nivel cuatro">
+                    <h2>Nivel 4: robótica</h2>
+                    <br>
+                    <img src="./img/inicio-nivel-4.gif" alt="Nivel 4">
+                    <div class="panel-group" id="accordionNivel4" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel4/implementacion/home-implementacion.html">
+                                        Implementación de proyecto TIC
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel4/desarrollo/home-desarrollo.html">
+                                        Desarrollo e implementación
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel4/desarrollo/home-desarrollo.html">
+                                        Desarrollo e implementación
+                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel4/desarrollo/home-desarrollo.html">
+                                        Desarrollo e implementación
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+
+                                <div class="panel-title">
+                                    <a href="https://contenidos.sucerman.com/nivel4/desarrollo/home-desarrollo.html">
+                                        Desarrollo e implementación
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div></body></html>
