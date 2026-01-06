@@ -1,0 +1,5 @@
+$(document).on('ready', function(){
+    $('.animated-delay').each(function(index){
+        $(this).css('animation-delay', $(this).data('delay'));
+    });
+});
