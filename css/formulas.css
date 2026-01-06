@@ -1,0 +1,189 @@
+/* Fórmulas matemáticas */
+
+.math sup {
+    vertical-align: 0.35em;
+    font-size: 75%;
+}
+
+.fraction {
+    display: inline-block;
+    vertical-align: middle; 
+    margin: 0 0.2em 0.4ex;
+    text-align: center;
+}
+
+.fraction > span {
+    display: block;
+    padding-top: 0.15em;
+}
+
+.fraction span.fdn {
+    border-top: thin solid #777;
+}
+
+.fraction span.bar {
+  display: none;
+}
+
+.column-3{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.resultado_calculadora{
+  margin-top:2em;
+  text-align: center;   
+}
+
+span.dividendo {
+  text-align: right;
+  border-right: solid 1px black;
+  padding: 0 5px;
+  margin: 0 5px;
+  width: 6em;
+  display: inline-block;
+}
+
+span.divisor {
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.math {
+    /*text-align: center;*/
+    width: 100%;
+    word-spacing: normal;
+}
+
+.math .radic2 {
+    font-size: 100%;
+    vertical-align: top;
+}
+
+.math .root {
+    border-top: thin #777 solid;
+}
+
+.math .root.padd{
+  padding-top: 6px;
+}
+
+.math .root.padd-sum {
+    padding-top: 40px;
+}
+
+.math .root.padd-div {
+    padding-top: 20px;
+}
+
+.math.padd-top{
+    padding-top: 25px;
+}
+
+.radic2.x2{
+    font-size: 200%;
+}
+.radic2.x1{
+    font-size: 130%;
+}
+span.sum {
+    position: relative;
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+    vertical-align: -0.25ex;
+}
+
+.sum {
+    text-align: center;
+}
+
+.sum {
+    text-align: center;
+    padding: 0 0.25ex 0 0.25ex;
+}
+
+span.sum {
+    position: relative;
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+    vertical-align: -0.25ex;
+}
+
+.sum {
+    text-align: center;
+}
+
+.sum {
+    text-align: center;
+    padding: 0 0.25ex 0 0.25ex;
+}
+
+.sum .limits {
+    line-height: 1;
+    font-size: medium;
+    text-align: center;
+}
+
+span.sum {
+    position: relative;
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+    vertical-align: -0.25ex;
+}
+
+.sum {
+    text-align: center;
+    padding: 0 0.25ex 0 0.25ex;
+}
+
+.sum .limits sup {
+    left: 0.7ex;
+    top: 0em;
+}
+
+.sum .limits sub, .sum .limits sup {
+    position: absolute;
+    font-size: 75%;
+}
+
+.sum sup {
+    vertical-align: 0.35em;
+    font-size: 75%;
+}
+
+.sum .limits {
+    line-height: 1;
+    font-size: medium;
+    text-align: center;
+}
+
+span.sum {
+    position: relative;
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+    vertical-align: 0.75ex;
+}
+
+span.parameter{
+  font-size: 24px;
+}
+
+.sum .limits sub {
+    left: 0ex;
+    top: 4.3em;
+}
+
+.sum .limits sub, .sum .limits sup {
+    position: absolute;
+    font-size: 75%;
+}
+
+.sum sub {
+    vertical-align: -0.25em;
+    font-size: 75%;
+}

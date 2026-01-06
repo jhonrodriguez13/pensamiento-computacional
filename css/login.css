@@ -1,0 +1,132 @@
+body {
+    background: #36B0BA url(../img/fondo-program.png);
+    -webkit-animation: fondo 100s linear 0s normal infinite;
+    -moz-animation: fondo 100s linear 0s normal infinite;
+    -ms-animation: fondo 100s linear 0s normal infinite;
+    animation: fondo 100s linear 0s normal infinite;
+}
+
+footer img {
+    margin: 0 30px 50px;
+    max-width: 100%;
+}
+
+header,footer,.content {
+    text-align: center;
+}
+
+header img.proyecto {
+    max-width: 100%;
+    padding: 20px 15px;
+}
+
+label {
+    text-align: left;
+}
+
+.grupo-ingreso {
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.logo-men {
+    margin-right: 3em;
+}
+
+.avatar-wrap {
+    width: 270px;
+}
+
+.avatar-wrap,.ingreso {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-control {
+    color: inherit;
+    font-size: 18px;
+    height: initial;
+    padding: 5px 10px;
+}
+
+.ingreso {
+    width: 300px;
+    text-align: left;
+    border-radius: 15px;
+    position: relative;
+}
+
+.ingreso:before {
+    content: "";
+    width: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 40px 20px 0;
+    border-color: transparent white;
+    top: 30px;
+    left: -38px;
+}
+
+.panel {
+    border-radius: 8px;
+    padding: 15px;
+    padding-bottom: 20px;
+    box-shadow: none;
+}
+
+.selector-imagen {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.selector-imagen a {
+    color: rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: 0.1s linear;
+}
+
+.selector-imagen a:hover, .selector-imagen a.hover {
+    color: rgba(0,0,0,0.5);
+}
+
+.selector-imagen p {
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.4);
+}
+
+#audio {
+    display:none;
+}
+
+.login-panel .form-group{
+    margin-bottom: 5px;
+}
+
+p.help-text{
+    font-size: 16px;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: #E44751;
+    pointer-events: none;
+    height: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.campo-requerido p.help-text{
+    opacity: 1;
+    height: auto;
+}
+.campo-requerido input.form-control{
+    border-color: #E44751;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}

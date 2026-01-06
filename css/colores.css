@@ -1,0 +1,127 @@
+/*ESTILOS DEL NIVEL 1 - PENSAMIENTO COMPUTACIONAL*/
+
+a {
+    color: #4FD4B4;
+}
+
+a:active, a:focus, a:hover {
+    color: #4FD4B4;
+}
+
+body {
+    background: #D2DAFC url(../assets/fondo-matematicas.jpg);
+}
+
+div.cs-skin-slide:not(.cs-active):before {
+    border-bottom: 2px dotted #4FD4B4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #4FAFE6;
+}
+
+ul.list-actividades a strong {
+    color: #4FD4B4;
+}
+
+ul.lista-menu>li a strong {
+    color: #4FD4B4;
+}
+
+#nav-icon1, #nav-icon3 {
+    background-color: #4FAFE6;
+}
+
+.actividades {
+    background: #4FD4B4 url(fondo-matematicas.jpg);
+}
+
+.backdrop {
+    background: #fff url(../assets/fondo-cortina.jpg);
+    border: 20px solid #4FD4B4;
+}
+
+.backdrop .instrucciones {
+    background-color: rgba(79, 212, 180, 0.08);
+    border-bottom-color: #4FD4B4;
+    border-top-color: #4FD4B4;
+}
+
+.boton-contenido .fa-bars, .boton-contenido .fa-times {
+    background: #4FD4B4;
+}
+
+.crono {
+    background: rgba(79, 212, 180, 0.08);
+    color: #4FD4B4;
+}
+
+.cs-skin-slide > span::after, 
+.cs-skin-slide.cs-active > span::after {
+    color: #4FD4B4;
+}
+
+.cs-skin-slide .cs-options li {
+    background: rgba(79, 212, 180, 0.08);
+}
+
+.cs-skin-slide .cs-options li:hover {
+    background: rgba(79, 212, 180, 0.2);
+}
+.listas-ordenadas dt:before {
+    color: #4FD4B4;
+}
+.list-active {
+    border: 1px dashed #4FD4B4;
+}
+
+.menu-asignatura .nivel {
+    color: #4fd4b4;
+}
+
+.menu-contenido {
+    border-bottom: 3px solid #4FD4B4;
+}
+
+.menu-contenido .menu-item a:hover .fa-stack {
+    color: #4FD4B4;
+}
+
+.menu-contenido a strong {
+    color: #4FAFE6;
+}
+
+.miga-pan {
+    background-color: #4FAFE6;
+}
+
+.nav-roundslide a {
+    border: 1px solid #4FD4B4;
+}
+
+.page-header {
+    border-bottom: 2px dashed #4fd4b4;
+}
+
+.pagina .boton-fijo .fa-stack-1x {
+    background: #4FD4B4;
+}
+
+.sopa .palabras hr {
+    border-top: 1px dashed #4FD4B4;
+}
+
+.tooltip-exploratorios-content {
+    background: #4FD4B4;
+}
+
+.tooltip-exploratorios-item {
+	color: #4FD4B4;
+}
+.tooltip-glosario-content {
+    background: #4FD4B4;
+}
+
+.tooltip-glosario-item {
+    color: #4FD4B4;
+}

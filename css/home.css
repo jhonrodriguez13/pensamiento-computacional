@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'uni05';
+    src: url('../fonts/uni_05_x/uni05_53-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #36B0BA url(../img/fondo-program.png);
+    -webkit-animation: fondo 100s linear 0s normal infinite;
+    -moz-animation: fondo 100s linear 0s normal infinite;
+    -ms-animation: fondo 100s linear 0s normal infinite;
+    animation: fondo 100s linear 0s normal infinite;
+}
+
+.content{
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: stretch;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.columna-nivel {
+    border:0;
+    box-sizing : border-box;
+    margin:0;
+    min-height: 100vh;
+    min-width: 180px;
+    padding: 100px 15px 0 15px;
+    text-align: center;
+    width: 25%;
+}
+
+.columna-nivel:hover {
+    background: url(../img/fondo.png);
+    -webkit-animation: fondo 100s linear 0s normal infinite;
+    -moz-animation: fondo 100s linear 0s normal infinite;
+    -ms-animation: fondo 100s linear 0s normal infinite;
+    animation: fondo 100s linear 0s normal infinite;
+    background-color: #72D6C5;
+}
+
+.columna-nivel.uno:hover {
+    background-color: #FFD52F;
+}
+
+.columna-nivel.dos:hover {
+    background-color: #825DEA;
+}
+
+.columna-nivel.tres:hover {
+    background-color: #2F69FF;
+}
+
+.columna-nivel.cuatro:hover {
+    background-color: #FD863D;
+}
+
+.columna-nivel h2 {
+    color: #25255B;
+    font-family: 'uni05', monospace;
+    font-size: 22px;
+    font-Weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    text-transform: uppercase;
+}
+
+.columna-nivel img {
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.columna-nivel .panel, .columna-nivel .panel .panel-collapse {
+    background-color: transparent;
+    border: none;
+}
+
+.columna-nivel .panel, .columna-nivel .panel .panel-collapse {
+    box-shadow: none;
+}
+
+.columna-nivel .panel .panel-collapse .list-group {
+    border-top: 1px solid transparent;
+}
+
+.columna-nivel .panel .panel-collapse .list-group .list-group-item {
+    background-color: #ccc;
+    border: none;
+    text-align: left;
+    margin: 0 15px 2px 15px;
+}
+
+.columna-nivel .panel .panel-heading {
+    border-radius: 3px;
+}
+
+.columna-nivel .panel-title {
+    font-weight: 600;
+}
+
+.columna-nivel .panel-default>.panel-heading {
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+ul.list-unidades>li {
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*ul.list-unidades>li a:before {
+    content: "\f061";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-right: 10px
+}*/
+
+ul.list-unidades>li a:active, ul.list-unidades>li a:focus, ul.list-unidades>li a:hover {
+    padding-left: 15px
+}
+.list-unidades {
+    transition: all .3s
+}
+
+.list-unidades a .fa-stack {
+    transition: all .15s;
+    top: 0
+}
+
+.list-unidades a:hover .fa-stack {
+    color: #fb724d;
+    top: -10px
+}
+
+ul.list-unidades {
+    border: none;
+    border-radius: 0;
+    /*display: block;*/
+    padding: 10px 0px;
+    width: 100%;
+    min-height: 210px;
+    position: relative;
+    margin: 0;
+}
+
+ul.list-unidades a {
+    color: #777;
+    transition: all .2s;
+}
+
+ul.list-unidades a:active, ul.list-unidades a:focus, ul.list-unidades a:hover {
+    text-decoration: none;
+}
+
+.header-logos img.img-ministerio {
+    margin-right: 40px;
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.header-logos img.img-curriculos {
+    height: 130px;
+    display: inline-block;
+}

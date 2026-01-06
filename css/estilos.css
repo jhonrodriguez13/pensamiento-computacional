@@ -1,0 +1,144 @@
+/*ESTILOS DE LA LECCION*/
+.incorrecto{
+    background-color: rgba(229, 71, 81, 0.2);
+}
+.correcto{
+    background-color: rgba(117, 206, 102, 0.2);
+}
+
+#resultado{
+    margin: 20px 0px;
+}
+/** Estilos Calculadora **/
+
+.calculadora {
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    border-radius: 32px;
+    margin: 0 auto;
+    position: relative;
+    width: 213px;
+}
+
+.bt-calculadora-1,.bt-calculadora-2,.bt-calculadora-3,.bt-calculadora-4,.bt-calculadora-5,.bt-calculadora-6,.bt-calculadora-7,.bt-calculadora-8,.bt-calculadora-9 {
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 42px 40px;
+    text-align: center;
+    background-image: url("../img/bt_calculadora-inactivo.png");
+}
+.bt-calculadora-1:hover,.bt-calculadora-2:hover,.bt-calculadora-3:hover,.bt-calculadora-4:hover,.bt-calculadora-5:hover,.bt-calculadora-6:hover,.bt-calculadora-7:hover,.bt-calculadora-8:hover,.bt-calculadora-9:hover {
+    background-image: url("../img/bt_calculadora-activo.png");
+}
+.bt-calculadora-0:hover{
+    background-image: url("../img/bt_calculadora-inactivo.png");
+}
+.bt-calculadora-0 img, .bt-calculadora-1 img,.bt-calculadora-2 img,.bt-calculadora-3 img,.bt-calculadora-4 img,.bt-calculadora-5 img,.bt-calculadora-6 img,.bt-calculadora-7 img,.bt-calculadora-8 img,.bt-calculadora-9 img{
+    height: 20px;	
+}
+
+.display-calculadora{
+    color: #444;
+    position: absolute;
+    height: 50px;
+    top: 19px;
+    left: 16px;
+    letter-spacing: 1px;
+    font-family: 'uni05';
+    padding: 10px 20px;
+    text-align: right;
+    width: 180px;
+}
+
+.bt-calculadora-1{
+    top:80px;
+    left: 25px;
+}
+.bt-calculadora-2{
+    top: 80px;
+    left: 90px;
+}
+.bt-calculadora-3{
+    top:80px;
+    left: 156px;
+}
+.bt-calculadora-4{
+    top:135px;
+    left: 25px;
+}
+.bt-calculadora-5{
+    top:135px;
+    left: 90px;
+}
+.bt-calculadora-6{
+    top:135px;
+    left: 156px;
+}
+.bt-calculadora-7{
+    top:190px;
+    left: 25px;
+}
+.bt-calculadora-8{
+    top:190px;
+    left: 90px;
+}
+.bt-calculadora-9{
+    top:190px;
+    left: 156px;
+}
+/*Botones especiales*/
+.bt-calculadora-0{
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    cursor: pointer;
+    top: 245px;
+    left: 25px;
+    text-align: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 42px 40px;
+    background-image: url("../img/bt_calculadora-inactivo.png");
+}
+.bt-calculadora-0:hover{
+    background-image: url("../img/bt_calculadora-activo.png");
+}
+.bt-borrar{
+    position: absolute;
+    width: 108px;
+    height: 40px;
+    cursor: pointer;
+    top: 245px;
+    left: 90px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 108px 40px;
+    background-image: url("../img/bt_resultado-inactivo.png");
+}
+.bt-borrar:hover{
+    background-image: url("../img/bt_resultado-activo.png");
+}
+
+p.help-text {
+    font-size: 16px;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: #E44751;
+    pointer-events: none;
+    height: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+p.help-text.campo-requerido {
+    opacity: 1;
+    height: auto;
+}
+
