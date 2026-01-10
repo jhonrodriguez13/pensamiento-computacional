@@ -212,7 +212,7 @@
 
 @-webkit-keyframes animacion-exito {
     100% {
-        background-position: -2000px;
+        background-position: -1000px;
     }
 }
 
@@ -296,7 +296,7 @@
 
 @keyframes animacion-exito {
     100% {
-        background-position: -2000px;
+        background-position: -1000px;
     }
 }
 
@@ -320,7 +320,7 @@
 
 @keyframes animacion-lanzador-actividades {
     100% {
-        background-position: -1500px;
+        background-position: -1000px;
     }
 }
 
@@ -386,9 +386,10 @@ body {
 }
 
 footer p {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.4);
     font-family: 'CabinSketch', sans-serif;
     font-size: 16px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
@@ -1734,12 +1735,12 @@ border-bottom: none;
 }
 
 .avatar-exito {
-    background-image: url("../img/sprite-nino-nina-exito.png");
+    background-image: url("../img/sprite-aprendiendo.png");
     -webkit-animation-name: animacion-exito;
-    -webkit-animation-timing-function: steps(8);
+    -webkit-animation-timing-function: steps(4);
     -webkit-animation-duration: 1.5s;
     animation-name: animacion-exito;
-    animation-timing-function: steps(8);
+    animation-timing-function: steps(4);
     animation-duration: 1.5s;
 }
 
@@ -1754,13 +1755,13 @@ border-bottom: none;
 }
 
 .lanzador-actividades {
-    background-image: url("../img/sprite-lanzador-actividades.png");
+    background-image: url("../img/sprite-aprendiendo.png");
     -webkit-animation-name: animacion-lanzador-actividades;
-    -webkit-animation-timing-function: steps(6);
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: steps(4);
+    -webkit-animation-duration: 3s;
     animation-name: animacion-lanzador-actividades;
-    animation-timing-function: steps(6);
-    animation-duration: 1.5s;
+    animation-timing-function: steps(4);
+    animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     height: 250px;
@@ -1874,4 +1875,237 @@ span#version {
     height: auto;
     margin: 15px auto;
     image-rendering: auto;
+}
+
+/* ===============================
+   IMAGEN REPETICIONES
+   =============================== */
+
+#recurso2Content .media-left {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#recurso2Content .media-left .media-object {
+    display: inline-block;
+    max-width: 800px;  /* más grande */
+    width: 100%;       /* responsiva */
+    height: auto;
+    margin: 0 auto;
+    image-rendering: auto;
+}
+
+/* Centrar imagen desconectadas */
+.center-image {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    margin: 20px 0;           /* Espacio arriba y abajo */
+}
+
+.center-image img.media-object {
+    max-width: 80%;  /* Tamaño máximo relativo al contenedor */
+    height: auto;    /* Mantiene proporción */
+}
+
+/* ===============================
+   Actividad desconectada 1
+   =============================== */
+
+
+.laberinto {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.fila {
+    display: flex;
+}
+
+.celda {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.camino {
+    background: #e0f7fa;
+}
+
+.pared {
+    background: #424242;
+}
+
+.inicio {
+    background: #81c784;
+}
+
+.meta {
+    background: #ffd54f;
+}
+
+.resultado {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ===============================
+   Actividad desconectada 2
+   =============================== */
+
+   .secuencia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.slot {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #555;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slot.fijo {
+    border-style: solid;
+    background: #e3f2fd;
+}
+
+.fichas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ficha {
+    width: 60px;
+    height: 60px;
+    background: #fff3e0;
+    border: 2px solid #ff9800;
+    font-size: 30px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha:active {
+    cursor: grabbing;
+}
+
+.slot.drop.over {
+    background: #c8e6c9;
+}
+
+.resultado {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===============================
+   Actividad conectada 1
+   =============================== */
+    .media {
+    margin-bottom: 30px;
+}
+
+.ejemplos-horizontal {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.ejemplo-item {
+    text-align: center;
+    max-width: 220px;
+}
+
+.img-ejemplo {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.img-ejemplo:hover {
+    transform: scale(1.05);
+}
+
+.acciones {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.nina-apunta {
+    .media-right img {
+    max-width: 120px;
+}
+}
+
+.lista-ahora-tu li {
+    margin-bottom: 25px;     /* espacio entre numerales */
+    line-height: 1.6;
+}
+
+.boton-centrado {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo-ahora-tu {
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   Imagen Aplicaciones Apps conectadas
+   =============================== */
+
+.aplicaciones-conectadas {
+    margin-top: 20px;
+}
+
+.aplicaciones-conectadas .media-left {
+    padding-right: 15px;
+}
+
+.aplicaciones-conectadas .img-apps {
+    max-width: 240px;
+    height: auto;
+}
+
+/* ===============================
+   Interactivo 2: Blockly conectadas
+   =============================== */
+
+   #recurso2Content .texto-imagen {
+    display: flex;
+    align-items: center;        /* centra verticalmente con el texto */
+    gap: 12px;                  /* espacio entre imagen y texto */
+    margin-bottom: 20px;
+}
+
+/* ===== IMAGEN NINA ===== */
+#recurso2Content .texto-imagen img.nina-apunta {
+    width: 250px !important;    /* fuerza tamaño */
+    max-width: 250px !important;
+    height: auto !important;
+    display: block;
+}
+
+/* ===== EVITA QUE EL IFRAME SE PEGUE ===== */
+#recurso2Content .recurso-embed {
+    clear: both;
+    margin-top: 20px;
 }

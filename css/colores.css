@@ -33,11 +33,11 @@ ul.lista-menu>li a strong {
 }
 
 .actividades {
-    background: #4FD4B4 url(fondo-matematicas.jpg);
+    background: #4FD4B4 url("../img/fondo-program.png");
 }
 
 .backdrop {
-    background: #fff url(../assets/fondo-cortina.jpg);
+    background: #fff url(/fondo-cortina.jpg);
     border: 20px solid #4FD4B4;
 }
 
