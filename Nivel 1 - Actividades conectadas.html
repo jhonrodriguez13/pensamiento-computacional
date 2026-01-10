@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Actividades conectadas
+        </title>
+        
+        <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
+        <meta name="author" content="Jhon sebastián Rodríguez">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="icons\logo.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animsition.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Revisado biblioteca de iconos (botones) -->
+        <link rel="stylesheet" href="css/exploratorios.css">
+        <link rel="stylesheet" href="css/colores.css">
+        <link rel="stylesheet" href="css/formulas.css">
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <script src="js/jquery.min.js.descarga"></script>
+        <script src="js/bootstrap.min.js.descarga"></script>
+        <script src="js/gogosmath.js.descarga"></script>
+        <script src="js/jquery.animsition.min.js.descarga"></script>
+        <script src="js/locache.min.js.descarga"></script>
+        <script src="js/localstoragedb.min.js.descarga"></script>
+        <script src="js/utilidades.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js\login.js"></script>
+        <script src="js/leccion5.js"></script>
+
+        <script>
+            $(document).on('ready',inicioHome);
+            function inicioHome(){
+                var img= avatares[locache.session.get("usuario").avatar].src;
+                $('.icono-usuario').css('background-image','url('+img+')');
+                $('.icono-usuario').attr('title',locache.session.get("usuario").nombre);
+                $('.icono-usuario').attr('alt','');
+            }
+        </script>
+
+    <style>.nav-roundslide a.next:hover { width: 385px; }.nav-roundslide a.prev:hover { width: 167px; }</style></head>
+
+    <body> 
+        <header class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="sahgsh" alt="" style="animation-delay: 0.1s; background-image: url(&quot;img/usuario-imagen-04.png&quot;);"></div>
+                    <a class="animated bounceIn animated-delay" data-delay="1.5s" href="index.html" title="Salir" style="animation-delay: 1.5s;">
+                        <div class="icono-salir">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </a>
+                    <img class="img-curriculos" src="img/nombre-proyecto.gif" alt="Proyecto GJ">
+                </div>
+                <div class="col-sm-5">
+                    <img class="img-escudo" src="img/Escudo colegio.png" alt="Gustavo Jiménez">
+                </div>
+            </div>            
+        </header>
+                
+        <div class="container pagina animsition" style="animation-duration: 1.5s; opacity: 1;">
+            <div class="miga-pan">
+                <div class="boton regresar">
+                    <a href="niveles.html" title="Regresar al inicio">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        NIVEL I
+                    </a>
+                </div>
+                <div class="ruta">Unidad 1: Fundamentos del pensamiento computacional</div>
+            </div>
+            <div class="row menu-contenido">
+                <div class="col-sm-7 menu-item">
+                    <ul class="list-unstyled list-lecciones">
+                        <li><a href="Nivel 1 - Pensamiento computacional.html"><strong>Lección 1:</strong> Pensamiento computacional</a></li>
+                        <li><a href="Nivel 1 - secuencia e instrucciones.html"><strong>Lección 2:</strong> Secuencias e instrucciones</a></li>
+                        <li><a href="Nivel 1 - Reconocimiento de patrones y repeticion.html"><strong>Lección 3:</strong> Reconocimiento de patrones y repeticiones</a></li>
+                        <li><a href="Nivel 1 - Actividades desconectadas.html"><strong>Lección 4:</strong> Actividades desconectadas</a></li>
+                        <li class="list-active"><a href="Nivel 1 - Actividades conectadas.html"><strong>Lección 5:</strong> Actividades conectadas</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 usuario">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="avatar-usuario">
+                                <div id="avatar-usuario" class="avatar avatar-13"></div>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <p class="media-heading" id="nombre">sajga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-roundslide">
+                <a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="Nivel 1 - Actividades desconectadas.html">
+                    <span class="icon-wrap">
+                        <i class="fa fa-arrow-left"></i></span>
+                    <div class="roundslide-label">Actividades desconectadas</div>
+                </a>
+                <!--No hay más lecciones para avanzar-->
+            </nav>
+            <div class="boton-fijo volver">
+                <a href="javascript:void(0);" id="volver" title="Volver al inicio">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+            
+    <article class="contenido col-xs-12">
+    <div class="page-header">
+        <h1>
+            <small>Lección 5</small><br>
+            ACTIVIDADES CONECTADAS
+        </h1>
+    </div>
+
+    <h2>¿Qué son las actividades conectadas?</h2>
+    <p>
+        Las <strong>actividades conectadas</strong> tienen como propósito desarrollar
+        habilidades de <strong>pensamiento computacional</strong> mediante el uso de
+        <strong>recursos digitales interactivos</strong> diseñados especialmente para
+        nuestros estudiantes.
+    </p>
+    <p>
+        Estas actividades hacen uso de plataformas web, juegos educativos, simuladores
+        y aplicaciones digitales que permiten al estudiante interactuar con el contenido,
+        recibir retroalimentación inmediata y aprender de forma activa.
+    </p>
+
+    <h2>Aplicaciones e importancia de las actividades conectadas</h2>
+
+<div class="media aplicaciones-conectadas">
+    <div class="media-left">
+        <img class="media-object img-apps"
+             src="img/apps-conectadas.png"
+             alt="Aplicaciones de pensamiento computacional">
+    </div>
+
+    <div class="media-body">
+        <p>
+            Las aplicaciones conectadas para el pensamiento computacional son fundamentales porque permiten a los estudiantes desarrollar habilidades como la lógica, la secuenciación, la resolución de problemas y la toma de decisiones mediante entornos digitales interactivos.
+        </p>
+
+        <p>
+            Herramientas como <strong>Code.org, Lightbot, MakeCode, Bebras, CodeCombat, Scratch, Kodable y Blockly</strong>
+            facilitan el aprendizaje a través de retos, juegos y programación por bloques, promoviendo la experimentación,
+            la corrección de errores y el análisis de patrones, lo que fortalece un aprendizaje activo y significativo.
+        </p>
+    </div>
+</div>
+
+    <h2>Actividad conectada 1: Code.Org</h2>
+
+    <div class="recurso der">
+        <a href="javascript:void(0)" data-toggle="recurso" data-target="#recurso1Content">
+            <div class="thumbnail lanzador">
+                <div class="recurso-nina"></div>
+                <div class="lanzador-icono">
+                    <div class="thumbnail">
+                        <img src="img/Ejer-conectadas.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="recurso-pie">
+            <strong>Recurso interactivo:</strong> Juego digital de exploración y lógica
+        </div>
+    </div>
+
+    <p>
+        En esta actividad conectada se utiliza como herramienta la plataforma Code.org, donde el estudiante interactúa con un recurso que le permite resolver retos mediante la observación, la lógica y la experimentación. El objetivo es identificar patrones, analizar el recorrido y programar una secuencia correcta de acciones para guiar al personaje hasta el objetivo, fortaleciendo el pensamiento computacional y la toma de decisiones.
+    </p>
+
+    <h2>Actividad conectada 2: Retos con laberintos y rompecabezas</h2>
+
+    <div class="recurso izq">
+        <a href="javascript:void(0)" data-toggle="recurso" data-target="#recurso2Content">
+            <div class="thumbnail lanzador">
+                <div class="recurso-nino"></div>
+                <div class="lanzador-icono">
+                    <div class="thumbnail">
+                        <img src="img/Ejer-conectadas.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="recurso-pie">
+            <strong>Recurso interactivo:</strong> Blockly Games
+        </div>
+    </div>
+
+    <p>
+        Blockly Games es un recurso digital que presenta desafíos tipo laberinto y rompecabezas, donde el estudiante debe organizar bloques de programación para resolver cada reto. Estas actividades fomentan el pensamiento computacional mediante la identificación de patrones, la secuenciación de instrucciones y la toma de decisiones lógicas, fortaleciendo habilidades de análisis y resolución de problemas de forma interactiva y progresiva
+    </p>
+</article>
+
+
+        </div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
+
+        <!--recurso 1 -->
+       <div class="backdrop" id="recurso1Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir"><i class="fa fa-times"></i></span>
+    </a>
+
+    <h1 class="text-center">PROGRAMACIÓN LABERINTO – ANGRY BIRDS</h1>
+
+    <!-- BLOQUE TÍTULO + IMAGEN -->
+<div class="media">
+    <div class="media-body">
+        <h3>Ejemplos interactivos</h3>
+        <p>
+            Observa los laberintos y haz clic en cada imagen para descubrir la secuencia de instrucciones que permiten llegar al objetivo.
+            En cada caso, deberás analizar el recorrido correcto para guiar al Angry Bird hasta el destino final, utilizando instrucciones como avanzar Izq o avanzara la der, subir o bajar, sin cometer errores en el camino.
+            Ten en cuenta que no debes pasar por las cajas de TNT.
+        </p>
+    </div>
+
+    <div class="media-right">
+    <img class="media-object nina-apunta"
+         src="img/enseña-desconectada.png"
+         alt="apuntando">
+</div>
+</div>
+
+<!-- EJEMPLOS (YA NO DENTRO DEL MEDIA) -->
+<div class="ejemplos-horizontal">
+
+    <!-- EJEMPLO 1 -->
+    <div class="ejemplo-item">
+        <img src="img/angrybirds-ej1.png"
+             data-original="img/angrybirds-ej1.png"
+             data-respuesta="img/angrybirds-ej1-sol.png"
+             class="img-ejemplo"
+             alt="Ejemplo 1">
+
+        <div class="acciones">
+            <strong>Acciones utilizadas:</strong>
+            <p>Avanzar Izq → Avanzar izq → Avanzar izq</p>
+        </div>
+    </div>
+
+    <!-- EJEMPLO 2 -->
+    <div class="ejemplo-item">
+        <img src="img/angrybirds-ej2.png"
+             data-original="img/angrybirds-ej2.png"
+             data-respuesta="img/angrybirds-ej2-sol.png"
+             class="img-ejemplo"
+             alt="Ejemplo 2">
+
+        <div class="acciones">
+            <strong>Acciones utilizadas:</strong>
+            <p>Abajo → Abajo → Abajo</p>
+        </div>
+    </div>
+
+    <!-- EJEMPLO 3 -->
+    <div class="ejemplo-item">
+        <img src="img/angrybirds-ej3.png"
+             data-original="img/angrybirds-ej3.png"
+             data-respuesta="img/angrybirds-ej3-sol.png"
+             class="img-ejemplo"
+             alt="Ejemplo 3">
+
+        <div class="acciones">
+            <strong>Acciones utilizadas:</strong>
+            <p>Abajo → Abajo → Abajo → Avanzar izq</p>
+        </div>
+    </div>
+
+</div>
+
+
+        <!-- EJERCICIOS -->
+        <h3 class="titulo-ahora-tu">Ahora tú</h3>
+
+<ol class="dashed lista-ahora-tu">
+    <li>
+        Ingresa al siguiente reto y programa la secuencia correcta:
+        <div class="boton-centrado">
+            <a href="https://studio.code.org/courses/courseb-2025/units/1/lessons/4/levels/5"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Ejercicio 1 – Angry Birds
+            </a>
+        </div>
+    </li>
+
+    <li>
+        Resuelve el laberinto usando el menor número de bloques posible:
+        <div class="boton-centrado">
+            <a href="https://studio.code.org/courses/courseb-2025/units/1/lessons/4/levels/6"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Ejercicio 2 – Angry Birds
+            </a>
+        </div>
+    </li>
+
+    <li>
+        Analiza el camino y corrige errores en la secuencia:
+        <div class="boton-centrado">
+            <a href="https://studio.code.org/courses/courseb-2025/units/1/lessons/4/levels/7"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Ejercicio 3 – Angry Birds
+            </a>
+        </div>
+    </li>
+</ol>
+
+
+
+        <!--recurso 2 -->
+        
+        <div class="backdrop" id="recurso2Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir"><i class="fa fa-times"></i></span>
+    </a>
+
+    <h1 class="text-center">RETOS DE SECUENCIAS Y PATRONES – BLOCKLY GAMES</h1>
+
+    <h3>Instrucciones:</h3>
+    <div class="instrucciones">
+        Explora el recurso interactivo de <strong>Blockly Games</strong> y resuelve los retos organizando correctamente
+        las piezas del rompecabezas. Analiza la forma, posición y relación entre los bloques para completar cada desafío.
+    </div>
+
+    <div class="contenido">
+        <!-- TEXTO + IMAGEN -->
+<div class="media texto-imagen">
+    
+    <div class="media-left">
+        <img class="media-object nina-apunta"
+             src="img/nino-explica.png"
+             alt="apuntando">
+    </div>
+
+    <div class="media-body">
+        <p>
+            Las aplicaciones conectadas para el pensamiento computacional son fundamentales
+            porque permiten desarrollar habilidades como la lógica, la secuenciación y la
+            resolución de problemas.
+        </p>
+        <p>
+            Herramientas como Code.org, Lightbot, MakeCode, Blockly y Scratch promueven
+            el aprendizaje mediante retos interactivos y programación por bloques.
+        </p>
+    </div>
+
+</div>
+
+<h3 class="subtitulo-recurso">Recurso interactivo – Blockly Games:</h3>
+
+<!-- RECURSO EMBEBIDO (ABAJO) -->
+<div class="embed-responsive embed-responsive-16by9 recurso-embed">
+    <iframe class="embed-responsive-item"
+            src="https://blockly.games/puzzle?lang=es"
+            allowfullscreen></iframe>
+</div>
+<h3 class="subtitulo-recurso">Recurso interactivo: Laberinto</h3>
+
+<p>
+    En este recurso interactivo de <strong>Laberinto</strong>, el estudiante debe analizar el recorrido y
+    programar una secuencia de instrucciones utilizando bloques de programación para guiar al
+    personaje hasta el objetivo. Es importante observar los caminos disponibles, evitar obstáculos
+    y corregir errores en la secuencia, promoviendo el desarrollo del pensamiento lógico, la toma
+    de decisiones y la resolución de problemas de manera progresiva.
+</p>
+
+<div class="embed-responsive embed-responsive-16by9 recurso-embed">
+    <iframe class="embed-responsive-item"
+            src="https://blockly.games/maze?lang=es"
+            allowfullscreen></iframe>
+</div>
+
+<h3>Ejercicios – Recursos Blockly Games</h3>
+
+<ol class="dashed">
+    <li>
+        <strong>Pájaro</strong><br>
+        Programa las instrucciones necesarias para que el pájaro llegue hasta el objetivo,
+        utilizando condicionales para tomar decisiones según el camino.
+        <br><br>
+        <div class="text-center">
+            <a href="https://blockly.games/bird?lang=es"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Acceder al recurso Pájaro
+            </a>
+        </div>
+    </li>
+
+    <li>
+        <strong>Tortuga</strong><br>
+        Utiliza bloques de programación para dibujar figuras siguiendo instrucciones
+        de movimiento y giro, desarrollando la lógica espacial.
+        <br><br>
+        <div class="text-center">
+            <a href="https://blockly.games/turtle?lang=es"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Acceder al recurso Tortuga
+            </a>
+        </div>
+    </li>
+
+    <li>
+        <strong>Película</strong><br>
+        Crea una animación controlando el tiempo y la secuencia de eventos,
+        comprendiendo cómo se ejecutan las instrucciones paso a paso.
+        <br><br>
+        <div class="text-center">
+            <a href="https://blockly.games/movie?lang=es"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Acceder al recurso Película
+            </a>
+        </div>
+    </li>
+
+    <li>
+        <strong>Música</strong><br>
+        Programa melodías utilizando patrones, repeticiones y secuencias
+        para comprender la estructura lógica de los algoritmos.
+        <br><br>
+        <div class="text-center">
+            <a href="https://blockly.games/music?lang=es"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Acceder al recurso Música
+            </a>
+        </div>
+    </li>
+
+    <li>
+        <strong>Tutor del estanque</strong><br>
+        Aprende a usar variables y condiciones para crear un programa que
+        responda de forma automática a diferentes situaciones.
+        <br><br>
+        <div class="text-center">
+            <a href="https://blockly.games/pond-tutor?lang=es"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Acceder al Tutor del estanque
+            </a>
+        </div>
+    </li>
+
+    <li>
+        <strong>Estanque</strong><br>
+        Diseña estrategias más avanzadas de programación utilizando lógica,
+        funciones y control de flujo para superar a otros programas.
+        <br><br>
+        <div class="text-center">
+            <a href="https://blockly.games/pond-duck?lang=es"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+                Acceder al recurso Estanque
+            </a>
+        </div>
+    </li>
+</ol>
+
+    </div>
+</div>
+  
+<div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div>
+
+<script>
+document.addEventListener("click", function (e) {
+    const trigger = e.target.closest('[data-toggle="recurso"]');
+    if (trigger) {
+        const target = document.querySelector(trigger.getAttribute("data-target"));
+        if (target) {
+            setTimeout(() => {
+                target.scrollTop = 0;
+            }, 50);
+        }
+    }
+});
+</script>
+
+<!-- script 1 -->
+
+<script>
+document.querySelectorAll('.img-ejemplo').forEach(function(img) {
+    img.addEventListener('click', function () {
+        let actual = img.src;
+        let original = img.getAttribute('data-original');
+        let respuesta = img.getAttribute('data-respuesta');
+        img.src = actual.includes(original) ? respuesta : original;
+    });
+});
+</script>
+</body></html>

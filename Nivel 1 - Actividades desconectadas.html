@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Actividades desconectadas
+        </title>
+        
+        <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
+        <meta name="author" content="Jhon sebastián Rodríguez">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="icons\logo.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animsition.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Revisado biblioteca de iconos (botones) -->
+        <link rel="stylesheet" href="css/exploratorios.css">
+        <link rel="stylesheet" href="css/colores.css">
+        <link rel="stylesheet" href="css/formulas.css">
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <script src="js/jquery.min.js.descarga"></script>
+        <script src="js/bootstrap.min.js.descarga"></script>
+        <script src="js/gogosmath.js.descarga"></script>
+        <script src="js/jquery.animsition.min.js.descarga"></script>
+        <script src="js/locache.min.js.descarga"></script>
+        <script src="js/localstoragedb.min.js.descarga"></script>
+        <script src="js/utilidades.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js\login.js"></script>
+        <script src="js/leccion4.js"></script>
+
+        <script>
+            $(document).on('ready',inicioHome);
+            function inicioHome(){
+                var img= avatares[locache.session.get("usuario").avatar].src;
+                $('.icono-usuario').css('background-image','url('+img+')');
+                $('.icono-usuario').attr('title',locache.session.get("usuario").nombre);
+                $('.icono-usuario').attr('alt','');
+            }
+        </script>
+
+    <style>.nav-roundslide a.next:hover { width: 385px; }.nav-roundslide a.prev:hover { width: 167px; }</style></head>
+
+    <body> 
+        <header class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="sahgsh" alt="" style="animation-delay: 0.1s; background-image: url(&quot;img/usuario-imagen-04.png&quot;);"></div>
+                    <a class="animated bounceIn animated-delay" data-delay="1.5s" href="index.html" title="Salir" style="animation-delay: 1.5s;">
+                        <div class="icono-salir">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </a>
+                    <img class="img-curriculos" src="img/nombre-proyecto.gif" alt="Proyecto GJ">
+                </div>
+                <div class="col-sm-5">
+                    <img class="img-escudo" src="img/Escudo colegio.png" alt="Gustavo Jiménez">
+                </div>
+            </div>            
+        </header>
+                
+        <div class="container pagina animsition" style="animation-duration: 1.5s; opacity: 1;">
+            <div class="miga-pan">
+                <div class="boton regresar">
+                    <a href="niveles.html" title="Regresar al inicio">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        NIVEL I
+                    </a>
+                </div>
+                <div class="ruta">Unidad 1: Fundamentos del pensamiento computacional</div>
+            </div>
+            <div class="row menu-contenido">
+                <div class="col-sm-7 menu-item">
+                    <ul class="list-unstyled list-lecciones">
+                        <li><a href="Nivel 1 - Pensamiento computacional.html"><strong>Lección 1:</strong> Pensamiento computacional</a></li>
+                        <li><a href="Nivel 1 - secuencia e instrucciones.html"><strong>Lección 2:</strong> Secuencias e instrucciones</a></li>
+                        <li><a href="Nivel 1 - Reconocimiento de patrones y repeticion.html"><strong>Lección 3:</strong> Reconocimiento de patrones y repeticiones</a></li>
+                        <li class="list-active"><a href="Nivel 1 - Actividades desconectadas.html"><strong>Lección 4:</strong> Actividades desconectadas</a></li>
+                        <li><a href="Nivel 1 - Actividades conectadas.html"><strong>Lección 5:</strong> Actividades conectadas</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 usuario">
+                    <div class="media">
+                        <div class="media-left">
+                            <div class="avatar-usuario">
+                                <div id="avatar-usuario" class="avatar avatar-13"></div>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <p class="media-heading" id="nombre">sajga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-roundslide">
+                <a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="Nivel 1 - Reconocimiento de patrones y repeticion.html">
+                    <span class="icon-wrap">
+                        <i class="fa fa-arrow-left"></i></span>
+                    <div class="roundslide-label">Patrones y repeticiones</div>
+                </a>
+                <a class="next animsition-link" data-animsition-in="fade-in-right" data-animsition-out="fade-out-left" href="Nivel 1 - Actividades conectadas.html">
+                    <span class="icon-wrap">
+                        <i class="fa fa-arrow-right"></i></span>
+                    <div class="roundslide-label">Actividades conectadas</div>
+                </a>
+            </nav>
+            <div class="boton-fijo volver"> <!--le quite el style-->
+                <a href="javascript:void(0);" id="volver" title="Volver al inicio">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+            <section>
+    <article class="contenido col-xs-12">
+        <div class="page-header">
+            <h1>
+                <small>Lección 4</small><br>
+                Actividades desconectadas
+            </h1>
+        </div>
+
+        <h2>¿Qué son las actividades desconectadas?</h2>
+        <p>
+            Las <strong>actividades desconectadas</strong> o <em>unplugged</em> tienen como objetivo enseñar conceptos de programación y lógica mediante juegos o ejercicios que se pueden realizar sin computadora, usando objetos tangibles como papel, fichas o tarjetas. Estas actividades permiten que los estudiantes comprendan mejor los conceptos de manera práctica, divertida e interactiva.
+        </p>
+        <!-- Imagen centrada usando clase CSS -->
+    <div class="media-left center-image">
+        <img class="media-object" src="img/desconectadas.png" alt="Actividades desconectadas">
+    </div>
+        <p>
+            Algunos ejemplos de actividades desconectadas incluyen la creación de algoritmos para la preparación de una receta de cocina, la construcción de torres con bloques siguiendo reglas específicas, la realización de rompecabezas y juegos de mesa que requieren pensamiento lógico y estratégico, y la resolución de problemas matemáticos usando técnicas como la descomposición y el reconocimiento de patrones.
+        </p>
+
+        <div class="actividades">
+            <div class="media">
+                <div class="media-left">
+                    <div class="media-object lanzador-actividades"></div>
+                </div>
+                <div class="media-body">
+                    <h2 class="media-heading">Actividades de aprendizaje</h2>
+                    <ul class="list-unstyled lista-menu">
+                        <li>
+                            <a href="javascript:void(0);" data-toggle="recurso" data-target="#recurso1Content">
+                                <strong>Actividad 1:</strong> Juegos de rutas y laberintos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" data-toggle="recurso" data-target="#recurso2Content">
+                                <strong>Actividad 2:</strong> Secuencias y patrones con fichas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2>Cómo implementar estas actividades</h2>
+        <p>
+            Para realizar actividades desconectadas, primero se decide qué concepto se quiere enseñar y se reúnen los materiales necesarios, como fichas, tarjetas o papel. Luego se explica la actividad a los estudiantes y se les permite practicar en grupos, observando cómo aplican los conceptos de manera práctica y colaborativa. Al final, se reflexiona sobre lo aprendido y las estrategias usadas para resolver el problema.
+        </p>
+
+        <h2>Tiempo estimado</h2>
+        <p>
+            Cada actividad puede durar entre 15 y 20 minutos. Son fáciles de implementar, no requieren computadoras y pueden adaptarse a diferentes edades y niveles.
+        </p>
+
+        <h2>Recursos adicionales</h2>
+<p>A continuación encontrarás enlaces a páginas con más actividades, juegos y recursos de codificación desconectada que puedes usar para complementar tus clases:</p>
+
+<ul>
+    <li>
+        <a href="https://www.picuino.com/es/prog-unplugged.html" target="_blank">
+            Programación Desconectada – CodeMonkey
+        </a>
+    </li>
+    <li>
+        <a href="https://formacion.intef.es/aulaenabierto/mod/book/tool/print/index.php?id=5174" target="_blank">
+            Actividades y recursos de programación sin ordenador – INTEF
+        </a>
+    </li>
+    <li>
+        <a href="https://libros.catedu.es/books/pensamiento-computacional-y-actividades-desenchufadas/chapter/actividades-desenchufadas" target="_blank">
+            Actividades desenchufadas – Libro de Pensamiento Computacional (CATEDU)
+        </a>
+    </li>
+    <li>
+        <a href="https://codeweek.eu/view/1305638/actividades-desconectadas" target="_blank">
+            Actividades desconectadas – EU CodeWeek
+        </a>
+    </li>
+    <li>
+        <a href="https://programamos.es/aprender-a-programar-sin-ordenador/" target="_blank">
+            Aprender a programar sin ordenador – Programamos.es
+        </a>
+    </li>
+</ul>
+
+    </article>
+</section>
+
+        </div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
+
+        <!--RECURSOS Y ACTIVIDADES-->
+        <div class="backdrop" id="recurso1Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir">
+            <i class="fa fa-times"></i>
+        </span>
+    </a>
+
+    <h1 class="text-center">Actividad 1: Juego de rutas y laberintos</h1>
+
+    <h3>Instrucciones:</h3>
+    <div class="instrucciones">
+        <P>Observa el laberinto. Escribe la secuencia correcta de pasos para que el personaje
+        llegue desde el punto de inicio 🟢 hasta la meta ⭐.
+        </P>
+        <p>
+        Usa solo estas palabras separadas por coma:
+        <strong>ARRIBA, ABAJO, IZQUIERDA, DERECHA</strong>
+        </p>
+    </div>
+
+    <div class="contenido">
+        <div class="media">
+            <div class="media-body">
+                <div class="col-sm-12 text-center">
+
+                    <!-- LABERINTO -->
+                    <div class="laberinto">
+                        <div class="fila">
+                            <span class="celda inicio">🟢</span>
+                            <span class="celda camino"></span>
+                            <span class="celda pared"></span>
+                            <span class="celda pared"></span>
+                        </div>
+                        <div class="fila">
+                            <span class="celda pared"></span>
+                            <span class="celda camino"></span>
+                            <span class="celda camino"></span>
+                            <span class="celda pared"></span>
+                        </div>
+                        <div class="fila">
+                            <span class="celda pared"></span>
+                            <span class="celda pared"></span>
+                            <span class="celda camino"></span>
+                            <span class="celda meta">⭐</span>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- ENTRADA DE ALGORITMO -->
+                    <label><strong>Escribe tu algoritmo:</strong></label>
+                    <input type="text" id="ruta_usuario" class="form-control text-center"
+                           placeholder="Ej: DERECHA, ABAJO, ARRIBA...">
+
+                    <br>
+
+                    <input type="button"
+                           id="btn_validar_ruta"
+                           class="btn btn-success"
+                           value="Validar ruta">
+
+                    <p id="resultado_ruta" class="resultado"></p>
+
+                </div>
+            </div>
+
+            <div class="media-right">
+                <img class="media-object"
+                     src="img/enseña-desconectada.png"
+                     alt="recurso_1_desconectada">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!--RECURSO 2-->
+        <div class="backdrop" id="recurso2Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir">
+            <i class="fa fa-times"></i>
+        </span>
+    </a>
+
+    <h1 class="text-center">Actividad 2: Secuencias y patrones con fichas</h1>
+
+    <h3>Instrucciones:</h3>
+    <div class="instrucciones">
+        Arrastra las fichas y colócalas en los espacios vacíos para completar
+        correctamente el patrón.
+    </div>
+
+    <div class="contenido">
+        <div class="media">
+            <div class="media-body">
+                <div class="col-sm-12 text-center">
+
+                    <!-- SECUENCIA -->
+                    <div class="secuencia">
+                        <div class="slot fijo">🔵</div>
+                        <div class="slot fijo">🔴</div>
+                        <div class="slot drop" data-valor="🔵"></div>
+                        <div class="slot drop" data-valor="🔴"></div>
+                        <div class="slot fijo">🔵</div>
+                    </div>
+
+                    <h4>Fichas disponibles</h4>
+
+                    <!-- FICHAS DRAG -->
+                    <div class="fichas">
+                        <div class="ficha" draggable="true" data-valor="🔴">🔴</div>
+                        <div class="ficha" draggable="true" data-valor="🔵">🔵</div>
+                    </div>
+
+                    <br>
+
+                    <input type="button"
+                           id="btn_validar_patron"
+                           class="btn btn-primary"
+                           value="Validar patrón">
+
+                    <p id="resultado_patron" class="resultado"></p>
+
+                </div>
+            </div>
+
+            <div class="media-right">
+                <img class="media-object"
+                     src="img/enseña-desconectada.png"
+                     alt="apuntando">
+            </div>
+        </div>
+    </div>
+</div>
+        
+    </div><div style="display:none;" id="audio"><audio id="player" preload="auto"><source src="../../../assets/audio/alerta.mp3" type="audio/mpeg"><source src="../../../assets/audio/alerta.m4a" type="audio/m4a"><source src="../../../assets/audio/alerta.ogg" type="audio/ogg"></audio></div>
+
+    <!--SCRIPT RECURSO 1-->
+<script>
+document.getElementById("btn_validar_ruta").addEventListener("click", function () {
+
+    const respuestaCorrecta = [
+        "DERECHA",
+        "ABAJO",
+        "DERECHA",
+        "ABAJO",
+        "DERECHA"
+    ];
+
+    const entrada = document.getElementById("ruta_usuario").value
+        .toUpperCase()
+        .replace(/\s+/g, "")
+        .split(",");
+
+    const resultado = document.getElementById("resultado_ruta");
+
+    if (JSON.stringify(entrada) === JSON.stringify(respuestaCorrecta)) {
+        resultado.style.color = "green";
+        resultado.innerHTML = "✅ ¡Excelente! La ruta es correcta.";
+    } else {
+        resultado.style.color = "red";
+        resultado.innerHTML = "❌ Ruta incorrecta. Revisa los pasos e inténtalo nuevamente.";
+    }
+});
+</script>
+
+<!--SCRIPT RECURSO 2-->
+<script>
+let fichaArrastrada = null;
+
+document.querySelectorAll(".ficha").forEach(ficha => {
+    ficha.addEventListener("dragstart", e => {
+        fichaArrastrada = ficha;
+    });
+});
+
+document.querySelectorAll(".slot.drop").forEach(slot => {
+
+    slot.addEventListener("dragover", e => {
+        e.preventDefault();
+        slot.classList.add("over");
+    });
+
+    slot.addEventListener("dragleave", () => {
+        slot.classList.remove("over");
+    });
+
+    slot.addEventListener("drop", () => {
+        slot.classList.remove("over");
+        if (fichaArrastrada) {
+            slot.textContent = fichaArrastrada.textContent;
+            slot.dataset.user = fichaArrastrada.dataset.valor;
+        }
+    });
+});
+
+document.getElementById("btn_validar_patron").addEventListener("click", () => {
+    let correcto = true;
+
+    document.querySelectorAll(".slot.drop").forEach(slot => {
+        if (slot.dataset.user !== slot.dataset.valor) {
+            correcto = false;
+        }
+    });
+
+    const resultado = document.getElementById("resultado_patron");
+
+    if (correcto) {
+        resultado.style.color = "green";
+        resultado.innerHTML = "✅ ¡Patrón correcto! Excelente trabajo.";
+    } else {
+        resultado.style.color = "red";
+        resultado.innerHTML = "❌ El patrón no es correcto. Inténtalo nuevamente.";
+    }
+});
+</script>
+
+</body></html>
