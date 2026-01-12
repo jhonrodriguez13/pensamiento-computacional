@@ -2183,3 +2183,72 @@ span#version {
     margin: 25px 0;
     font-weight: 500;
 }
+
+/* ===== Lección 1: Bloques código ===== */
+
+.lista-pasos {
+    margin: 15px 0 15px 20px;
+}
+
+.lista-pasos li {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.colores-bloques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.color {
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.azul { background: #2196f3; }
+.morado { background: #9c27b0; }
+.rosa { background: #e91e63; }
+.naranja { background: #ff9800; }
+.amarillo { background: #fbc02d; color: #333; }
+.verde { background: #4caf50; }
+.rojo { background: #f44336; }
+
+/* ===== Lección 2: Bloques de movimiento... ===== */
+
+.leccion-bloques {
+    padding: 30px 40px;       /* Espacio interno */
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+/* Encabezado */
+.leccion-header {
+    margin-bottom: 30px;
+}
+
+/* Tarjetas de contenido */
+.bloque-contenido {
+    padding: 20px 25px;       /* 👈 ESTE ES EL CLAVE */
+    margin-bottom: 25px;
+    background-color: #f5f7fa;
+    border-left: 6px solid #6fb2df;
+    border-radius: 8px;
+}
+
+/* Títulos */
+.bloque-contenido h3 {
+    margin-top: 0;
+}
+
+/* Texto */
+.bloque-contenido p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
