@@ -693,7 +693,7 @@ ul.referencias {
 }
 
 .backdrop .instrucciones {
-    font-size: 22px;
+    font-size: 24px;
     border-bottom: 2px dashed transparent;
     border-top: 2px dashed transparent;
     margin-bottom: 30px;
@@ -2108,4 +2108,78 @@ span#version {
 #recurso2Content .recurso-embed {
     clear: both;
     margin-top: 20px;
+}
+
+.sprite-manos {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+
+    background-image: url("../img/manos.png");
+    background-repeat: no-repeat;
+    background-size: 2500px 250px;
+
+    animation: lavadoManos 3s steps(10) infinite;
+}
+
+@keyframes lavadoManos {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2500px 0;
+    }
+}
+
+/* ===== recurso diagrama de flujo ===== */
+
+.algoritmo-contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pasos, .zona-algoritmo {
+    width: 260px;
+    min-height: 260px;
+    background: #f1f8e9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.paso {
+    background: #c8e6c9;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    cursor: grab;
+    text-align: center;
+    font-weight: bold;
+}
+
+.zona-algoritmo {
+    border: 2px dashed #81c784;
+}
+
+.planta {
+    width: 300px;       /* ⬅️ MÁS GRANDE (antes 200px) */
+    height: 300px;      /* ⬅️ MISMA PROPORCIÓN */
+    margin: 30px auto;
+    background: url("../img/planta-crecimiento.png") no-repeat;
+    background-size: 1500px 300px; /* ⬅️ ESCALADO PROPORCIONAL */
+}
+
+.planta-0 { background-position: 0 0; }
+.planta-1 { background-position: -300px 0; }
+.planta-2 { background-position: -600px 0; }
+.planta-3 { background-position: -900px 0; }
+.planta-4 { background-position: -1200px 0; }
+
+.instrucciones-algoritmo {
+    font-size: 2.5rem; /* Puedes subir a 1.3rem o 1.4rem */
+    line-height: 1.8;
+    margin: 25px 0;
+    font-weight: 500;
 }
