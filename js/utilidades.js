@@ -55,19 +55,19 @@ $(document).on("ready", function() {
         var sel = $(this).attr('data-target');
         $(sel).addClass("in");
         $('body').css('overflow', 'hidden');
-        reproducirAudio('../../../assets/audio/alerta');
+        reproducirAudio('audio/alerta');
     });
     $("[data-backdropdismiss=true]").on('click', function(event) {
         event.preventDefault();
         $('body').css('overflow', '');
         $(this).parents('.backdrop').removeClass("in");
-        reproducirAudio('../../../assets/audio/alerta');
+        reproducirAudio('audio/alerta');
     });
     $(document).on('keydown.esc-backdrop', function(e) {
         if (e.keyCode == 27) {
             $('body').css('overflow', '');
             if ($('.backdrop.in').length == 1) {
-                reproducirAudio('../../../assets/audio/alerta');
+                reproducirAudio('audio/alerta');
             }
             $('.backdrop.in').removeClass('in');
         }
@@ -139,9 +139,9 @@ function is_internet_connected(callbackhandler, parametros) {
 
 function animacionExito() {
     try {
-        $('#img-actividad').css("background-image", 'url(assets/img/sprite-nino-nina-exito.png)');
+        $('#img-actividad').css("background-image", 'url(img/sprite-aprendiendo.png)');
         $('#img-actividad').css("-webkit-animation-name", 'animacion-exito');
-        $('#img-actividad').css("-webkit-animation-timing-function", 'steps(8)');
+        $('#img-actividad').css("-webkit-animation-timing-function", 'steps(4)');
         $('#img-actividad').css("-webkit-animation-duration", '1.5s');
     } catch (e) {
         console.log(e);
