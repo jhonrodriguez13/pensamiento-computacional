@@ -159,7 +159,7 @@
                 <div class="recurso-nina"></div>
                 <div class="lanzador-icono">
                     <div class="thumbnail">
-                        <img src="img/apariencia-image.png" alt="">
+                        <img src="img/blocks-ico.png" alt="">
                     </div>
                 </div>
             </div>
@@ -240,108 +240,212 @@
     </a>
 
     <!-- TÍTULO -->
-    <h1 class="text-center">Ejemplos de secuencias e instrucciones</h1>
+    <h1 class="text-center">Actividades de movimiento, apariencia y sonido</h1>
 
-    <!-- EJEMPLO 1 -->
-    <h3>Ejemplo 1: Preparar un sándwich</h3>
+<h2>Actividad 1: Bloques de Movimiento</h2>
+<br>
+<p>
+    Los bloques de <strong>movimiento</strong> permiten indicar cómo se desplaza un personaje dentro del escenario.
+    Mediante estos bloques es posible realizar acciones como avanzar, retroceder o cambiar de posición.
+</p>
+<p>
+    En esta actividad, al hacer clic sobre cada bloque, observarás cómo el personaje se mueve una cantidad
+    determinada de pasos. Esto permite comprender que cada bloque representa una instrucción que el
+    personaje ejecuta de manera inmediata.
+</p>
+<p>Haz clic en los bloques para mover el personaje.</p>
 
-    <div class="text-center">
-    <img src="img/receta-sandwich.png"
-         alt="Receta sándwich"
-         class="imagen-ejemplo">
+<div class="text-center">
+    <div id="sprite"
+     style="
+        width: 180px;
+        height: 160px;
+        background-image: url('img/movimiento-cat.png');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: auto 100%;
+        position: relative;
+        margin: auto;
+        will-change: background-position, transform;
+        transform-origin: center;
+     ">
+</div>
+</div>
+
+<br>
+
+<div class="text-center">
+    <button class="btn btn-info" onclick="mover(50)">Mover 50 pasos ➡️</button>
+    <button class="btn btn-info" onclick="mover(-50)">Mover -50 pasos ⬅️</button>
+</div>
+
+<p id="mensajeMovimiento" class="text-center"></p>
+
+<hr>
+
+<h2>Actividad 2: Bloques de Apariencia</h2>
+<br>
+<p>
+    Los bloques de <strong>apariencia</strong> se utilizan para modificar cómo se ve un personaje y qué mensajes
+    muestra durante la ejecución de un programa. Con ellos se pueden cambiar disfraces, mostrar textos
+    o generar efectos visuales.
+</p>
+<p>
+    En esta actividad, al usar los bloques disponibles, podrás cambiar la imagen del personaje y hacer que
+    muestre un mensaje en pantalla, identificando cómo estos bloques influyen en la comunicación visual
+    entre el programa y el usuario.
+</p>
+
+<div class="text-center">
+    <img src="img/disfraz-pac1.png" id="spriteApariencia" style="width:120px;">
+    <h4 id="mensajeSprite">Hola 👋</h4>
+</div>
+
+<br>
+
+<div class="text-center">
+    <button class="btn btn-warning" onclick="cambiarDisfraz()">Cambiar disfraz</button>
+    <button class="btn btn-success" onclick="cambiarMensaje()">Decir mensaje</button>
+</div>
+
+<hr>
+<h2>Actividad 3: Bloques de Sonido</h2>
+<br>
+<p>
+    Los bloques de <strong>sonido</strong> permiten reproducir efectos sonoros o música para hacer que los
+    programas sean más dinámicos e interactivos. Estos bloques suelen activarse como respuesta a una acción.
+</p>
+<p>
+    En esta actividad, al presionar el bloque de sonido, se reproducirá un efecto auditivo, permitiendo
+    reconocer cómo un bloque ejecuta una acción sonora específica dentro del programa.
+</p>
+<p>Haz clic en el bloque para reproducir un sonido.</p>
+
+<div class="text-center">
+
+    <div style="margin-bottom:10px;">
+        <img src="img/blocks-sound.png"
+             alt="Bloque de sonido"
+             style="width:500px; display:block; margin:0 auto;">
     </div>
 
-    <p>
-        Para preparar un sándwich debemos seguir una secuencia de pasos en el orden correcto.
-    </p>
-
-    <ol>
-        <li>Colocar el pan.</li>
-        <li>Agregar el relleno.</li>
-        <li>Cerrar el sándwich.</li>
-    </ol>
-
-    <hr>
-
-    <!-- EJEMPLO 2 -->
-    <h3>Ejemplo 2: Cambiar un neumático</h3>
-
-    <div class="text-center">
-    <img src="img/cambiar-neumatico.png"
-         alt="Cambiar neumático"
-         class="imagen-ejemplo">
-    </div>
-
-    <p>
-        Cambiar un neumático requiere seguir instrucciones claras y ordenadas.
-    </p>
-
-    <ol>
-        <li>Detener el vehículo.</li>
-        <li>Aflojar los tornillos.</li>
-        <li>Levantar el vehículo.</li>
-        <li>Cambiar el neumático.</li>
-    </ol>
-
-    <hr>
-
-    <!-- EJERCICIO -->
-    <h2>Ejercicio</h2>
-
-    <p>Organiza correctamente las instrucciones para preparar una limonada:</p>
-
-    <ul>
-        <li>Mezclar los ingredientes</li>
-        <li>Exprimir los limones</li>
-        <li>Agregar agua y azúcar</li>
-    </ul>
-
-    <div class="row">
-        <div class="col-sm-4">
-            <input type="text" id="orden1" placeholder="Paso 1">
-        </div>
-        <div class="col-sm-4">
-            <input type="text" id="orden2" placeholder="Paso 2">
-        </div>
-        <div class="col-sm-4">
-            <input type="text" id="orden3" placeholder="Paso 3">
-        </div>
-    </div>
-
-    <br>
-
-    <button class="btn btn-primary" id="btn_comprobar">
-        Comprobar
+    <button class="btn btn-danger" onclick="reproducirSonido()">
+        🔊 Tocar sonido
     </button>
-
-    <div id="resultado" class="text-center"></div>
 
 </div>
 
-<div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div>
+<p id="mensajeSonido" class="text-center"></p>
+
+</div>
+
+<!--Script de la Actividad 1-->
 
 <script>
-document.getElementById("btn_comprobar").addEventListener("click", function () {
+let posicion = 0;
+let frame = 0;
+let totalFrames = 10;        // ajusta a tu sprite
+let frameWidth = 542;       // 5420 / totalFrames
+let animando = false;
+let frameReposo = 0;
 
-    const p1 = document.getElementById("orden1").value.toLowerCase();
-    const p2 = document.getElementById("orden2").value.toLowerCase();
-    const p3 = document.getElementById("orden3").value.toLowerCase();
+function mover(pasos) {
 
-    const resultado = document.getElementById("resultado");
+    if (animando) return;
+    animando = true;
 
-    const correcto =
-        p1.includes("exprimir") &&
-        p2.includes("agregar") &&
-        p3.includes("mezclar");
+    const sprite = document.getElementById("sprite");
 
-    if (correcto) {
-        resultado.innerHTML =
-            "<span style='color:green;font-weight:bold;'>¡Correcto! Organizaste bien la secuencia.</span>";
+    /* 🔁 REFLEJO SEGÚN DIRECCIÓN */
+    if (pasos < 0) {
+        sprite.style.transform = "scaleX(-1)";
     } else {
-        resultado.innerHTML =
-            "<span style='color:red;font-weight:bold;'>Revisa el orden de las instrucciones.</span>";
+        sprite.style.transform = "scaleX(1)";
     }
-});
+
+    // mover posición
+    posicion += pasos;
+    sprite.style.left = posicion + "px";
+
+    let contador = 0;
+
+    function animar() {
+
+        sprite.style.backgroundPosition =
+            `-${frame * frameWidth}px 0px`;
+
+        frame++;
+        contador++;
+
+        if (frame >= totalFrames) {
+            frame = 0;
+        }
+
+        if (contador < totalFrames) {
+            requestAnimationFrame(animar);
+        } else {
+            /* 🧊 PAUSA LIMPIA (SIN PARPADEO) */
+            frame = frameReposo;
+            sprite.style.backgroundPosition =
+                `-${frameReposo * frameWidth}px 0px`;
+
+            animando = false;
+        }
+    }
+
+    requestAnimationFrame(animar);
+}
 </script>
+
+<!--Script de la Actividad 2-->
+
+<script>
+let disfraz = 0;
+
+function cambiarDisfraz() {
+    let img = document.getElementById("spriteApariencia");
+    if (disfraz === 0) {
+    img.src = "img/disfraz-pac1.png";
+} else if (disfraz === 1) {
+    img.src = "img/disfraz-pac2.png";
+} else {
+    img.src = "img/disfraz-pac3.png";
+}
+
+disfraz++;
+
+if (disfraz > 2) {
+    disfraz = 0;
+}
+    
+}
+
+function cambiarMensaje() {
+    const mensaje = document.getElementById("mensajeSprite");
+
+    // mostrar mensaje
+    mensaje.innerHTML = "¡Estoy programando! 😎";
+
+    // después de 2 segundos, volver al estado inicial
+    setTimeout(() => {
+        mensaje.innerHTML = "Hola 👋";
+    }, 2000);
+}
+</script>
+
+<!--Script de la Actividad 3, el audio funciona correctamente-->
+
+<script>
+function reproducirSonido() {
+    const mensaje = document.getElementById("mensajeSonido");
+
+    mensaje.innerText = "Reproduciendo sonido 🎵";
+
+    // usa el sistema global existente
+    reproducirAudio('audio/bubble-pop2');
+}
+</script>
+
+<div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div>
 
 </body></html>
