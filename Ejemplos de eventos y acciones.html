@@ -94,11 +94,11 @@
                 </div>
             </div>
             <nav class="nav-roundslide">
-                <a class="next animsition-link" data-animsition-in="fade-in-right" data-animsition-out="fade-out-left" href="Ejemplos de eventos y acciones.html">
-                    <span class="icon-wrap">
-                        <i class="fa fa-arrow-right"></i></span>
-                    <div class="roundslide-label">Ejercicios de eventos y acciones</div>
-                </a>
+                <a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="Eventos y acciones.html">
+                <span class="icon-wrap">
+                        <i class="fa fa-arrow-left"></i></span>
+                <div class="roundslide-label">Eventos y acciones</div>
+            </a>
             </nav>
             <div class="boton-fijo volver">  <!--de acá elimine style=""-->
                 <a href="javascript:void(0);" id="volver" title="Volver al inicio">
@@ -109,194 +109,114 @@
                 </a>
             </div>
             
-            <article class="contenido col-xs-12">  
+            <article class="contenido col-xs-12">
     <div class="page-header">
         <h1>
-            <small>Lección 1</small><br>
+            <small>Lección 2 - Ejercicios</small><br>
             Eventos y acciones
         </h1>
     </div>
 
     <p>
-        En la programación por bloques, los programas no comienzan solos: necesitan que algo ocurra para ponerse en marcha.
-        Ese “algo” se conoce como <strong>evento</strong>.
+        En esta lección encontrarás varios ejercicios para practicar eventos y acciones en programación por bloques,
+    especialmente en Scratch. Un evento es una situación o interacción que ocurre en el programa, como presionar
+    una tecla, hacer clic en un objeto o iniciar el proyecto con la bandera verde, y que desencadena una o varias
+    acciones previamente definidas. Gracias a los eventos, los programas pueden responder de forma interactiva
+    a las acciones del usuario.
     </p>
 
-    <p>
-        Cuando un evento sucede, el programa responde ejecutando una o varias <strong>acciones</strong>.
-        Esta relación entre evento y acción es la base del funcionamiento de muchos programas interactivos como juegos,
-        simulaciones y aplicaciones educativas.
-    </p>
-
-    <h2>¿Qué es un evento?</h2>
+    <h2>Ejercicio 1: Control de movimiento con teclas</h2>
 
     <div class="imagen der col-sm-5">
         <div class="thumbnail">
-            <img src="img/evento-boton.png" alt="Evento presionar bandera o botón" style="width:100%;">
-
+            <img src="img/ejercicio-teclas.png" alt="Control con teclas" style="width:100%;">
             <div class="caption">
-                Un evento ocurre cuando sucede algo específico, por ejemplo:
-                hacer clic en la bandera verde, presionar una tecla o tocar la pantalla.
+                Usa las teclas de dirección para mover al personaje.
             </div>
         </div>
     </div>
 
     <p>
-        Un <strong>evento</strong> es una situación que activa el inicio de un programa o de una parte del mismo.
-        En programación por bloques, los eventos suelen representarse con bloques que indican
-        <em>“cuando ocurra algo…”</em>.
+        Crea un programa en Scratch donde el sprite (por ejemplo el gato) se mueva hacia la derecha e izquierda
+        al presionar las teclas correspondientes:
     </p>
+
+    <ol>
+        <li>Inserta un bloque <strong>al presionar la flecha derecha</strong> y agrega la acción <em>mover 30 pasos</em>.</li>
+        <li>Inserta un bloque <strong>al presionar la flecha izquierda</strong> y agrega la acción <em>mover -30 pasos</em>.</li>
+        <li>Agrega mensajes o sonidos para dar retroalimentación al presionar cada tecla.</li>
+    </ol>
 
     <p>
-        Algunos eventos comunes son:
+        Cuando termines, el personaje debería responder a las teclas y dar una sensación de control interactivo,
+        como un mini juego.
     </p>
 
-    <ul>
-        <li>Cuando se hace clic en la bandera verde.</li>
-        <li>Cuando se presiona una tecla.</li>
-        <li>Cuando se hace clic sobre un objeto.</li>
-        <li>Cuando se recibe un mensaje.</li>
-    </ul>
-
-    <h2>¿Qué es una acción?</h2>
+    <h2>Ejercicio 2: Acciones al hacer clic en protagonistas</h2>
 
     <div class="imagen izq col-sm-5">
         <div class="thumbnail">
-            <img src="img/accion-decir.png" alt="Acciones en programación por bloques" style="width:100%;">
-
+            <img src="img/ejercicio-clic-objeto.png" alt="Evento de clic en objeto" style="width:100%;">
             <div class="caption">
-                Las acciones son las tareas que realiza el programa después de que ocurre un evento.
+                El personaje reacciona al hacer clic sobre él.
             </div>
         </div>
     </div>
 
     <p>
-        Una <strong>acción</strong> es una instrucción que el programa ejecuta como respuesta a un evento.
-        Las acciones indican qué debe hacer el personaje, objeto o sistema.
+        Diseña un programa en el que el personaje diga un mensaje o reproduzca un sonido cuando el usuario haga
+        clic sobre él:
     </p>
+    <ol>
+        <li>Coloca el bloque <strong>al hacer clic en este objeto</strong>.</li>
+        <li>Debajo, coloca una acción como <em>decir “¡Me has presionado!”</em> o <em>tocar sonido</em>.</li>
+        <li>Prueba tu programa haciendo clic sobre el sprite.</li>
+    </ol>
+
+    <h2>Ejercicio 3: Estado inicial con la bandera verde</h2>
+
+    <div class="imagen der col-sm-5">
+        <div class="thumbnail">
+            <img src="img/ejercicio-bandera.png" alt="Evento bandera verde" style="width:100%;">
+            <div class="caption">
+                Reiniciar el programa al iniciar.
+            </div>
+        </div>
+    </div>
 
     <p>
-        Ejemplos de acciones en programación por bloques:
+        Usa el bloque <strong>al presionar la bandera verde</strong> para dejar siempre tu proyecto en un estado inicial
+        como:
     </p>
-
     <ul>
-        <li>Mover un personaje.</li>
-        <li>Reproducir un sonido.</li>
-        <li>Mostrar un mensaje.</li>
-        <li>Cambiar de color o de escenario.</li>
+        <li>Colocar el sprite en el centro (x:0, y:0).</li>
+        <li>Fijar la dirección hacia el frente.</li>
+        <li>Borrar cualquier trazo o cambio anterior.</li>
     </ul>
 
-    <h3>Ejemplo 1</h3>
     <p>
-        Relacione el evento con la acción correspondiente en un programa por bloques.
+        Esto asegura que cada vez que se ejecute, el programa comienza desde el mismo punto, sin importar lo que
+        ocurrió antes.
     </p>
 
-    <p><strong>Objetivo:</strong> Comprender la relación evento → acción.</p>
-
-    <mark class="display-table">
-        <p>Inicio</p>
-        <ol class="dashed">
-            <li>Ocurre el evento: se presiona la bandera verde.</li>
-            <li>El programa inicia.</li>
-            <li>El personaje aparece en pantalla.</li>
-            <li>El personaje se mueve hacia adelante.</li>
-        </ol>
-        <p>Fin</p>
-    </mark>
+    <h2>Ejercicio 4: Combinando eventos</h2>
+    <p>
+        Finalmente, crea un proyecto que combine varios eventos para lograr varias acciones:
+    </p>
+    <ol>
+        <li>Al presionar la flecha arriba, el sprite se mueve hacia arriba.</li>
+        <li>Al presionar la flecha abajo, el sprite se mueve hacia abajo y cambia de disfraz.</li>
+        <li>Al hacer clic sobre el sprite, reproduce un sonido y muestra un mensaje.</li>
+        <li>Al presionar la bandera verde, todo se reinicia.</li>
+    </ol>
 
     <p>
-        En este ejemplo, <strong>la bandera verde es el evento</strong> y
-        <strong>mover el personaje es la acción</strong>.
+        Esta actividad permite ver cómo diferentes eventos pueden trabajar de forma conjunta para crear un programa
+        interactivo completo.
     </p>
 
-    <div class="thumbnail text-center">
-    <img 
-        src="img/evento-estatico.png"
-        data-gif="img/evento-animado.gif"
-        alt="Evento bandera verde"
-        class="img-responsive img-evento"
-        onclick="reproducirGif(this)"
-        style="cursor:pointer;"
-    >
-
-    <div class="caption">
-        Haz clic sobre la imagen para observar el evento y la acción en ejecución.
-    </div>
-    </div>
-
-    <script>
-    function reproducirGif(img) {
-    const imgOriginal = img.src;
-    const gif = img.getAttribute("data-gif");
-
-    img.src = gif;
-
-    setTimeout(() => {
-        img.src = imgOriginal;
-    }, 11000); // ajusta al tiempo real del GIF
-    }
-    </script>
-
-    <h3>Ejemplo 2</h3>
-    <p>
-        Analice la siguiente situación:
-    </p>
-
-    <p>
-        <strong>Objetivo:</strong> Crear una interacción sencilla con el teclado.
-    </p>
-
-    <mark class="display-table">
-        <p>Inicio</p>
-        <ol class="dashed">
-            <li>Evento: se presiona la tecla espacio.</li>
-            <li>Acción: el personaje salta.</li>
-            <li>Acción: se reproduce un sonido.</li>
-        </ol>
-        <p>Fin</p>
-    </mark>
-
-    <div class="thumbnail text-center">
-    <img 
-        id="gifTecla"
-        src="img/tecla-estatica.png"
-        data-gif="img/tecla-espacio.gif"
-        alt="Evento tecla espacio"
-        class="img-responsive"
-    >
-
-    <div class="caption">
-        Presiona la tecla <strong>ESPACIO</strong> para activar el evento.
-    </div>
-    </div>
-
-    <script>
-    document.addEventListener("keydown", function(event) {
-    if (event.code === "Space") {
-        const img = document.getElementById("gifTecla");
-        const imgOriginal = img.src;
-        const gif = img.getAttribute("data-gif");
-
-        img.src = gif;
-
-        setTimeout(() => {
-            img.src = imgOriginal;
-        }, 10000); // duración del GIF
-    }
-    });
-    </script>
-
-    <p>
-        Observe que un mismo evento puede activar <strong>varias acciones al mismo tiempo</strong>.
-        Esto permite crear programas más dinámicos e interactivos.
-    </p>
-
-    <p>
-        En programación por bloques, los eventos funcionan como disparadores y las acciones como respuestas.
-        Esta lógica está presente en videojuegos, robots, simulaciones y sistemas interactivos.
-        Comprender esta relación facilita el diseño de programas claros, organizados y fáciles de entender.
-    </p>
 </article>
+
 
 
         </div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
