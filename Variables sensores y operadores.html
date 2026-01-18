@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Variables, sensores y operadores
+    </title>
+    
+    <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
+    <meta name="author" content="Jhon sebastián Rodríguez">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icons\logo.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Revisado biblioteca de iconos (botones) -->
+    <link rel="stylesheet" href="css/exploratorios.css">
+    <link rel="stylesheet" href="css/colores.css">
+    <link rel="stylesheet" href="css/formulas.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/tooltip-box.css">
+    <link rel="stylesheet" href="css/colores-web2.css">
+    <script src="js/jquery.min.js.descarga"></script>
+    <script src="js/bootstrap.min.js.descarga"></script>
+    <script src="js/gogosmath.js.descarga"></script>
+    <script src="js/jquery.animsition.min.js.descarga"></script>
+    <script src="js/locache.min.js.descarga"></script>
+    <script src="js/localstoragedb.min.js.descarga"></script>
+    <script src="js/utilidades.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js\login.js"></script>
+    <script src="js/leccion2.js.descarga"></script>
+
+        <script>
+            $(document).on('ready',inicioHome);
+            function inicioHome(){
+                var img= avatares[locache.session.get("usuario").avatar].src;
+                $('.icono-usuario').css('background-image','url('+img+')');
+                $('.icono-usuario').attr('title',locache.session.get("usuario").nombre);
+                $('.icono-usuario').attr('alt','');
+            }
+        </script>
+
+<style>.nav-roundslide a.next:hover { width: 167px; }
+.nav-roundslide a.prev:hover { width: 259px; }</style></head>
+
+<body>
+        <header class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="sahgsh" alt="" style="animation-delay: 0.1s; background-image: url(&quot;img/usuario-imagen-04.png&quot;);"></div>
+                <a class="animated bounceIn animated-delay" data-delay="1.5s" href="index.html" title="Salir" style="animation-delay: 1.5s;">
+                    <div class="icono-salir">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </a>
+                <img class="img-curriculos" src="img/nombre-proyecto.gif" alt="Proyecto GJ">
+            </div>
+            <div class="col-sm-5">
+                <img class="img-escudo" src="img/Escudo colegio.png" alt="Gustavo Jiménez">
+            </div>
+        </div>
+    </header>
+    <div class="container pagina animsition" style="animation-duration: 1.5s; opacity: 1;">
+        <div class="miga-pan">
+            <div class="boton regresar">
+                <a href="Niveles.html" title="Regresar al inicio">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    NIVEL I
+                </a>
+            </div>
+            <div class="ruta">Unidad 1: Variables, sensores y operadores</div>
+        </div>
+        
+        <div class="row menu-contenido">
+            <div class="col-sm-7 menu-item">
+                <ul class="list-unstyled list-lecciones">
+                        <li><a href="Bloques de programacion.html"><strong>Lección 1:</strong> Bloques de programación</a></li>
+                        <li><a href="Movimientos apariencia y sonido.html"><strong>Lección 2:</strong> Movimientos, apariencia y sonido</a></li>
+                        <li class="list-active"><a href="Variables sensores y operadores.html"><strong>Lección 3:</strong> Variables, sensores y operadores</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-5 usuario">
+                <div class="media">
+                    <div class="media-left">
+                        <div class="avatar-usuario">
+                            <div id="avatar-usuario" class="avatar avatar-3"></div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading" id="nombre">Estudiante</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-roundslide">
+            <a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="Movimientos apariencia y sonido.html">
+                <span class="icon-wrap">
+                        <i class="fa fa-arrow-left"></i></span>
+                <div class="roundslide-label">Bloques de programación</div>
+            </a>
+        </nav>
+        <div class="boton-fijo volver">
+            <a href="javascript:void(0);" id="volver" title="Volver al inicio">
+                <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+                    </span>
+            </a>
+        </div>
+            <section>
+                <article class="contenido col-xs-12">
+    <div class="page-header">
+        <h1>
+            <small>Lección 3</small><br>
+            Variables, sensores y operadores
+        </h1>
+    </div>
+
+    <h2>Variables:</h2>
+    <!--LANZADOR RECURSO 1-->
+    <div class="recurso izq">
+        <a href="#" data-toggle="recurso" data-target="#recurso1Content">
+            <div class="thumbnail lanzador">
+                <div class="recurso-nino"></div>
+                <div class="lanzador-icono">
+                    <div class="thumbnail">
+                        <img src="img/lanzador-web2.png" alt="lanzador">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="recurso-pie"><strong>Ejemplo:</strong> Uso de variables en bloques.</div>
+    </div>
+
+    <p>
+        En la programación por bloques, las <span class="tooltip-glosario tooltip-glosario-effect-1">
+        <span class="tooltip-glosario-item">variables</span>
+        <span class="tooltip-glosario-content clearfix">
+        <span class="tooltip-glosario-text">Espacios de memoria que almacenan información que puede cambiar durante la ejecución del programa.</span>
+        </span></span> permiten guardar valores como números, textos o estados, los cuales pueden ser utilizados y modificados a lo largo del programa.
+    </p>
+
+    <p>
+        Las variables se representan mediante bloques específicos que permiten crear, asignar y consultar valores de forma visual, facilitando la comprensión del funcionamiento interno de un algoritmo sin necesidad de escribir código textual.
+    </p>
+
+    <p>
+        Un ejemplo del uso de variables es almacenar el puntaje de un juego, la cantidad de intentos de un usuario o el valor leído por un sensor, permitiendo que el programa tome decisiones a partir de estos datos.
+    </p>
+
+    <div class="limpiador"></div>
+
+    <h2>Sensores:</h2>
+    <!--LANZADOR RECURSO 2-->
+    <div class="recurso der">
+        <a href="#" data-toggle="recurso" data-target="#recurso2Content">
+            <div class="thumbnail lanzador">
+                <div class="recurso-nina"></div>
+                <div class="lanzador-icono">
+                    <div class="thumbnail">
+                        <img src="img/lanzador-web2.png" alt="lanzador">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="recurso-pie"><strong>Ejemplo:</strong> Lectura de sensores.</div>
+    </div>
+
+    <p>
+        Los <span class="tooltip-glosario tooltip-glosario-effect-1">
+        <span class="tooltip-glosario-item">sensores</span>
+        <span class="tooltip-glosario-content clearfix">
+        <span class="tooltip-glosario-text">Dispositivos que detectan cambios del entorno y los convierten en información.</span>
+        </span></span> permiten que un programa interactúe con el mundo físico, captando datos como luz, distancia, temperatura o movimiento.
+    </p>
+
+    <p>
+        En la programación por bloques, los sensores se utilizan mediante bloques que devuelven valores en tiempo real, los cuales pueden almacenarse en variables o emplearse directamente en estructuras de control.
+    </p>
+
+    <p>
+        Un ejemplo común es utilizar un sensor de proximidad para detectar obstáculos o un sensor de luz para activar una acción cuando cambia la iluminación del entorno.
+    </p>
+
+    <h2>Operadores</h2>
+
+    <p>
+        Los <span class="tooltip-glosario tooltip-glosario-effect-1">
+        <span class="tooltip-glosario-item">operadores</span>
+        <span class="tooltip-glosario-content clearfix">
+        <span class="tooltip-glosario-text">Permiten realizar comparaciones y operaciones lógicas o matemáticas.</span>
+        </span></span> son fundamentales para procesar la información almacenada en variables o proveniente de sensores.
+    </p>
+
+    <h3>Operadores más utilizados:</h3>
+    <!--LANZADOR RECURSO 3-->
+    <div class="recurso izq">
+        <a href="#" data-toggle="recurso" data-target="#recurso3Content">
+            <div class="thumbnail lanzador">
+                <div class="recurso-nino"></div>
+                <div class="lanzador-icono">
+                    <div class="thumbnail">
+                        <img src="img/lanzador-web2.png" alt="lanzador">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="recurso-pie"><strong>Ejemplo:</strong> Operadores lógicos y matemáticos.</div>
+    </div>
+
+    <p>
+        En la programación por bloques se utilizan operadores matemáticos para realizar cálculos como sumas, restas o multiplicaciones, y operadores lógicos para comparar valores, por ejemplo, verificar si una variable es mayor, menor o igual a otra.
+    </p>
+
+    <p>
+        Estos operadores se emplean principalmente en estructuras condicionales y repetitivas, permitiendo que el programa tome decisiones y ejecute acciones según las condiciones establecidas.
+    </p>
+
+</article>
+
+        </section>
+        </div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
+
+        <!--recurso 1 -->
+<div class="backdrop" id="recurso1Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir"><i class="fa fa-times"></i></span>
+    </a>
+
+    <h1 class="text-center">Variables en Programación por Bloques</h1>
+
+    <h3>¿Qué es una variable?</h3>
+    <div class="instrucciones">
+        Una <strong>variable</strong> es como una caja con nombre donde se guarda información.
+        Esa información puede cambiar mientras el programa se ejecuta.
+    </div>
+
+    <div class="contenido">
+
+        <!-- SECCIÓN VISUAL -->
+        <div class="row text-center" style="margin-bottom:20px;">
+            <img src="img/Contador.png" alt="Variable como caja"
+                 style="max-width:720px;">
+            <p><em>Una variable guarda información que puede cambiar</em></p>
+        </div>
+
+        <!-- VARIABLE INTERACTIVA -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Variable: <span class="label label-info">contador</span></h3>
+
+                <div class="well text-center">
+                    <p>Valor actual de la variable:</p>
+                    <h1 id="valorVariable" style="font-size:48px;">0</h1>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-success" onclick="incrementarVariable()">
+                        + Aumentar
+                    </button>
+                    <button class="btn btn-warning" onclick="reiniciarVariable()">
+                        Reiniciar
+                    </button>
+                </div>
+            </div>
+
+            <!-- EXPLICACIÓN POR BLOQUES -->
+            <div class="col-sm-6">
+                <h3>Bloques utilizados</h3>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        🧱 <strong>Crear variable:</strong> contador
+                    </li>
+                    <li class="list-group-item">
+                        🔢 <strong>Asignar valor:</strong> contador = 0
+                    </li>
+                    <li class="list-group-item">
+                        ➕ <strong>Cambiar variable:</strong> contador + 1
+                    </li>
+                    <li class="list-group-item">
+                        👁️ <strong>Mostrar variable:</strong> contador
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RETO -->
+        <div class="row" style="margin-top:25px;">
+            <div class="col-sm-12">
+                <div class="alert alert-info">
+                    <strong>🎯 Reto:</strong>  
+                    ¿Qué pasa si presionas el botón <em>Aumentar</em> cinco veces?  
+                    ¿Para qué situaciones usarías una variable como esta en un juego o robot?
+                </div>
+            </div>
+        </div>
+        <!-- ================== TIPOS DE VARIABLES ================== -->
+<hr>
+
+<h2 class="text-center">Tipos de Variables en Programación por Bloques</h2>
+
+<p class="text-center">
+    En la programación por bloques existen diferentes tipos de variables según el tipo de información
+    que almacenan. Observa cada tipo y prueba la actividad.
+</p>
+
+<div class="row">
+
+    <!-- NÚMEROS -->
+    <div class="col-sm-3 text-center">
+        <div class="well">
+            <img src="img/variable-numero.png" alt="Variable numérica" style="width:250px; height:auto;">
+            <h4>Números</h4>
+            <p>Guardan valores numéricos.</p>
+            <p><strong>Ejemplo:</strong> puntaje = 10</p>
+            <button class="btn btn-info btn-sm" onclick="mostrarTipo('Número: se usa para contar puntos, vidas o intentos.')">
+                Probar
+            </button>
+        </div>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="col-sm-3 text-center">
+        <div class="well">
+            <img src="img/variable-texto.png" alt="Variable texto" style="width:250px; height:auto;">
+            <h4>Texto</h4>
+            <p>Guardan palabras o frases.</p>
+            <p><strong>Ejemplo:</strong> nombre = "Robot"</p>
+            <button class="btn btn-info btn-sm" onclick="mostrarTipo('Texto: se usa para nombres, mensajes o instrucciones.')">
+                Probar
+            </button>
+        </div>
+    </div>
+
+    <!-- BOOLEANAS -->
+    <div class="col-sm-3 text-center">
+        <div class="well">
+            <img src="img/variable-booleano.png" alt="Variable booleana" style="width:250px; height:auto;">
+            <h4>Verdadero / Falso</h4>
+            <p>Guardan estados.</p>
+            <p><strong>Ejemplo:</strong> puertaAbierta = verdadero</p>
+            <button class="btn btn-info btn-sm" onclick="mostrarTipo('Booleana: se usa para tomar decisiones.')">
+                Probar
+            </button>
+        </div>
+    </div>
+
+    <!-- LISTAS -->
+    <div class="col-sm-3 text-center">
+        <div class="well">
+            <img src="img/variable-lista.png" alt="Variable numérica" class="img-responsive center-block" style="width:250px;">
+            <h4>Listas</h4>
+            <p>Guardan varios valores.</p>
+            <p><strong>Ejemplo:</strong> colores = [rojo, azul]</p>
+            <button class="btn btn-info btn-sm" onclick="mostrarTipo('Lista: se usa para guardar muchos datos en una sola variable.')">
+                Probar
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<!-- PANEL DE RESPUESTA -->
+<div class="row" style="margin-top:20px;">
+    <div class="col-sm-12">
+        <div id="resultadoTipo" class="alert alert-success text-center" style="display:none;">
+        </div>
+    </div>
+</div>
+
+<!-- RETO FINAL -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="alert alert-warning">
+            <strong>🧠 Reto final:</strong>  
+            Relaciona cada tipo de variable con una situación real:
+            <ul>
+                <li>¿Qué tipo usarías para guardar la edad de una persona?</li>
+                <li>¿Cuál usarías para mostrar un mensaje en pantalla?</li>
+                <li>¿Cuál usarías para saber si un sensor está activado?</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    function mostrarTipo(texto) {
+        const panel = document.getElementById("resultadoTipo");
+        panel.style.display = "block";
+        panel.innerHTML = texto;
+    }
+</script>
+<!-- ======================================================== -->
+
+    </div>
+</div>
+
+<script>
+    let contador = 0;
+
+    function incrementarVariable() {
+        contador++;
+        document.getElementById("valorVariable").innerHTML = contador;
+    }
+
+    function reiniciarVariable() {
+        contador = 0;
+        document.getElementById("valorVariable").innerHTML = contador;
+    }
+</script>
+
+
+
+        <!--recurso 2 -->
+        <div class="backdrop" id="recurso2Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir"><i class="fa fa-times"></i></span>
+    </a>
+
+    <h1 class="text-center">Sensores en Programación por Bloques</h1>
+
+    <h3>¿Qué es un sensor?</h3>
+    <div class="instrucciones">
+        Un <strong>sensor</strong> es un dispositivo que detecta información del entorno
+        (luz, distancia, temperatura, movimiento) y la envía al programa para tomar decisiones.
+    </div>
+
+    <div class="contenido">
+
+        <!-- INTRO VISUAL -->
+        <div class="row text-center" style="margin-bottom:25px;">
+            <img src="img/sensores-entorno.png"
+                 alt="Sensores y entorno"
+                 class="img-responsive center-block"
+                 style="width:500px;">
+            <p><em>Los sensores permiten que el programa interactúe con el mundo real</em></p>
+        </div>
+
+        <!-- SENSOR DE DISTANCIA -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Sensor de Distancia</h3>
+                <p>
+                    Este sensor mide qué tan lejos o cerca se encuentra un objeto.
+                    En programación por bloques, su valor suele guardarse en una variable.
+                </p>
+
+                <div class="well text-center">
+                    <p><strong>Distancia detectada (cm):</strong></p>
+                    <h1 id="valorDistancia">50</h1>
+
+                    <input type="range"
+                           min="0"
+                           max="100"
+                           value="50"
+                           class="form-control"
+                           onchange="actualizarDistancia(this.value)">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h3>Bloques usados</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">📡 Leer sensor de distancia</li>
+                    <li class="list-group-item">📦 Guardar valor en variable</li>
+                    <li class="list-group-item">🤔 Comparar distancia</li>
+                    <li class="list-group-item">🚦 Tomar una decisión</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RESPUESTA DEL PROGRAMA -->
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div id="respuestaSensor" class="alert alert-info">
+                    El objeto está a una distancia segura.
+                </div>
+            </div>
+        </div>
+
+        <!-- SENSOR DE LUZ -->
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Sensor de Luz</h3>
+                <p>
+                    El sensor de luz detecta cuánta iluminación hay en el entorno.
+                    Es muy usado para encender luces o activar acciones automáticas.
+                </p>
+
+                <div class="well text-center">
+                    <p><strong>Nivel de luz:</strong></p>
+                    <h1 id="valorLuz">70</h1>
+
+                    <input type="range"
+                           min="0"
+                           max="100"
+                           value="70"
+                           class="form-control"
+                           onchange="actualizarLuz(this.value)">
+                </div>
+            </div>
+
+            <div class="col-sm-6 text-center">
+                <img src="img/sensor-luz.png"
+                     alt="Sensor de luz"
+                     class="img-responsive center-block"
+                     style="width:500px;">
+                <p><em>El sensor de luz detecta cambios de iluminación</em></p>
+            </div>
+        </div>
+
+        <!-- RETO -->
+        <div class="row" style="margin-top:25px;">
+            <div class="col-sm-12">
+                <div class="alert alert-warning">
+                    <strong>🎯 Reto:</strong><br>
+                    Ajusta los sensores y responde:
+                    <ul>
+                        <li>¿Qué pasa cuando la distancia es muy pequeña?</li>
+                        <li>¿En qué situaciones usarías un sensor de luz?</li>
+                        <li>¿Qué variable guardarías para cada sensor?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+<h2 class="text-center">Sensores del Ratón y Teclado (Scratch)</h2>
+
+<p class="text-center">
+    En Scratch, los sensores permiten que el programa detecte acciones del usuario,
+    como mover el ratón, presionar teclas o responder preguntas.
+</p>
+
+<!-- BLOQUES VISUALES -->
+<div class="row text-center" style="margin-bottom:20px;">
+    <img src="img/sensores-scratch.png"
+         alt="Bloques de sensores Scratch"
+         class="img-responsive center-block"
+         style="width:500px;">
+    <p><em>Bloques de sensores usados en programación por bloques</em></p>
+</div>
+
+<!-- SENSOR RATÓN -->
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Sensor: Puntero del ratón</h3>
+        <p>
+            Estos bloques permiten saber si el ratón está tocando un objeto,
+            cuál es su posición o si el botón está presionado.
+        </p>
+
+        <div class="well text-center">
+            <p><strong>Estado del ratón:</strong></p>
+            <p id="estadoRaton">Mueve el ratón o haz clic</p>
+
+            <button class="btn btn-info" onclick="ratonPresionado()">
+                Simular clic del ratón
+            </button>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <h3>Bloques relacionados</h3>
+        <ul class="list-group">
+            <li class="list-group-item">🖱️ ¿ratón presionado?</li>
+            <li class="list-group-item">📍 posición x del ratón</li>
+            <li class="list-group-item">📍 posición y del ratón</li>
+            <li class="list-group-item">📏 distancia al puntero del ratón</li>
+        </ul>
+    </div>
+</div>
+
+<!-- SENSOR TECLADO -->
+<hr>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Sensor: Teclado</h3>
+        <p>
+            El sensor de teclado detecta si una tecla específica está siendo presionada,
+            permitiendo controlar movimientos o acciones.
+        </p>
+
+        <div class="well text-center">
+            <p><strong>Presiona una tecla:</strong></p>
+            <h4 id="teclaDetectada">Ninguna</h4>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <h3>Bloque usado</h3>
+        <ul class="list-group">
+            <li class="list-group-item">⌨️ ¿tecla [espacio] presionada?</li>
+        </ul>
+    </div>
+</div>
+
+<!-- SENSOR PREGUNTA -->
+<hr>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Sensor: Preguntar y esperar</h3>
+        <p>
+            Este sensor permite recibir información del usuario y almacenarla en una variable.
+        </p>
+
+        <div class="well text-center">
+            <p>¿Cómo te llamas?</p>
+            <input type="text" id="nombreUsuario" class="form-control">
+            <br>
+            <button class="btn btn-success" onclick="mostrarRespuesta()">
+                Enviar respuesta
+            </button>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <h3>Bloques usados</h3>
+        <ul class="list-group">
+            <li class="list-group-item">❓ preguntar “¿Cómo te llamas?” y esperar</li>
+            <li class="list-group-item">📦 respuesta</li>
+        </ul>
+    </div>
+</div>
+
+<!-- RESPUESTA -->
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <div id="respuestaUsuario" class="alert alert-success" style="display:none;">
+        </div>
+    </div>
+</div>
+
+<!-- RETO -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="alert alert-warning">
+            <strong>🎯 Reto Scratch:</strong>
+            <ul>
+                <li>¿Qué acción controla el ratón?</li>
+                <li>¿Qué bloque usarías para mover un personaje con el teclado?</li>
+                <li>¿En qué casos usarías el bloque <em>preguntar y esperar</em>?</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    function ratonPresionado() {
+        document.getElementById("estadoRaton").innerHTML =
+            "🖱️ El ratón está presionado";
+    }
+
+    document.addEventListener("keydown", function (event) {
+        document.getElementById("teclaDetectada").innerHTML =
+            "Tecla presionada: " + event.key;
+    });
+
+    function mostrarRespuesta() {
+        const nombre = document.getElementById("nombreUsuario").value;
+        const panel = document.getElementById("respuestaUsuario");
+
+        panel.style.display = "block";
+        panel.innerHTML = "¡Hola, " + nombre + "! Esta información viene del bloque <strong>respuesta</strong>.";
+    }
+</script>
+
+</div>
+
+<script>
+    function actualizarDistancia(valor) {
+        document.getElementById("valorDistancia").innerHTML = valor;
+
+        if (valor < 30) {
+            document.getElementById("respuestaSensor").className = "alert alert-danger";
+            document.getElementById("respuestaSensor").innerHTML =
+                "⚠️ Objeto muy cerca: detener movimiento";
+        } else {
+            document.getElementById("respuestaSensor").className = "alert alert-info";
+            document.getElementById("respuestaSensor").innerHTML =
+                "✅ Distancia segura: continuar movimiento";
+        }
+    }
+
+    function actualizarLuz(valor) {
+        document.getElementById("valorLuz").innerHTML = valor;
+    }
+</script>
+    
+        <!-- Recurso 3: Operadores -->
+<div class="backdrop" id="recurso3Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir">
+            <i class="fa fa-times"></i>
+        </span>
+    </a>
+
+    <h1 class="text-center">Operadores en Programación por Bloques</h1>
+
+    <h3>¿Qué son los operadores?</h3>
+    <p>
+        Los <strong>operadores</strong> son bloques que permiten <strong>realizar cálculos</strong>,
+        <strong>comparar valores</strong> y <strong>tomar decisiones</strong> dentro de un programa.
+        Son fundamentales para que el programa piense y actúe según una condición.
+    </p>
+
+    <hr>
+
+    <!-- Tipos de operadores -->
+    <h3>Tipos de operadores más usados</h3>
+
+    <div class="row text-center">
+
+        <!-- Operadores aritméticos -->
+        <div class="col-sm-4">
+            <div class="well">
+                <h4>🔢 Aritméticos</h4>
+                <img src="img/operadores-aritmeticos.png"
+                     alt="Operadores aritméticos"
+                     class="img-responsive center-block"
+                     style="width:400px;">
+                <p>
+                    Se usan para realizar cálculos matemáticos.
+                </p>
+                <ul class="text-left">
+                    <li>➕ Sumar</li>
+                    <li>➖ Restar</li>
+                    <li>✖ Multiplicar</li>
+                    <li>➗ Dividir</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Operadores relacionales -->
+        <div class="col-sm-4">
+            <div class="well">
+                <h4>🔍 Relacionales</h4>
+                <img src="img/operadores-relacionales.png"
+                     alt="Operadores relacionales"
+                     class="img-responsive center-block"
+                     style="width:400px;">
+                <p>
+                    Comparan dos valores y devuelven <strong>verdadero o falso</strong>.
+                </p>
+                <ul class="text-left">
+                    <li>== Igual</li>
+                    <li>≠ Diferente</li>
+                    <li>> Mayor que</li>
+                    <li>< Menor que</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Operadores lógicos -->
+        <div class="col-sm-4">
+            <div class="well">
+                <h4>🧠 Lógicos</h4>
+                <img src="img/operadores-logicos.png"
+                     alt="Operadores lógicos"
+                     class="img-responsive center-block"
+                     style="width:400px;">
+                <p>
+                    Permiten combinar condiciones.
+                </p>
+                <ul class="text-left">
+                    <li>Y (AND)</li>
+                    <li>O (OR)</li>
+                    <li>NO (NOT)</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Actividad interactiva -->
+    <h3>🎮 Actividad interactiva: ¿Qué operador usar?</h3>
+
+    <p>
+        Lee cada situación y selecciona el tipo de operador correcto.
+    </p>
+
+    <div class="actividad-operadores">
+        <p><strong>1.</strong> Quiero saber si el puntaje es mayor a 10.</p>
+        <div class="text-center botones-operadores">
+    <button class="btn btn-default btn-lg" onclick="evaluarOperador(this, 'aritmetico')">
+        Aritmético
+    </button>
+
+    <button class="btn btn-default btn-lg" onclick="evaluarOperador(this, 'relacional')">
+        Relacional
+    </button>
+
+    <button class="btn btn-default btn-lg" onclick="evaluarOperador(this, 'logico')">
+        Lógico
+    </button>
+</div>
+<style>
+.botones-operadores button {
+    margin: 8px 10px;   /* separación entre botones */
+    min-width: 160px;  /* todos del mismo tamaño */
+    font-size: 18px;   /* texto más grande */
+}
+</style>
+
+        <p id="resultadoOp" style="margin-top:10px; font-weight:bold;"></p>
+    </div>
+
+    <hr>
+
+    <!-- Reto -->
+    <h3>🚀 Reto rápido</h3>
+    <p>
+        Imagina que estás programando un videojuego:
+    </p>
+    <ul>
+        <li>El jugador gana si <strong>vidas > 0</strong> Y <strong>tiempo > 0</strong></li>
+    </ul>
+    <p>
+        👉 ¿Qué tipo de operadores necesitas usar?
+    </p>
+
+    <button class="btn btn-success" onclick="alert('¡Correcto! Se usan operadores relacionales y lógicos 🎉')">
+        Ver respuesta
+    </button>
+
+</div>
+
+<script>
+function evaluarOperador(boton, tipo) {
+    var resultado = document.getElementById("resultadoOp");
+
+    // Reiniciar estilos
+    var botones = boton.parentNode.querySelectorAll("button");
+    botones.forEach(function(btn) {
+        btn.className = "btn btn-default";
+    });
+
+    if (tipo === "relacional") {
+        boton.className = "btn btn-success";
+        resultado.innerHTML = "✅ Correcto. Se está comparando un valor.";
+        resultado.style.color = "green";
+    } else {
+        boton.className = "btn btn-danger";
+        resultado.innerHTML = "❌ No es correcto. Piensa si estás comparando o calculando.";
+        resultado.style.color = "red";
+    }
+}
+</script>
+  
+<div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div></body></html>
