@@ -1,0 +1,2259 @@
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../../assets/fonts/Lato/lato-light-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-light-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-light-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-light-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-light-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-light-webfont.svg#latolight) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../assets/fonts/Lato/lato-regular-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-regular-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-regular-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-regular-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-regular-webfont.svg#latoregular) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../../assets/fonts/Lato/lato-semibold-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-semibold-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-semibold-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-semibold-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-semibold-webfont.svg#latosemibold) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../../assets/fonts/Lato/lato-bold-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-bold-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-bold-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-bold-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-bold-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-bold-webfont.svg#latobold) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    src: url(../../assets/fonts/Lato/lato-heavy-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-heavy-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-heavy-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-heavy-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-heavy-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-heavy-webfont.svg#latoheavy) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    src: url(../../assets/fonts/Lato/lato-black-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-black-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-black-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-black-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-black-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-black-webfont.svg#latoblack) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 300;
+    src: url(../../assets/fonts/Lato/lato-lightitalic-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-lightitalic-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-lightitalic-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-lightitalic-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-lightitalic-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-lightitalic-webfont.svg#latolight_italic) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 400;
+    src: url(../../assets/fonts/Lato/lato-italic-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-italic-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-italic-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-italic-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-italic-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-italic-webfont.svg#latoitalic) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 600;
+    src: url(../../assets/fonts/Lato/lato-semibolditalic-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-semibolditalic-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-semibolditalic-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-semibolditalic-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-semibolditalic-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-semibolditalic-webfont.svg#latosemibold_italic) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 700;
+    src: url(../../assets/fonts/Lato/lato-bolditalic-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-bolditalic-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-bolditalic-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-bolditalic-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-bolditalic-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-bolditalic-webfont.svg#latobold_italic) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 800;
+    src: url(../../assets/fonts/Lato/lato-heavyitalic-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-heavyitalic-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-heavyitalic-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-heavyitalic-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-heavyitalic-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-heavyitalic-webfont.svg#latoheavy_italic) format('svg')
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 900;
+    src: url(../../assets/fonts/Lato/lato-blackitalic-webfont.eot);
+    src: url(../../assets/fonts/Lato/lato-blackitalic-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/Lato/lato-blackitalic-webfont.woff2) format('woff2'), url(../../assets/fonts/Lato/lato-blackitalic-webfont.woff) format('woff'), url(../../assets/fonts/Lato/lato-blackitalic-webfont.ttf) format('truetype'), url(../../assets/fonts/Lato/lato-blackitalic-webfont.svg#latoblack_italic) format('svg')
+}
+
+@font-face {
+    font-family: CabinSketch;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../assets/fonts/cabinsketch/cabinsketch-regular-webfont.eot);
+    src: url(../../assets/fonts/cabinsketch/cabinsketch-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/cabinsketch/cabinsketch-regular-webfont.woff2) format('woff2'), url(../../assets/fonts/cabinsketch/cabinsketch-regular-webfont.woff) format('woff'), url(../../assets/fonts/cabinsketch/cabinsketch-regular-webfont.ttf) format('truetype'), url(../../assets/fonts/cabinsketch/cabinsketch-regular-webfont.svg#CabinSketch) format('svg');
+}
+
+@font-face {
+    font-family: CabinSketch;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../../assets/fonts/cabinsketch/cabinsketch-bold-webfont.eot);
+    src: url(../../assets/fonts/cabinsketch/cabinsketch-bold-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/cabinsketch/cabinsketch-bold-webfont.woff2) format('woff2'), url(../../assets/fonts/cabinsketch/cabinsketch-bold-webfont.woff) format('woff'), url(../../assets/fonts/cabinsketch/cabinsketch-bold-webfont.ttf) format('truetype'), url(../../assets/fonts/cabinsketch/cabinsketch-bold-webfont.svg#CabinSketch) format('svg');
+}
+
+@font-face {
+    font-family: uni05;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../assets/fonts/uni_05_x/uni05_53-webfont.eot);
+    src: url(../../assets/fonts/uni_05_x/uni05_53-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/uni_05_x/uni05_53-webfont.woff2) format('woff2'), url(../../assets/fonts/uni_05_x/uni05_53-webfont.woff) format('woff'), url(../../assets/fonts/uni_05_x/uni05_53-webfont.ttf) format('truetype'), url(../../assets/fonts/uni_05_x/uni05_53-webfont.svg#uni05) format('svg');
+}
+
+@font-face {
+    font-family: uni05;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../../assets/fonts/uni_05_x/uni05_63-webfont.eot);
+    src: url(../../assets/fonts/uni_05_x/uni05_63-webfont.eot?#iefix) format('embedded-opentype'), url(../../assets/fonts/uni_05_x/uni05_63-webfont.woff2) format('woff2'), url(../../assets/fonts/uni_05_x/uni05_63-webfont.woff) format('woff'), url(../../assets/fonts/uni_05_x/uni05_63-webfont.ttf) format('truetype'), url(../../assets/fonts/uni_05_x/uni05_63-webfont.svg#uni05) format('svg');
+}
+
+@-webkit-keyframes fondo {
+    0% {
+        background-position: 0 0, 0 0
+    }
+    100% {
+        background-position: 1500px -670px, 0 0
+    }
+}
+
+@keyframes fondo {
+    0% {
+        background-position: 0 0, 0 0
+    }
+    100% {
+        background-position: 1500px -670px, 0 0
+    }
+}
+
+@-webkit-keyframes salida {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes salida {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes animacion-1920 {
+    100% {
+        background-position: -1920px;
+    }
+}
+
+@-webkit-keyframes animacion-1600 {
+    100% {
+        background-position: -1600px;
+    }
+}
+
+@-webkit-keyframes animacion-4800 {
+    100% {
+        background-position: -4800px;
+    }
+}
+
+@-webkit-keyframes animacion-4750 {
+    100% {
+        background-position: -4750px;
+    }
+}
+
+@-webkit-keyframes animacion-2200 {
+    100% {
+        background-position: -2200px;
+    }
+}
+
+@-webkit-keyframes animacion-5100 {
+    100% {
+        background-position: -5100px;
+    }
+}
+
+@-webkit-keyframes animacion-7500 {
+    100% {
+        background-position: -7500px;
+    }
+}
+
+@-webkit-keyframes animacion-2000 {
+    100% {
+        background-position: -2000px;
+    }
+}
+
+@-webkit-keyframes animacion-3500 {
+    100% {
+        background-position: -3500px;
+    }
+}
+
+@-webkit-keyframes animacion-exito {
+    100% {
+        background-position: -1000px;
+    }
+}
+
+@-webkit-keyframes animacion-error {
+    100% {
+        background-position: -6500px;
+    }
+}
+
+@keyframes animacion-3500 {
+    100% {
+        background-position: -3500px;
+    }
+}
+
+@-webkit-keyframes animacion-3206 {
+    100% {
+        background-position: -3206px;
+    }
+}
+
+@keyframes animacion-3206 {
+    100% {
+        background-position: -3206px;
+    }
+}
+
+@keyframes animacion-4750 {
+    100% {
+        background-position: -4750px;
+    }
+}
+
+@keyframes animacion-2200 {
+    100% {
+        background-position: -2200px;
+    }
+}
+
+@keyframes animacion-1600 {
+    100% {
+        background-position: -1600px;
+    }
+}
+
+@keyframes animacion-4800 {
+    100% {
+        background-position: -4800px;
+    }
+}
+
+@keyframes animacion-5100 {
+    100% {
+        background-position: -5100px;
+    }
+}
+
+@keyframes animacion-1920 {
+    100% {
+        background-position: -1920px;
+    }
+}
+
+@keyframes animacion-7250 {
+    100% {
+        background-position: -7250px;
+    }
+}
+
+@keyframes animacion-7500 {
+    100% {
+        background-position: -7500px;
+    }
+}
+
+@keyframes animacion-2000 {
+    100% {
+        background-position: -2000px;
+    }
+}
+
+@keyframes animacion-exito {
+    100% {
+        background-position: -1000px;
+    }
+}
+
+@keyframes animacion-error {
+    100% {
+        background-position: -6500px;
+    }
+}
+
+@keyframes animacion-recurso-nino {
+    100% {
+        background-position: -1280px;
+    }
+}
+
+@keyframes animacion-recurso-nina {
+    100% {
+        background-position: -1280px;
+    }
+}
+
+@keyframes animacion-lanzador-actividades {
+    100% {
+        background-position: -1000px;
+    }
+}
+
+article ol,
+article ul {
+    margin-bottom: 25px;
+}
+
+article.contenido {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 10px 50px 30px;
+}
+
+article.contenido h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+article.contenido h2 {
+    border-bottom: 1px dashed #ccc;
+    clear: both;
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+article.contenido h3,
+.backdrop h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+article.contenido p,
+mark.display-table {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+blockquote {
+    border: 1px dotted transparent;
+    border-left: 8px solid transparent;
+    border-radius: 0 8px 8px 0;
+    font-weight: 400;
+    max-width: 90%;
+}
+
+blockquote,
+table {
+    display: table;
+    font-size: 20px;
+}
+
+body {
+    color: #777;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    height: 100%;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'CabinSketch', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'CabinSketch', sans-serif;
+    font-weight: 600
+}
+
+header .icono-salir {
+    top: 5px;
+    left: 0;
+}
+
+header.container {
+    padding: 30px 0px 40px;
+}
+
+header.container .img-escudo {
+    background: #fff;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: inset 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+
+    width: 100%;
+    max-width: 180px;   /* 🔥 AQUÍ controlas el tamaño */
+    height: auto;       /* mantiene proporción */
+}
+
+header.container .col-sm-5 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header.container .img-curriculos {
+    height: 130px;
+    position: absolute;
+}
+
+header.container .icono-usuario {
+    background-color: #ffb;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: inset 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    margin-right: 10px;
+    position: relative;
+    top: 15px;
+    width: 100px;
+}
+
+mark {
+    background-color: #ffe;
+    border: 5px solid rgba(0, 0, 0, 0.02);
+    color: #666;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    width: 100%;
+    display: table;
+}
+
+mark ul,
+mark .table.columna {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+ol.dashed>li,
+ul.dashed>li {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+ol.dashed>li:last-child,
+ul.dashed>li:last-child {
+    border-bottom: none;
+}
+
+ol.dashed>li a,
+ul.dashed>li a {
+    text-decoration: none;
+}
+
+ul.grafia {
+    word-break: break-all;
+}
+
+ul.lista-menu>li {
+    background-color: #fff;
+    border: 1px dashed #777;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+ul.lista-menu>li a {
+    color: #777;
+    transition: all .2s;
+}
+
+ul.lista-menu>li a:before {
+    content: "\f061";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-right: 10px;
+}
+
+ul.lista-menu>li a:active,
+ul.lista-menu>li a:focus,
+ul.lista-menu>li a:hover {
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+ul.referencias {
+    border-top: 1px dashed #ccc;
+    clear: both;
+    display: table;
+    font-size: 18px;
+}
+
+#nav-icon1,
+#nav-icon3 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    display: inline-block;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+    transition: .15s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span,
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon1:hover {
+    transform: scale(1.3);
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 10px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 26px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#nav-icon3 span:nth-child(1) {
+    top: 13px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
+
+.actividades {
+    border-bottom: 10px solid #ffd;
+    border-top: 10px solid #ffd;
+    clear: both;
+    margin: 50px -50px;
+    padding: 10px 0;
+}
+
+.actividades .media {
+    border-bottom: 2px dashed #fff;
+    border-top: 2px dashed #fff;
+    padding: 20px 50px;
+}
+
+.actividades .media-heading {
+    border: none;
+    color: #fff;
+}
+
+.actividades .media-left {
+    padding-right: 50px;
+}
+
+.backdrop {
+    background: #fff;
+    position: fixed;
+    overflow: auto;
+    padding: 30px 50px;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    transition: all .8s;
+    z-index: 1005;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
+}
+
+.backdrop.in {
+    left: 0;
+    right: 0;
+}
+
+.backdrop h1 {
+    font-size: 42px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.backdrop .instrucciones {
+    font-size: 24px;
+    border-bottom: 2px dashed transparent;
+    border-top: 2px dashed transparent;
+    margin-bottom: 30px;
+    padding: 10px 20px 15px;
+}
+
+.backdrop .nav-tabs {
+    margin-bottom: 20px;
+}
+
+.backdrop .tab-content p {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.boton-contenido {
+    height: 0;
+    position: relative;
+    top: -22px;
+    z-index: 1;
+}
+
+.boton-contenido a .fa-bars,
+.boton-contenido a .fa-times,
+.menu-contenido a.descargar-leccion {
+    transition: all .15s linear;
+}
+
+.boton-contenido a:hover .fa-bars,
+.boton-contenido a:hover .fa-times {
+    transform: scale(1.3);
+}
+
+.boton-contenido a.collapsed #cerrar-contenido,
+.boton-contenido a:not(.collapsed) #abrir-contenido {
+    display: none;
+}
+
+.btn {
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    position: relative;
+    top: 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #29AAE1;
+    border-color: transparent;
+    text-shadow: 1px 1px 2px #777;
+    box-shadow: 0px 5px 0 #2086B2;
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+    background-color: #5cb85c;
+    border-color: transparent;
+    box-shadow: 0px 0px 0 #498E49;
+    position: relative;
+    top: 5px;
+}
+
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-secondary:active:focus,
+.btn-secondary:active:hover {
+    background-color: #5cb85c;
+    border-color: transparent;
+    box-shadow: 0px 0px 0 #498E49;
+    outline: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #5cb85c;
+    border-color: transparent;
+    box-shadow: 0px 5px 0 #498E49;
+    color: #fff;
+    outline: none;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #E54751;
+    border-color: transparent;
+    text-shadow: 1px 1px 2px #777;
+    box-shadow: 0px 5px 0 #A2444A;
+}
+
+.calificacion .media-heading {
+    font-size: 30px;
+}
+
+.calificacion .calificacion-mensaje {
+    font-size: 22px;
+}
+
+.calificacion .modal-content {
+    background-image: url('../img/fondo-error-exito.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calificacion .modal-body {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.center-margin {
+    margin: 0 auto;
+}
+
+.completar ol>li {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+}
+
+.container {
+    transition: all .2s linear;
+}
+
+.crono {
+    font-size: 32px;
+    padding: 0 10px;
+}
+
+.crono .fa {
+    bottom: 2px;
+    color: #777;
+    margin-right: 5px;
+    position: relative;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.display-columna {
+    display: table-cell;
+}
+
+.display-fila {
+    display: table-row;
+}
+
+.display-tabla {
+    display: table;
+}
+
+.documentos {
+    margin-top: 35px;
+    position: relative;
+}
+
+.documentos .documento-icono {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+}
+
+.documentos .documento-icono:hover {
+    background-color: #ffd;
+}
+
+.documentos .documento-icono::before {
+    position: absolute;
+    top: -12.5%;
+    left: -12.5%;
+    width: 125%;
+    height: 125%;
+    border: 2px dashed #fff;
+    border-radius: 50%;
+    content: '';
+    pointer-events: none;
+    -webkit-animation-name: anim-rotate;
+    animation-name: anim-rotate;
+    -webkit-animation-duration: 14s;
+    animation-duration: 14s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.documentos .documento-icono img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+}
+
+.documentos .documento-icono:hover img {
+    transform: scale(0.8);
+}
+
+.documentos .guia-docente {
+    top: 10px;
+    left: 30px;
+}
+
+.documentos .manual-usuario {
+    top: 10px;
+    left: 170px;
+}
+
+.documentos .texto-guia-docente,
+.documentos .texto-manual-uso {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 80px;
+    word-break: break-word;
+}
+
+.documentos .texto-guia-docente {
+    left: 25px;
+}
+
+.documentos .texto-manual-uso {
+    left: 168px;
+}
+
+.icono-salir {
+    color: #fff;
+    display: table;
+    height: 40px;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 40px;
+}
+
+.icono-salir::before {
+    border: 1px dashed #E54751;
+    border-radius: 50%;
+    content: "";
+    height: 110%;
+    left: -5%;
+    position: absolute;
+    top: -5%;
+    width: 110%;
+}
+
+.icono-salir:hover::before {
+    -webkit-animation: salida 5s linear infinite;
+    animation: salida 5s linear infinite;
+}
+
+.icono-salir .fa-times {
+    background-color: #E54751;
+    border-radius: 50%;
+    display: table-cell;
+    height: 34px;
+    vertical-align: middle;
+    width: 34px;
+}
+
+.imagen.der {
+    float: right;
+    margin-left: 15px;
+    padding-right: 0;
+}
+
+.imagen.izq {
+    float: left;
+    margin-right: 15px;
+    padding-left: 0;
+}
+
+.limpiador {
+    clear: both;
+}
+
+.listas-ordenadas {
+    counter-reset: contador-de-lista;
+    margin-bottom: 30px;
+}
+
+.listas-ordenadas dt {
+    position: relative;
+    padding: 5px 0 10px 0;
+    font-weight: normal;
+}
+
+.listas-ordenadas dt:before {
+    content: counter(contador-de-lista)'.';
+    counter-increment: contador-de-lista;
+    position: absolute;
+    left: 0;
+    font: bold 42px/1 'CabinSketch';
+}
+
+.listas-ordenadas dt.ng-scope {
+    margin-bottom: 5px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    padding-top: 5px;
+}
+
+.listas-ordenadas dd {
+    margin-bottom: 5px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    padding-top: 5px;
+}
+
+
+/*.listas-ordenadas dd:last-child {
+border-bottom: none;
+}*/
+
+.listas-ordenadas dt,
+.listas-ordenadas dd {
+    padding-left: 50px;
+}
+
+.completar .listas-ordenadas dt,
+.completar .listas-ordenadas dd {
+    padding-left: 65px;
+}
+
+.list-active {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.menu-asignatura h1 {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.menu-asignatura h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 3px 15px;
+}
+
+.menu-contenido {
+    background: #f5f5f5;
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+    width: 100%;
+    min-height: 210px;
+    position: relative;
+    margin: 0;
+}
+
+.menu-contenido a {
+    color: #777;
+    transition: all .2s;
+}
+
+.menu-contenido a:active,
+.menu-contenido a:focus,
+.menu-contenido a:hover {
+    text-decoration: none;
+}
+
+.menu-contenido ul>li {
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu-contenido ul.list-lecciones>li a:before {
+    content: "\f061";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-right: 10px;
+}
+
+.menu-contenido ul.list-lecciones>li a:active,
+.menu-contenido ul.list-lecciones>li a:focus,
+.menu-contenido ul.list-lecciones>li a:hover {
+    padding-left: 15px;
+}
+
+.menu-contenido .menu-item {
+    transition: all .3s;
+}
+
+.menu-contenido .usuario {
+    max-height: 180px;
+}
+
+.menu-contenido .usuario .avatar-usuario {
+    margin-top: -40px;
+    /*cursor: pointer;*/
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    width: 165px;
+}
+
+.menu-contenido .usuario .media-heading {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'uni05', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    position: absolute;
+}
+
+.menu-contenido .usuario .media-heading:before {
+    content: "";
+    border-color: transparent #fff;
+    border-style: solid;
+    border-width: 10px 20px 10px 0;
+    left: -18px;
+    position: absolute;
+    top: 25%;
+    width: 0;
+}
+
+@media(max-width:768px) {
+    .menu-contenido .menu-item:first-child {
+        border-bottom: 1px #4DD2B3 dashed;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.miga-pan {
+    background-color: transparent;
+    color: #fff;
+    /*padding: 0 40px;
+    position: relative;*/
+}
+
+.miga-pan>div {
+    display: table-cell;
+}
+
+.miga-pan>div.boton {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.miga-pan>div.boton:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.miga-pan>div.boton.cerrar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.miga-pan>div.boton.regresar {
+    /*height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.miga-pan>div.ruta {
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    padding: 5px 15px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.miga-pan>div.boton a {
+    /*height: 100%;
+    width: 40px;
+    display: block;*/
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.miga-pan span.glyphicon.glyphicon-home {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.miga-pan>div.boton a>i {
+    padding-top: 10px;
+}
+
+.miga-pan a {
+    color: inherit;
+}
+
+.miga-pan a:hover {
+    color: inherit;
+}
+
+.nav-roundslide a {
+    background: #f5f5f5;
+    border-radius: 40px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    display: block;
+    height: 40px;
+    opacity: .7;
+    position: fixed;
+    top: 48%;
+    transform: translateY(-50%);
+    transition: all .3s;
+    width: 40px;
+    z-index: 2;
+}
+
+.nav-roundslide a:hover {
+    border-color: #fff;
+    opacity: 1;
+    width: 220px;
+}
+
+.nav-roundslide a.prev {
+    left: 20px;
+}
+
+.nav-roundslide a.next {
+    right: 20px;
+}
+
+.nav-roundslide .icon-wrap {
+    position: absolute;
+    width: auto;
+}
+
+.nav-roundslide a.prev .icon-wrap {
+    left: 10px;
+    top: 3px;
+}
+
+.nav-roundslide a.next .icon-wrap {
+    right: 10px;
+    top: 3px;
+}
+
+.nav-roundslide .roundslide-label {
+    color: #777;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 5px 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity .3s, transform .3s;
+    white-space: nowrap;
+}
+
+.nav-roundslide a.prev .roundslide-label {
+    right: 15px;
+    transform: translateX(100%);
+}
+
+.nav-roundslide a.next .roundslide-label {
+    left: 15px;
+    transform: translateX(-100%);
+}
+
+.nav-roundslide a:hover .roundslide-label {
+    opacity: 1;
+    transition-delay: .1s;
+    transform: translateX(0);
+}
+
+.page-header {
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.page-header h1 {
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'CabinSketch', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-header h1 small {
+    color: #666;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.pagina {
+    background: #fff;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.6);
+    padding: 0 0 20px 0;
+}
+
+.pagina .boton-fijo {
+    opacity: .4;
+    position: fixed;
+    transition: all .15s;
+    z-index: 1;
+}
+
+.pagina .boton-fijo .fa-stack-1x {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    border-radius: 50%;
+}
+
+.pagina .boton-fijo.anterior {
+    left: 15px;
+    top: 48%;
+}
+
+.pagina .boton-fijo.siguiente {
+    right: 15px;
+    top: 48%;
+}
+
+.pagina .boton-fijo.volver {
+    bottom: 15px;
+    left: 48%;
+    transition: bottom 0s;
+}
+
+.pagina .boton-fijo.anterior:hover,
+.pagina .boton-fijo.siguiente:hover,
+.pagina .boton-fijo.volver:hover {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.recurso {
+    margin-bottom: 15px;
+    max-height: 250px;
+    max-width: 250px;
+    position: relative;
+    z-index: 1;
+    display: table;
+}
+
+.recurso.der {
+    float: right;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.recurso.izq {
+    float: left;
+    margin-right: 30px;
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.recurso .thumbnail {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.recurso .lanzador {
+    cursor: pointer;
+    border: 8px solid rgba(0, 0, 0, 0.03);
+    background-color: #ffd;
+}
+
+.recurso .lanzador-icono {
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    /*width: 45%;*/
+}
+
+.recurso .lanzador-icono::before {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #4FAFE6;
+    border-radius: 50%;
+    content: '';
+    pointer-events: none;
+    -webkit-animation-name: anim-rotate;
+    animation-name: anim-rotate;
+    -webkit-animation-duration: 14s;
+    animation-duration: 14s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.recurso .recurso-pie {
+    font-size: 18px;
+    padding: 10px 10px 15px;
+    line-height: normal;
+    text-align: center;
+}
+
+@-webkit-keyframes anim-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anim-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.recurso.izq .lanzador-icono {
+    top: 0;
+    right: 0;
+}
+
+.recurso.der .lanzador-icono {
+    top: 0;
+    left: 0;
+}
+
+.recurso .lanzador-icono .thumbnail {
+    background-color: #D2DAFC;
+    padding: 8px;
+    transition: all .3s;
+}
+
+.recurso .lanzador-icono:hover .thumbnail {
+    transform: scale(0.8);
+}
+
+.sopa {
+    text-align: center;
+}
+
+.sopa .letras {
+    display: inline-block;
+    overflow: auto;
+    vertical-align: top
+}
+
+.sopa .letras .ws-area {
+    background: #f5f5f5;
+}
+
+.sopa .ws-found {
+    background: rgba(117, 206, 102, 0.2);
+}
+
+.sopa .palabras {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.sopa .palabras h3 {
+    margin-left: 10px;
+}
+
+.sopa .palabras ul>li {
+    margin: 3px 0;
+    padding: 0px 10px;
+}
+
+.table {
+    margin-bottom: 25px;
+}
+
+.table.columna {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 40%
+}
+
+.table.table-bordered>caption+thead>tr:first-child>td,
+.table.table-bordered>caption+thead>tr:first-child>th,
+.table.table-bordered>colgroup+thead>tr:first-child>td,
+.table.table-bordered>colgroup+thead>tr:first-child>th,
+.table.table-bordered>thead:first-child>tr:first-child>td,
+.table.table-bordered>thead:first-child>tr:first-child>th,
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>th {
+    text-align: center;
+    border-top: none;
+}
+
+.table>tbody>tr:first-child {
+    border-top: 2px solid transparent;
+}
+
+.table-math {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thumbnail .caption {
+    border-top: 1px dotted #ddd;
+    color: #777;
+    font-size: 18px;
+    margin: 5px 15px 0;
+    text-align: center;
+}
+
+
+/*AVATAR*/
+
+.avatar {
+    background-position: left center;
+    display: inline-block;
+    height: 250px;
+    margin: 2% auto;
+    vertical-align: middle;
+    width: 250px;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.avatar-nivel {
+    background-position: left center;
+    display: inline-block;
+    height: 300px;
+    margin: 2% auto;
+    vertical-align: middle;
+    width: 300px;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.avatar-1 {
+    width: 192px;              /* ← OBLIGATORIO */
+    height: 250px;             /* ← OBLIGATORIO */
+    overflow: hidden;          /* ← CLAVE */
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-01.png"); /* male1*/
+    -webkit-animation-name: animacion-1920;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 1.5s;
+    animation-name: animacion-1920;
+    animation-timing-function: steps(10);
+    animation-duration: 1.5s;
+}
+
+.avatar-2 {
+    width: 192px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-02.png"); /* male2*/
+    -webkit-animation-name: animacion-1920;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 1.8s;
+    animation-name: animacion-1920;
+    animation-timing-function: steps(10);
+    animation-duration: 1.8s;
+}
+
+.avatar-3 {
+    width: 230px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-03.png"); /* Astronauta */
+    -webkit-animation-name: animacion-4750;
+    -webkit-animation-timing-function: steps(19);
+    -webkit-animation-duration: 1s;
+    animation-name: animacion-4750;
+    animation-timing-function: steps(19);
+    animation-duration: 1s;
+}
+
+.avatar-4 {
+    width: 192px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-04.png"); /* Female1 */
+    -webkit-animation-name: animacion-1920;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 1.5s;
+    animation-name: animacion-1920;
+    animation-timing-function: steps(10);
+    animation-duration: 1.5s;
+}
+
+.avatar-5 {
+    width: 175px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-05.png"); /* Knight */
+    -webkit-animation-name: animacion-1600;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 2s;
+    animation-name: animacion-1600;
+    animation-timing-function: steps(10);
+    animation-duration: 2s;
+}
+
+.avatar-6 {
+    width: 192px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-06.png"); /* Female2 */
+    -webkit-animation-name: animacion-1920;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 2s;
+    animation-name: animacion-1920;
+    animation-timing-function: steps(10);
+    animation-duration: 2s;
+}
+
+.avatar-7 {
+    width: 180px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-07.png"); /* Robot */
+    -webkit-animation-name: animacion-2000;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 2s;
+    animation-name: animacion-2000;
+    animation-timing-function: steps(10);
+    animation-duration: 2s;
+}
+
+.avatar-8 {
+    width: 230px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-08.png"); /* Dino */
+    -webkit-animation-name: animacion-3500;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 2.5s;
+    animation-name: animacion-3500;
+    animation-timing-function: steps(10);
+    animation-duration: 2.5s;
+}
+
+.avatar-9 {
+    width: 230px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-09.png"); /* Osa */
+    -webkit-animation-name: animacion-2200;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 2s;
+    animation-name: animacion-2200;
+    animation-timing-function: steps(10);
+    animation-duration: 2s;
+}
+
+.avatar-10 {
+    width: 300px;              
+    height: 250px;             
+    overflow: hidden;          
+    background-repeat: no-repeat;
+    background-image: url("../img/sprite-usuario-imagen-10.png"); /* Gata */
+    -webkit-animation-name: animacion-3206;
+    -webkit-animation-timing-function: steps(10);
+    -webkit-animation-duration: 2.5s;
+    animation-name: animacion-3206;
+    animation-timing-function: steps(10);
+    animation-duration: 2.5s;
+}
+
+
+.inicio-nivel-1 {
+    background-image: url("../img/sprite-inicio-nivel-1.png");
+    -webkit-animation-name: animacion-5100;
+    -webkit-animation-timing-function: steps(17);
+    -webkit-animation-duration: 2.8s;
+    animation-name: animacion-5100;
+    animation-timing-function: steps(17);
+    animation-duration: 2.8s;
+}
+
+.inicio-nivel-2 {
+    background-image: url("../img/sprite-inicio-nivel-2.png");
+    -webkit-animation-name: animacion-4800;
+    -webkit-animation-timing-function: steps(16);
+    -webkit-animation-duration: 2.8s;
+    animation-name: animacion-4800;
+    animation-timing-function: steps(16);
+    animation-duration: 2.8s;
+}
+
+.inicio-nivel-3 {
+    background-image: url("../img/sprite-inicio-nivel-3.png");
+    -webkit-animation-name: animacion-5100;
+    -webkit-animation-timing-function: steps(17);
+    -webkit-animation-duration: 2.8s;
+    animation-name: animacion-5100;
+    animation-timing-function: steps(17);
+    animation-duration: 2.8s;
+}
+
+.inicio-nivel-4 {
+    background-image: url("../img/sprite-inicio-nivel-4.png");
+    -webkit-animation-name: animacion-2400;
+    -webkit-animation-timing-function: steps(8);
+    -webkit-animation-duration: 2.8s;
+    animation-name: animacion-2400;
+    animation-timing-function: steps(8);
+    animation-duration: 2.8s;
+}
+
+.avatar-exito {
+    background-image: url("../img/sprite-aprendiendo.png");
+    -webkit-animation-name: animacion-exito;
+    -webkit-animation-timing-function: steps(4);
+    -webkit-animation-duration: 1.5s;
+    animation-name: animacion-exito;
+    animation-timing-function: steps(4);
+    animation-duration: 1.5s;
+}
+
+.avatar-error {
+    background-image: url("../img/imagen-error.png");
+    -webkit-animation-name: animacion-error;
+    -webkit-animation-timing-function: steps(26);
+    -webkit-animation-duration: 1.5s;
+    animation-name: animacion-error;
+    animation-timing-function: steps(26);
+    animation-duration: 1.5s;
+}
+
+.lanzador-actividades {
+    background-image: url("../img/sprite-aprendiendo.png");
+    -webkit-animation-name: animacion-lanzador-actividades;
+    -webkit-animation-timing-function: steps(4);
+    -webkit-animation-duration: 3s;
+    animation-name: animacion-lanzador-actividades;
+    animation-timing-function: steps(4);
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    height: 250px;
+    width: 250px;
+}
+
+.recurso-nina,
+.recurso-nino {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: steps(8);
+    animation-timing-function: steps(8);
+
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+
+    background-position: left center;
+    border-radius: 50%;
+    display: inline-block;
+    height: 350px;
+    vertical-align: middle;
+    width: 350px;
+}
+
+.recurso-nina {
+    width: 320px;
+    height: 320px;
+
+    background-image: url("../img/enseña-girl.png");
+    background-repeat: no-repeat;
+
+    /* ⛔ QUITAR */
+    /* background-size: contain; */
+
+    /* ✅ TAMAÑO REAL DEL SPRITESHEET */
+    background-size: 1280px 320px;
+
+    /* animación */
+    animation: animacion-recurso-nina 4s steps(4) infinite;
+}
+
+.recurso-nino {
+    width: 320px;
+    height: 320px;
+
+    background-image: url("../img/enseña-niño.png");
+    background-repeat: no-repeat;
+
+    /* ⛔ QUITAR */
+    /* background-size: contain; */
+
+    /* ✅ TAMAÑO REAL DEL SPRITESHEET */
+    background-size: 1280px 320px;
+
+    /* animación */
+    animation: animacion-recurso-nino 4s steps(4) infinite;
+}
+
+span#version {
+    position: absolute;
+    top: 115px;
+    left: 10px;
+}
+.imagen .thumbnail {
+    padding: 0;
+    border: none;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===============================
+   RECURSO INTERACTIVO - PATRÓN
+   =============================== */
+
+#recursoPatronContent .media {
+    display: block;
+    text-align: center;
+}
+
+#recursoPatronContent .media-left {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#recursoPatronContent .media-object {
+    display: inline-block;
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#recursoPatronContent .media-body {
+    display: block;
+    width: 100%;
+}
+
+#recursoPatronContent .media-body .row {
+    margin-top: 10px;
+}
+
+.imagen-ejemplo {
+    max-width: 480px;   /* antes 300px */
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+    image-rendering: auto;
+}
+
+/* ===============================
+   IMAGEN REPETICIONES
+   =============================== */
+
+#recurso2Content .media-left {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#recurso2Content .media-left .media-object {
+    display: inline-block;
+    max-width: 800px;  /* más grande */
+    width: 100%;       /* responsiva */
+    height: auto;
+    margin: 0 auto;
+    image-rendering: auto;
+}
+
+/* Centrar imagen desconectadas */
+.center-image {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    margin: 20px 0;           /* Espacio arriba y abajo */
+}
+
+.center-image img.media-object {
+    max-width: 80%;  /* Tamaño máximo relativo al contenedor */
+    height: auto;    /* Mantiene proporción */
+}
+
+/* ===============================
+   Actividad desconectada 1
+   =============================== */
+
+
+.laberinto {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.fila {
+    display: flex;
+}
+
+.celda {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.camino {
+    background: #e0f7fa;
+}
+
+.pared {
+    background: #424242;
+}
+
+.inicio {
+    background: #81c784;
+}
+
+.meta {
+    background: #ffd54f;
+}
+
+.resultado {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ===============================
+   Actividad desconectada 2
+   =============================== */
+
+   .secuencia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.slot {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #555;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slot.fijo {
+    border-style: solid;
+    background: #e3f2fd;
+}
+
+.fichas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ficha {
+    width: 60px;
+    height: 60px;
+    background: #fff3e0;
+    border: 2px solid #ff9800;
+    font-size: 30px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha:active {
+    cursor: grabbing;
+}
+
+.slot.drop.over {
+    background: #c8e6c9;
+}
+
+.resultado {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===============================
+   Actividad conectada 1
+   =============================== */
+    .media {
+    margin-bottom: 30px;
+}
+
+.ejemplos-horizontal {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.ejemplo-item {
+    text-align: center;
+    max-width: 220px;
+}
+
+.img-ejemplo {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.img-ejemplo:hover {
+    transform: scale(1.05);
+}
+
+.acciones {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.nina-apunta {
+    .media-right img {
+    max-width: 120px;
+}
+}
+
+.lista-ahora-tu li {
+    margin-bottom: 25px;     /* espacio entre numerales */
+    line-height: 1.6;
+}
+
+.boton-centrado {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titulo-ahora-tu {
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   Imagen Aplicaciones Apps conectadas
+   =============================== */
+
+.aplicaciones-conectadas {
+    margin-top: 20px;
+}
+
+.aplicaciones-conectadas .media-left {
+    padding-right: 15px;
+}
+
+.aplicaciones-conectadas .img-apps {
+    max-width: 240px;
+    height: auto;
+}
+
+/* ===============================
+   Interactivo 2: Blockly conectadas
+   =============================== */
+
+   #recurso2Content .texto-imagen {
+    display: flex;
+    align-items: center;        /* centra verticalmente con el texto */
+    gap: 12px;                  /* espacio entre imagen y texto */
+    margin-bottom: 20px;
+}
+
+/* ===== IMAGEN NINA ===== */
+#recurso2Content .texto-imagen img.nina-apunta {
+    width: 250px !important;    /* fuerza tamaño */
+    max-width: 250px !important;
+    height: auto !important;
+    display: block;
+}
+
+/* ===== EVITA QUE EL IFRAME SE PEGUE ===== */
+#recurso2Content .recurso-embed {
+    clear: both;
+    margin-top: 20px;
+}
+
+.sprite-manos {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+
+    background-image: url("../img/manos.png");
+    background-repeat: no-repeat;
+    background-size: 2500px 250px;
+
+    animation: lavadoManos 3s steps(10) infinite;
+}
+
+@keyframes lavadoManos {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2500px 0;
+    }
+}
+
+/* ===== recurso diagrama de flujo ===== */
+
+.algoritmo-contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pasos, .zona-algoritmo {
+    width: 260px;
+    min-height: 260px;
+    background: #f1f8e9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.paso {
+    background: #c8e6c9;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    cursor: grab;
+    text-align: center;
+    font-weight: bold;
+}
+
+.zona-algoritmo {
+    border: 2px dashed #81c784;
+}
+
+.planta {
+    width: 300px;       /* ⬅️ MÁS GRANDE (antes 200px) */
+    height: 300px;      /* ⬅️ MISMA PROPORCIÓN */
+    margin: 30px auto;
+    background: url("../img/planta-crecimiento.png") no-repeat;
+    background-size: 1500px 300px; /* ⬅️ ESCALADO PROPORCIONAL */
+}
+
+.planta-0 { background-position: 0 0; }
+.planta-1 { background-position: -300px 0; }
+.planta-2 { background-position: -600px 0; }
+.planta-3 { background-position: -900px 0; }
+.planta-4 { background-position: -1200px 0; }
+
+.instrucciones-algoritmo {
+    font-size: 2.5rem; /* Puedes subir a 1.3rem o 1.4rem */
+    line-height: 1.8;
+    margin: 25px 0;
+    font-weight: 500;
+}
+
+/* ===== Lección 1: Bloques código ===== */
+
+.lista-pasos {
+    margin: 15px 0 15px 20px;
+}
+
+.lista-pasos li {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.colores-bloques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.color {
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.azul { background: #2196f3; }
+.morado { background: #9c27b0; }
+.rosa { background: #e91e63; }
+.naranja { background: #ff9800; }
+.amarillo { background: #fbc02d; color: #333; }
+.verde { background: #4caf50; }
+.rojo { background: #f44336; }
+
+/* ===== Lección 2: Bloques de movimiento... ===== */
+
+.leccion-bloques {
+    padding: 30px 40px;       /* Espacio interno */
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+/* Encabezado */
+.leccion-header {
+    margin-bottom: 30px;
+}
+
+/* Tarjetas de contenido */
+.bloque-contenido {
+    padding: 20px 25px;       /* 👈 ESTE ES EL CLAVE */
+    margin-bottom: 25px;
+    background-color: #f5f7fa;
+    border-left: 6px solid #6fb2df;
+    border-radius: 8px;
+}
+
+/* Títulos */
+.bloque-contenido h3 {
+    margin-top: 0;
+}
+
+/* Texto */
+.bloque-contenido p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.video-centrado {
+    display: block;
+    margin: 0 auto;
+}
