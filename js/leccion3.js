@@ -1,91 +1,69 @@
-/*js de la Lección*/
-$(document).on('ready',inicioLeccion);
-
-function inicioLeccion(){
-	$('#btn_mcm').on('click',mcm);
-	$('#btn_mcd').on('click',mcd);
-
-	/*$('#recurso1Content .num1 div[class^=bt-calculadora]').on('click',{recurso:"#recurso1Content",numero:".num1"},digitar);
-	$('#recurso1Content .num1 .bt-borrar').on('click',{recurso:"#recurso1Content",numero:".num1"},borrar);
-	
-	$('#recurso1Content .num2 div[class^=bt-calculadora]').on('click',{recurso:"#recurso1Content",numero:".num2"},digitar);
-	$('#recurso1Content .num2 .bt-borrar').on('click',{recurso:"#recurso1Content",numero:".num2"},borrar);
-
-	$('#recurso2Content .num1 div[class^=bt-calculadora]').on('click',{recurso:"#recurso2Content",numero:".num1"},digitar);
-	$('#recurso2Content .num1 .bt-borrar').on('click',{recurso:"#recurso2Content",numero:".num1"},borrar);
-	
-	$('#recurso2Content .num2 div[class^=bt-calculadora]').on('click',{recurso:"#recurso2Content",numero:".num2"},digitar);
-	$('#recurso2Content .num2 .bt-borrar').on('click',{recurso:"#recurso2Content",numero:".num2"},borrar);*/
+//Leccion 3
+$(document).on('ready', inicioLeccion);
+//variable globales
+function inicioLeccion() {
+    //play 1
+    var imgs1 = [
+        ["drag1.png", "drag2.png", "drag3.png", "drag4.png", "drag5.png"],
+    ];
+    activityDrag("scratch", "Programas en scratch", "img/", imgs1);
 }
 
-function borrar(evento){
-	var recurso = evento.data.recurso;
-	var num = evento.data.numero;
-	var contenido = $(recurso+' '+ num +' .display-calculadora').html();
-	//contenido=contenido.substr(0, contenido.length-1);
-	//$(recurso+' '+ num +' .display-calculadora').html(contenido);
-	$(recurso+' '+ num +' .display-calculadora').html('');
-}
-//digito de la calculadora
-function digitar(evento){
-	var recurso = evento.data.recurso;
-	var num = evento.data.numero;
-	var contenido = $(recurso+' '+ num +' .display-calculadora').html();
-	if(contenido.length < 6){
-		var numero=$(this).attr('data-numero');
-		$(recurso+' '+ num +' .display-calculadora').html( contenido +numero);
-	}
-}
+var activityDrag = function(actividadID, nombre, path, listas) {
+    var originalImgs = listas;
+    var origen = "#list-origen-" + actividadID;
+    var destino = "#list-destino-" + actividadID;
+    var connected = "list-connected-" + actividadID;
+    var lista = shuffle(listas[0]);
+    var initList = function() {
+        $(origen).html("").addClass(connected);
+        $(destino).html("").addClass(connected);
+        for (var i = 0; i < lista.length; i++) {
+            var img = lista[i];
+            $(origen).append('<li class="img' + (i + 1) + '"><img src="' + path + img + '" alt="img"></li>');
+            $(destino).append('<li class="img' + (i + 1) +'"></li>');
+        };
+        $(origen + " li, " + destino + " li").sortable({
+            connectWith: "." + connected + " li:empty",
+            receive: function(event, ui) {
+                ui.item.attr('style', '');
+            }
+        }).disableSelection();
+        $(".btn-calificar-" + actividadID).on('click', calificar);
+    }
+    var reset= function(){
+        $(destino).find('.incorrecta').each(function(index){
+            $(this).removeClass('incorrecta');
+            $(origen).find("li:empty").first().append($(this).find('img'));
+        });
+    }
+    var calificar = function() {
+        var modalID = "#calificacionModal";
+        var mensaje = "Inténtalo nuevamente."
+        var puntaje = 0;
+        var exito = false;
+        $(destino).find("li").each(function(index) {
+            $(this).removeClass('correcta incorrecta');
+            $(this).addClass('incorrecta');
+        	for (var i = 0; i < originalImgs.length; i++) {
+                var l = originalImgs[i];
+                if ($(this).find('img').size() == 1 && $(this).find('img').attr('src') == path + l[index]) {
+                    $(this).removeClass('incorrecta');
+                    $(this).addClass('correcta');
+                	puntaje++;
+                    break;
+                }
+            };
+        });
+        puntaje = (puntaje / lista.length)*100;
+        puntaje = puntaje.toFixed(2);
+        if(puntaje==100){
+            exito = true;
+            mensaje = "¡Felicitaciones!"
+        }
 
-//digito del teclado
-function digitarTeclado(numero,recurso,num){
-	var contenido = $(recurso+' '+ num +' .display-calculadora').html();
-	if(contenido.length < 6){
-		console.log(numero);
-		$(recurso+' '+ num +' .display-calculadora').html( contenido +numero );
-	}
-}
-
-//Minimo comun multiplo
-function mcm(){
-	var gogosMath = GogosMath();
-	var a = $('#input_mcm_num1').val();
-	var b = $('#input_mcm_num2').val();
-	//var a = parseInt($('#recurso1Content .num1 .display-calculadora').html());
-	//var b = parseInt($('#recurso1Content .num2 .display-calculadora').html());
-
-	var html ="<mark>";
-	if(a!="" && !isNaN(a) && b!="" && !isNaN(b)){
-		$('p.help-text.mcm').removeClass('campo-requerido');
-		respuesta = gogosMath.getMcdMcm(a,b);
-		html += '<div class="respuesta"> El Mínimo Común Múltiplo entre '+a+' y '+b+' es: <div class="text-center"><h2>'+respuesta.mcm+'</h2></div></div>';
-		html += '</mark>';
-		$('#resultado_mcm').html(html);
-	}else{
-		//alert('Debes ingresar dos números enteros');
-		$('p.help-text.mcm').addClass('campo-requerido');
-	}
-	return false;
-}
-
-//Maximo comun divisor
-function mcd(){
-	var gogosMath = GogosMath();
-	var a = $('#input_mcd_num1').val();
-	var b = $('#input_mcd_num2').val();
-	//var a = parseInt($('#recurso2Content .num1 .display-calculadora').html());
-	//var b = parseInt($('#recurso2Content .num2 .display-calculadora').html());
-
-	var html ="<mark>";
-	if(a!="" && !isNaN(a) && b!="" && !isNaN(b)){
-		$('p.help-text.mcd').removeClass('campo-requerido');
-		respuesta = gogosMath.getMcdMcm(a,b);
-		html += '<div class="respuesta">El Máximo Común Divisor entre '+a+' y '+b+' es: <div class="text-center"><h2>'+respuesta.mcd+'</h2></div></div>';
-		html += '</mark>';
-		$('#resultado_mcd').html(html);
-	}else{
-		//alert('Debes ingresar dos números enteros');
-		$('p.help-text.mcd').addClass('campo-requerido');
-	}
-	return false;
+        registrarActividad('Actividad', nombre, puntaje);
+        mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, reset);
+    }
+    initList();
 }
