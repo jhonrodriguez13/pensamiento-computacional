@@ -1745,7 +1745,7 @@ border-bottom: none;
 }
 
 .avatar-error {
-    background-image: url("../img/sprite-nino-nina-error.png");
+    background-image: url("../img/imagen-error.png");
     -webkit-animation-name: animacion-error;
     -webkit-animation-timing-function: steps(26);
     -webkit-animation-duration: 1.5s;
@@ -2251,4 +2251,9 @@ span#version {
 .bloque-contenido p {
     line-height: 1.6;
     margin-bottom: 12px;
+}
+
+.video-centrado {
+    display: block;
+    margin: 0 auto;
 }
