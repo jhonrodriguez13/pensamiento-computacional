@@ -58,7 +58,7 @@ function inicio() {
             overlayParentElement  :   'body'*/
         }).one('animsition.start', function() {}).one('animsition.end', function() {});
 
-        //Manejo de excepciones
+     /*   //Manejo de excepciones
         var img = '';
         if (isLeccion()) {
             img = '../../../' + avatares[locache.session.get("usuario").avatar].src;
@@ -67,7 +67,20 @@ function inicio() {
         }
         $('.icono-usuario').css('background-image', 'url(' + img + ')');
         $('.icono-usuario').attr('title', locache.session.get("usuario").nombre);
-        $('.icono-usuario').attr('alt', '');
+        $('.icono-usuario').attr('alt', '');*/
+        // ICONO USUARIO – ruta directa (sin ../../ ni isLeccion)
+
+        var icono = avatares[locache.session.get("usuario").avatar].src;
+
+$('.icono-usuario').css({
+    'background-image': 'url(' + icono + ')',
+    'background-size': 'cover',
+    'background-position': 'center'
+});
+
+$('.icono-usuario')
+    .attr('title', locache.session.get("usuario").nombre)
+    .attr('alt', '');
 
     } catch (e) {
         //console.log(e);
@@ -75,7 +88,7 @@ function inicio() {
 }
 //funcion que coloca el número de versión
 function version() {
-    $('.pagina').after("<footer class='container animsition'><p class='text-right'>Proyecto de grado univeridad Sergio Arboleda</p></footer>");
+    $('.pagina').after("<footer class='container animsition'><p class='text-right'>Proyecto de grado universidad Sergio Arboleda</p></footer>");
 }
 //funcion que cierra la session
 function salir() {
@@ -84,7 +97,7 @@ function salir() {
 }
 //Funcion que valida la session
 //Si no tiene activa la session muestra el pagina de login
-function validarSession(evento) {
+/*function validarSession(evento) {
     if (!locache.session.get("usuario")) {
         //redirige al login
         if (isLeccion()) {
@@ -107,6 +120,21 @@ function validarSession(evento) {
         }
     }
 }
+    */
+//Funcion que valida la session actualizada 21/01/2026
+
+function validarSession() {
+    var usuario = locache.session.get("usuario");
+
+    if (!usuario || usuario.avatar === undefined) {
+        locache.session.set("usuario", {
+            documento: '9865208',
+            nombre: 'Andres',
+            avatar: 2
+        });
+    }
+}
+
 //registrarSalida
 function registrarSalida(internet) {
     var fue_sincronizado = 0;
