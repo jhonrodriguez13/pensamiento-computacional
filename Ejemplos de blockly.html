@@ -30,6 +30,11 @@
     <script src="js/localstoragedb.min.js.descarga"></script>
     <script src="js/animate.js.descarga"></script>
     <script src="js/utilidades.js"></script>
+    
+    <script>
+    var AVATAR_ACTUAL = locache.session.get("usuario").avatar;
+    </script>
+    
     <script src="js/script.js"></script>
     <script src="js/login.js"></script>
 
@@ -61,7 +66,8 @@
                 <div class="col-sm-5">
                     <img class="img-escudo" src="img/Escudo colegio.png" alt="Gustavo Jiménez">
                 </div>
-            </div>            
+            </div>
+                        
         </header>
 
         <div class="container pagina animsition" style="animation-duration: 1.5s; opacity: 1;">
@@ -87,7 +93,7 @@
                 <div class="media">
                     <div class="media-left">
                         <div class="avatar-usuario">
-                            <div id="avatar-usuario" class="avatar avatar-3"></div>
+                            <div id="avatar-usuario" class="avatar"></div>
                         </div>
                     </div>
                     <div class="media-body">
