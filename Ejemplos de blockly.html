@@ -34,14 +34,24 @@
     <script src="js\login.js"></script>
 
     <script>
-            $(document).on('ready',inicioHome);
-            function inicioHome(){
-                var img= avatares[locache.session.get("usuario").avatar].src;
-                $('.icono-usuario').css('background-image','url('+img+')');
-                $('.icono-usuario').attr('title',locache.session.get("usuario").nombre);
-                $('.icono-usuario').attr('alt','');
-            }
-        </script>
+$(document).ready(function () {
+
+    var usuario = locache.session.get("usuario");
+
+    if (!usuario || usuario.avatar === undefined) {
+        console.warn("Usuario no encontrado en sesión");
+        return;
+    }
+
+    var img = avatares[usuario.avatar].src;
+
+    $('.icono-usuario')
+        .css('background-image', 'url(' + img + ')')
+        .attr('title', usuario.nombre)
+        .attr('alt', 'Avatar de usuario');
+
+});
+</script>
     
     <style>.nav-roundslide a.next:hover { width: 60px; }
 .nav-roundslide a.prev:hover { width: 293px; }</style></head>
@@ -50,7 +60,7 @@
         <header class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="sahgsh" alt="" style="animation-delay: 0.1s; background-image: url(&quot;img/usuario-imagen-04.png&quot;);"></div>
+                    <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="" alt=""></div>
                     <a class="animated bounceIn animated-delay" data-delay="1.5s" href="index.html" title="Salir" style="animation-delay: 1.5s;">
                         <div class="icono-salir">
                             <i class="fa fa-times"></i>
