@@ -2,16 +2,19 @@
 //
 var etiquetaAudio = '<div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div>';
 
-var avatares = [{ img: 1, src: 'img/usuario-imagen-01.png' }, //Black_men
-    { img: 2, src: 'img/usuario-imagen-02.png' }, //J
-    { img: 3, src: 'img/usuario-imagen-03.png' }, //G
-    { img: 4, src: 'img/usuario-imagen-04.png' }, //S
-    { img: 5, src: 'img/usuario-imagen-05.png' }, //J
-    { img: 6, src: 'img/usuario-imagen-06.png' }, //C
-    { img: 7, src: 'img/usuario-imagen-07.png' }, //C
-    { img: 8, src: 'img/usuario-imagen-08.png' }, //P
-    { img: 9, src: 'img/usuario-imagen-09.png' }, //D
-    { img: 10, src: 'img/usuario-imagen-10.png' }, //P
+var BASE_PATH = '/pensamiento-computacional/';
+
+var avatares = [
+  { img: 1, src: BASE_PATH + 'img/usuario-imagen-01.png' },
+  { img: 2, src: BASE_PATH + 'img/usuario-imagen-02.png' },
+  { img: 3, src: BASE_PATH + 'img/usuario-imagen-03.png' },
+  { img: 4, src: BASE_PATH + 'img/usuario-imagen-04.png' },
+  { img: 5, src: BASE_PATH + 'img/usuario-imagen-05.png' },
+  { img: 6, src: BASE_PATH + 'img/usuario-imagen-06.png' },
+  { img: 7, src: BASE_PATH + 'img/usuario-imagen-07.png' },
+  { img: 8, src: BASE_PATH + 'img/usuario-imagen-08.png' },
+  { img: 9, src: BASE_PATH + 'img/usuario-imagen-09.png' },
+  { img: 10, src: BASE_PATH + 'img/usuario-imagen-10.png' }
 ];
 
 var avataresAnimados = [{ img: 1, src: 'img/sprite-usuario-imagen-01.png', pasos: 10, animacion: 'animacion-1920', velocidad: '1.5s', audio: 'audio/usuario-audio-06', },
