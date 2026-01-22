@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
-        <meta name="author" content="Jhon sebastián Rodríguez">
-        <title>El pensamiento computacional</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="icons\logo.png">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animsition.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Revisado biblioteca de iconos (botones) -->
-        <link rel="stylesheet" href="css/exploratorios.css">
-        <link rel="stylesheet" href="css/colores.css">
-        <link rel="stylesheet" href="css/formulas.css">
-        <link rel="stylesheet" href="css/estilos.css">
-        <script src="js/jquery.min.js.descarga"></script>
-        <script src="js/bootstrap.min.js.descarga"></script>
-        <script src="js/gogosmath.js.descarga"></script>
-        <script src="js/jquery.animsition.min.js.descarga"></script>
-        <script src="js/locache.min.js.descarga"></script>
-        <script src="js/localstoragedb.min.js.descarga"></script>
-        <script src="js/animate.js.descarga"></script>
-        <script src="js/utilidades.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js\login.js"></script>
-        <script src="js/leccion2.js.descarga"></script>
-           
-           <script>
+    <title>
+        Variables avanzadas
+    </title>
+    
+    <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
+    <meta name="author" content="Jhon sebastián Rodríguez">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icons\logo.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Revisado biblioteca de iconos (botones) -->
+    <link rel="stylesheet" href="css/exploratorios.css">
+    <link rel="stylesheet" href="css/colores.css">
+    <link rel="stylesheet" href="css/formulas.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/tooltip-box.css">
+    <link rel="stylesheet" href="css/colores-web2.css">
+    <script src="js/jquery.min.js.descarga"></script>
+    <script src="js/bootstrap.min.js.descarga"></script>
+    <script src="js/gogosmath.js.descarga"></script>
+    <script src="js/jquery.animsition.min.js.descarga"></script>
+    <script src="js/locache.min.js.descarga"></script>
+    <script src="js/localstoragedb.min.js.descarga"></script>
+    <script src="js/utilidades.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js\login.js"></script>
+    <script src="js/leccion2.js.descarga"></script>
+
+        <script>
             $(document).on('ready',inicioHome);
             function inicioHome(){
                 var img= avatares[locache.session.get("usuario").avatar].src;
@@ -39,108 +44,467 @@
             }
         </script>
 
-   <style>.nav-roundslide a.next:hover { width: 286px; }
-.nav-roundslide a.prev:hover { width: 60px; }</style></head>
+<style>.nav-roundslide a.next:hover { width: 167px; }
+.nav-roundslide a.prev:hover { width: 259px; }</style></head>
 
-    <body>
+<body>
         <header class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="sahgsh" alt="" style="animation-delay: 0.1s; background-image: url(&quot;img/usuario-imagen-04.png&quot;);"></div>
-                    <a class="animated bounceIn animated-delay" data-delay="1.5s" href="index.html" title="Salir" style="animation-delay: 1.5s;">
-                        <div class="icono-salir">
-                            <i class="fa fa-times"></i>
-                        </div>
-                    </a>
-                    <img class="img-curriculos" src="img/nombre-proyecto.gif" alt="Proyecto GJ">
-                </div>
-                <div class="col-sm-5">
-                    <img class="img-escudo" src="img/Escudo colegio.png" alt="Gustavo Jiménez">
-                </div>
-            </div>            
-        </header>
-                
-        <div class="container pagina animsition" style="animation-duration: 1.5s; opacity: 1;">
-            <div class="miga-pan">
-                <div class="boton regresar">
-                    <a href="niveles.html" title="Regresar al inicio">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        NIVEL I
-                    </a>
-                </div>
-                <div class="ruta">Unidad 1: Fundamentos del pensamiento computacional</div>
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="icono-usuario animated zoomInDown animated-delay" data-delay="0.1s" title="sahgsh" alt="" style="animation-delay: 0.1s; background-image: url(&quot;img/usuario-imagen-04.png&quot;);"></div>
+                <a class="animated bounceIn animated-delay" data-delay="1.5s" href="index.html" title="Salir" style="animation-delay: 1.5s;">
+                    <div class="icono-salir">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </a>
+                <img class="img-curriculos" src="img/nombre-proyecto.gif" alt="Proyecto GJ">
             </div>
-            <div class="row menu-contenido">
-                <div class="col-sm-7 menu-item">
-                    <ul class="list-unstyled list-lecciones">
-                        <li class="list-active"><a href="Pensamiento computacional.html"><strong>Lección 1:</strong> Pensamiento computacional</a></li>
-                        <li><a href="secuencia e instrucciones.html"><strong>Lección 2:</strong> Secuencias e instrucciones</a></li>
-                        <li><a href="Reconocimiento de patrones y repeticion.html"><strong>Lección 3:</strong> Reconocimiento de patrones y repeticiones</a></li>
-                        <li><a href="Actividades desconectadas.html"><strong>Lección 4:</strong> Actividades desconectadas</a></li>
-                        <li><a href="Actividades conectadas.html"><strong>Lección 5:</strong> Actividades conectadas</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-5 usuario">
-                    <div class="media">
-                        <div class="media-left">
-                            <div class="avatar-usuario">
-                                <div id="avatar-usuario" class="avatar avatar-3"></div>
-                            </div>
+            <div class="col-sm-5">
+                <img class="img-escudo" src="img/Escudo colegio.png" alt="Gustavo Jiménez">
+            </div>
+        </div>
+    </header>
+    <div class="container pagina animsition" style="animation-duration: 1.5s; opacity: 1;">
+        <div class="miga-pan">
+            <div class="boton regresar">
+                <a href="Niveles.html" title="Regresar al inicio">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    NIVEL III
+                </a>
+            </div>
+            <div class="ruta">Unidad 3: Variables avanzadas</div>
+        </div>
+        
+        <div class="row menu-contenido">
+            <div class="col-sm-7 menu-item">
+                <ul class="list-unstyled list-lecciones">
+                        <li><a href="Bloques de programacion.html"><strong>Lección 1:</strong> Variables avanzadas</a></li>
+                        <li><a href="Movimientos apariencia y sonido.html"><strong>Lección 2:</strong> Pendiente</a></li>
+                        <li class="list-active"><a href="Variables sensores y operadores.html"><strong>Lección 3:</strong> Pendiente</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-5 usuario">
+                <div class="media">
+                    <div class="media-left">
+                        <div class="avatar-usuario">
+                            <div id="avatar-usuario" class="avatar"></div>
                         </div>
-                        <div class="media-body">
-                            <p class="media-heading" id="nombre">Estudiante</p>
-                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p class="media-heading" id="nombre">Estudiante</p>
                     </div>
                 </div>
             </div>
-            <nav class="nav-roundslide">
-                <!--<a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="leccion2.html">
-<span class="icon-wrap">
-<i class="fa fa-arrow-left"></i></span>
-<h3>Leer un dato</h3>
-</a>-->
-                <a class="next animsition-link" data-animsition-in="fade-in-right" data-animsition-out="fade-out-left" href="secuencia e instrucciones.html">
-                    <span class="icon-wrap">
-                        <i class="fa fa-arrow-right"></i></span>
-                    <div class="roundslide-label">Secuencia e instrucciones</div>
-                </a>
-            </nav>
-            <div class="boton-fijo volver">  <!--de acá elimine style=""-->
-                <a href="javascript:void(0);" id="volver" title="Volver al inicio">
-                    <span class="fa-stack">
+        </div>
+        <nav class="nav-roundslide">
+            <a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="Movimientos apariencia y sonido.html">
+                <span class="icon-wrap">
+                        <i class="fa fa-arrow-left"></i></span>
+                <div class="roundslide-label">Movimientos, apariencia y sonido</div>
+            </a>
+        </nav>
+        <div class="boton-fijo volver">
+            <a href="javascript:void(0);" id="volver" title="Volver al inicio">
+                <span class="fa-stack">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
                     </span>
-                </a>
-            </div>
-            <article class="contenido col-xs-12">
-                <div class="page-header">
-                    <h1>
-                        <small>Lección 1</small><br>
-                        Pensamiento computacional
-                    </h1>
-                </div>
-                <div class="imagen der col-sm-6">
+            </a>
+        </div>
+            <section>
+<article class="contenido col-xs-12">
+
+    <div class="page-header">
+        <h1>
+            <small>Lección 1</small><br>
+            Variables avanzadas
+        </h1>
+    </div>
+
+    <p>
+        Cuando los programas crecen y se vuelven más complejos, ya no es suficiente usar
+        variables simples. En la programación por bloques, existen
+        <strong>variables avanzadas</strong> que permiten almacenar, organizar y compartir
+        información de forma más eficiente.
+    </p>
+
+    <p>
+        Antes de trabajar con variables globales y listas, es importante comprender
+        <strong>qué tipo de datos puede capturar un programa</strong>.
+    </p>
+
+    <h2>Tipos de datos en programación por bloques</h2>
+
+    <p>
+        Un <span class="tooltip-glosario tooltip-glosario-effect-1">
+        <span class="tooltip-glosario-item">tipo de dato</span>
+        <span class="tooltip-glosario-content clearfix">
+        <span class="tooltip-glosario-text">
+            Es la clase de información que una variable puede almacenar.
+        </span>
+        </span></span>
+        define cómo se interpreta y se utiliza la información dentro del programa.
+    </p>
+
+    <div class="row align-items-center">
+    <!-- Texto -->
+    <div class="col-sm-7">
+        <ul>
+            <li><strong>Números:</strong> se usan para contar, medir o calcular.</li>
+            <li><strong>Texto:</strong> almacena palabras, nombres o mensajes.</li>
+            <li><strong>Booleanos:</strong> solo pueden ser verdadero o falso.</li>
+            <li><strong>Listas:</strong> guardan múltiples datos en una sola variable.</li>
+        </ul>
+
+        <p>
+            Elegir correctamente el tipo de dato permite que el programa funcione correctamente y tome mejores decisiones. 
+    Si queremos realizar operaciones matemáticas, debemos usar números; si necesitamos almacenar 
+    nombres o mensajes, usamos cadena de texto; y si queremos verificar condiciones, usamos booleanos.
+        </p>
+    </div>
+
+    <!-- Imagen -->
+    <div class="col-sm-5 text-center">
+        <img src="img/tipos-datos-bloques.png"
+             alt="Tipos de datos en programación por bloques"
+             class="img-fluid mb-2">
+        <div>
+            Los diferentes tipos de datos determinan cómo se usa la información.
+        </div>
+    </div>
+</div>
+
+    <div class="alert alert-info">
+        <strong>💡 Piensa:</strong><br>
+        ¿Qué tipo de dato usarías para guardar el nombre de un jugador?<br>
+        ¿Y para saber si un botón fue presionado?
+    </div>
+
+    <div class="limpiador"></div>
+
+    <!-- ================= VARIABLES GLOBALES ================= -->
+
+    <h2>Variables globales</h2>
+
+    <!-- LANZADOR RECURSO 1 -->
+    <div class="recurso izq">
+        <a href="#" data-toggle="recurso" data-target="#recurso1Content">
+            <div class="thumbnail lanzador">
+                <div class="recurso-nino"></div>
+                <div class="lanzador-icono">
                     <div class="thumbnail">
-                        <img src="img/pensamiento_computac.gif" alt="El pensamiento númerico">
-                        <div class="caption">
-                            Pensamiento computacional
-                        </div>
+                        <img src="img/lanzador-web2.png" alt="lanzador">
                     </div>
                 </div>
-<p>El pensamiento computacional es el proceso que permite formular y resolver problemas del mundo que nos rodea haciendo uso de habilidades y técnicas, como las secuencias y las instrucciones ordenadas (algoritmos), con el fin de llegar a una solución de manera lógica y estructurada.</p>
+            </div>
+        </a>
+        <div class="recurso-pie"><strong>Simulación:</strong> Variable global en acción</div>
+    </div>
 
-<ul>
-    <li><strong>Descomposición:</strong> Dividir un problema o sistema complejo en partes más pequeñas que se pueden examinar y resolver o diseñar individualmente, ya que resultan más manejables y sencillas.</li>
-    <li><strong>Reconocimiento de patrones:</strong> Encontrar similitudes o características comunes que comparten los problemas, lo que facilita su comprensión y solución.</li>
-    <li><strong>Abstracción:</strong> Seleccionar la información relevante, filtrando lo esencial e ignorando detalles no relacionados o irrelevantes para el problema.</li>
-    <li><strong>Realización de algoritmos:</strong> Diseñar un plan o conjunto de instrucciones que se deben seguir paso a paso para resolver un problema, identificando cada acción y organizando el orden en que se deben ejecutar.</li>
-</ul>
+    <p>
+        Una <strong>variable global</strong> es aquella que puede ser utilizada por
+        <strong>todos los objetos o bloques</strong> del programa.
+        Su valor es compartido y puede cambiar desde diferentes partes del sistema.
+    </p>
 
-<p>El pensamiento computacional implica identificar, representar, organizar y analizar lógicamente la información, implementando posibles soluciones con el objetivo de lograr la combinación más efectiva y eficiente entre los pasos y los recursos disponibles.</p>
+    <p>
+        En programación por bloques, las variables globales se usan comúnmente para:
+    </p>
 
-<p>El pensamiento computacional es una de las destrezas clave del siglo XXI, que desarrolla habilidades efectivas para resolver problemas para aplicar a cualquier ámbito de la vida.</p>
+    <ul>
+        <li>Guardar el puntaje total de un juego.</li>
+        <li>Controlar el nivel o la etapa actual.</li>
+        <li>Registrar el estado general del sistema.</li>
+    </ul>
+
+    <div class="alert alert-warning">
+        <strong>⚠️ Importante:</strong><br>
+        Si muchos bloques modifican una variable global sin control,
+        el programa puede comportarse de forma inesperada.
+    </div>
+
+    <!-- ================= LISTAS / ARRAYS ================= -->
+
+    <h2>Listas (Arrays)</h2>
+
+    <!-- LANZADOR RECURSO 2 -->
+    <div class="recurso der">
+        <a href="#" data-toggle="recurso" data-target="#recurso2Content">
+            <div class="thumbnail lanzador">
+                <div class="recurso-nina"></div>
+                <div class="lanzador-icono">
+                    <div class="thumbnail">
+                        <img src="img/lanzador-web2.png" alt="lanzador">
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="recurso-pie"><strong>Exploración:</strong> Uso de listas</div>
+    </div>
+
+    <p>
+        Una <strong>lista</strong> es una variable especial que permite almacenar
+        <strong>muchos valores relacionados</strong> en un solo lugar.
+        Cada valor ocupa una posición dentro de la lista.
+    </p>
+
+    <p>
+        Las listas son muy útiles cuando se necesita:
+    </p>
+
+    <ul>
+        <li>Guardar nombres de jugadores.</li>
+        <li>Registrar puntajes.</li>
+        <li>Almacenar datos de sensores a lo largo del tiempo.</li>
+    </ul>
+    <br>
+    <hr> 
+
+    <div class="imagen izq col-sm-5">
+        <div class="thumbnail">
+            <img src="img/listas-bloques.png"
+                 alt="Listas en programación por bloques"
+                 style="width:100%;">
+            <div class="caption">
+                Creación de una lista y acceder a un elemento mediante el número.
+            </div>
+        </div>
+    </div>
+
+    <p>
+        En programación por bloques existen acciones específicas para trabajar con listas:
+    </p>
+
+    <ul>
+        <li>Añadir un elemento.</li>
+        <li>Eliminar un elemento.</li>
+        <li>Consultar una posición.</li>
+        <li>Recorrer todos los elementos.</li>
+    </ul>
+
+    <p>La lista podrá tener múltiple elementos y para acceder a cada uno de ellos usaremos la posición: 1, 2, etc. De esta forma, si tenemos una lista llamada “nombres” con 5 elementos, podremos acceder al situado en la posición 4 a través de la instrucción “elemento 4 de nombres”.</p>
+
+    <div class="limpiador"></div>
+
+    <!-- ================= RETO ================= -->
+
+    <h2>🎯 Reto de pensamiento computacional</h2>
+
+    <div class="alert alert-success">
+        <p><strong>Situación:</strong></p>
+        <p>
+            Estás programando un juego educativo donde:
+        </p>
+        <ul>
+            <li>El puntaje debe verse en todos los personajes.</li>
+            <li>Se deben guardar los nombres de los jugadores.</li>
+            <li>El juego debe saber si la partida terminó.</li>
+        </ul>
+
+        <p><strong>Responde:</strong></p>
+        <ul>
+            <li>¿Qué dato usarías como variable global?</li>
+            <li>¿Qué información guardarías en una lista?</li>
+            <li>¿Qué dato sería verdadero o falso?</li>
+        </ul>
+    </div>
+
+    <p>
+        Resolver estos retos te ayuda a pensar como un programador,
+        organizando la información antes de construir el programa.
+    </p>
+
 </article>
-        </div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
-    
+</section>
+
+<!-- ================= RECURSO 1 ================= -->
+<div class="backdrop" id="recurso1Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir"><i class="fa fa-times"></i></span>
+    </a>
+
+    <h1 class="text-center">Variables Globales en Acción</h1>
+
+    <div class="instrucciones">
+        En esta simulación observarás cómo una <strong>variable global</strong>
+        puede ser modificada desde distintos bloques y afectar a todo el programa.
+    </div>
+
+    <div class="contenido">
+
+        <div class="row">
+            <!-- PANEL GLOBAL -->
+            <div class="col-sm-6 text-center">
+                <h3>Variable global: <span class="label label-primary">puntaje</span></h3>
+
+                <div class="well">
+                    <p>Puntaje actual:</p>
+                    <h1 id="puntajeGlobal" style="font-size:48px;">0</h1>
+                </div>
+
+                <p>
+                    Esta variable es compartida por todos los objetos del programa.
+                </p>
+            </div>
+
+            <!-- ACCIONES -->
+            <div class="col-sm-6">
+                <h3>Acciones desde diferentes bloques</h3>
+
+                <button class="btn btn-success btn-block" onclick="sumarPuntos(10)">
+                    🎮 Personaje A suma +10
+                </button>
+
+                <button class="btn btn-info btn-block" onclick="sumarPuntos(5)">
+                    🤖 Personaje B suma +5
+                </button>
+
+                <button class="btn btn-danger btn-block" onclick="reiniciarPuntaje()">
+                    🔄 Reiniciar puntaje
+                </button>
+
+                <div class="alert alert-warning" style="margin-top:15px;">
+                    <strong>Observa:</strong><br>
+                    Todos los botones modifican la MISMA variable global.
+                </div>
+            </div>
+        </div>
+
+        <!-- RETO -->
+        <div class="row" style="margin-top:25px;">
+            <div class="col-sm-12">
+                <div class="alert alert-success">
+                    <strong>🎯 Reto:</strong><br>
+                    ¿Qué pasaría si cada personaje tuviera su propia variable
+                    en lugar de una global?
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    let puntaje = 0;
+
+    function sumarPuntos(valor) {
+        puntaje += valor;
+        document.getElementById("puntajeGlobal").innerHTML = puntaje;
+    }
+
+    function reiniciarPuntaje() {
+        puntaje = 0;
+        document.getElementById("puntajeGlobal").innerHTML = puntaje;
+    }
+</script>
+
+<!-- ================= RECURSO 2 ================= -->
+<div class="backdrop" id="recurso2Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir"><i class="fa fa-times"></i></span>
+    </a>
+
+    <h1 class="text-center">Uso de Listas en Programación por Bloques</h1>
+
+    <div class="instrucciones">
+        Una <strong>lista</strong> permite almacenar varios datos en una sola variable.
+        En esta actividad podrás agregar y eliminar elementos.
+    </div>
+
+    <div class="contenido">
+
+        <div class="row">
+            <!-- ENTRADA -->
+            <div class="col-sm-5">
+                <h3>Agregar elemento a la lista</h3>
+
+                <input type="text"
+                       id="nuevoElemento"
+                       class="form-control"
+                       placeholder="Ej: Juan, Azul, 25">
+                <br>
+
+                <button class="btn btn-success btn-block" onclick="agregarElemento()">
+                    ➕ Agregar a la lista
+                </button>
+
+                <button class="btn btn-danger btn-block" onclick="eliminarUltimo()">
+                    ➖ Eliminar último elemento
+                </button>
+
+                <div class="alert alert-info" style="margin-top:15px;">
+                    Cada elemento ocupa una posición dentro de la lista.
+                </div>
+            </div>
+
+            <!-- LISTA -->
+            <div class="col-sm-7">
+                <h3>Contenido de la lista</h3>
+
+                <ul id="listaDatos" class="list-group">
+                    <li class="list-group-item text-muted">
+                        (La lista está vacía)
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RETO -->
+        <div class="row" style="margin-top:25px;">
+            <div class="col-sm-12">
+                <div class="alert alert-warning">
+                    <strong>🎯 Reto:</strong>
+                    <ul>
+                        <li>Agrega al menos 3 elementos.</li>
+                        <li>Elimina uno.</li>
+                        <li>¿Qué tipo de datos podrías guardar aquí?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    let lista = [];
+
+    function agregarElemento() {
+        const input = document.getElementById("nuevoElemento");
+        const valor = input.value.trim();
+
+        if (valor === "") return;
+
+        lista.push(valor);
+        input.value = "";
+        actualizarLista();
+    }
+
+    function eliminarUltimo() {
+        lista.pop();
+        actualizarLista();
+    }
+
+    function actualizarLista() {
+        const ul = document.getElementById("listaDatos");
+        ul.innerHTML = "";
+
+        if (lista.length === 0) {
+            ul.innerHTML =
+                '<li class="list-group-item text-muted">(La lista está vacía)</li>';
+            return;
+        }
+
+        lista.forEach(function (item, index) {
+            const li = document.createElement("li");
+            li.className = "list-group-item";
+            li.innerHTML = "Posición " + (index + 1) + ": <strong>" + item + "</strong>";
+            ul.appendChild(li);
+        });
+    }
+</script>
+
+
+</div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
+  
 <div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div></body></html>
