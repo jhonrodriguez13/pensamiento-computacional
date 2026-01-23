@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Mensajes y eventos
+        </title>
         
         <meta name="description" content="Plataforma educativa interactiva para el aprendizaje de programación por bloques y robótica educativa.">
         <meta name="author" content="Jhon sebastián Rodríguez">
-        <title>El pensamiento computacional</title>
+        <title>Diagramas de flujo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="icons\logo.png">
         <link rel="stylesheet" href="css/normalize.css">
@@ -26,10 +29,12 @@
         <script src="js/animate.js.descarga"></script>
         <script src="js/utilidades.js"></script>
         <script src="js/script.js"></script>
-        <script src="js\login.js"></script>
+        <script src="js/login.js"></script>
         <script src="js/leccion2.js.descarga"></script>
-           
-           <script>
+        
+        
+
+            <script>
             $(document).on('ready',inicioHome);
             function inicioHome(){
                 var img= avatares[locache.session.get("usuario").avatar].src;
@@ -39,9 +44,9 @@
             }
         </script>
 
-   <style>.nav-roundslide a.next:hover { width: 286px; }
-.nav-roundslide a.prev:hover { width: 60px; }</style></head>
-
+    <style>.nav-roundslide a.next:hover { width: 297px; }
+.nav-roundslide a.prev:hover { width: 235px; }</style></head>
+    
     <body>
         <header class="container">
             <div class="row">
@@ -59,32 +64,33 @@
                 </div>
             </div>            
         </header>
-                
+
         <div class="container pagina animsition" style="animation-duration: 1.5s; opacity: 1;">
             <div class="miga-pan">
                 <div class="boton regresar">
-                    <a href="niveles.html" title="Regresar al inicio">
+                    <a href="Niveles.html" title="Regresar al inicio">
                         <i class="fa fa-home" aria-hidden="true"></i>
                         NIVEL I
                     </a>
                 </div>
-                <div class="ruta">Unidad 1: Fundamentos del pensamiento computacional</div>
+                <div class="ruta">Unidad 1: Diagramas de flujo</div>
             </div>
+
             <div class="row menu-contenido">
                 <div class="col-sm-7 menu-item">
                     <ul class="list-unstyled list-lecciones">
-                        <li class="list-active"><a href="Pensamiento computacional.html"><strong>Lección 1:</strong> Pensamiento computacional</a></li>
-                        <li><a href="secuencia e instrucciones.html"><strong>Lección 2:</strong> Secuencias e instrucciones</a></li>
-                        <li><a href="Reconocimiento de patrones y repeticion.html"><strong>Lección 3:</strong> Reconocimiento de patrones y repeticiones</a></li>
+                        <li><a href="Nivel 3 - mensajes y eventos.html"><strong>Lección 1:</strong> Mensajes y eventos</a></li>
+                        <li class="list-active"><a href="diagramas de flujo.html"><strong>Lección 2:</strong> Pendiente</a></li>
+                        <!--<li><a href="Reconocimiento de patrones y repeticion.html"><strong>Lección 3:</strong> Reconocimiento de patrones y repeticiones</a></li>
                         <li><a href="Actividades desconectadas.html"><strong>Lección 4:</strong> Actividades desconectadas</a></li>
-                        <li><a href="Actividades conectadas.html"><strong>Lección 5:</strong> Actividades conectadas</a></li>
+                        <li><a href="Actividades conectadas.html"><strong>Lección 5:</strong> Actividades conectadas</a></li>-->
                     </ul>
                 </div>
                 <div class="col-sm-5 usuario">
                     <div class="media">
                         <div class="media-left">
                             <div class="avatar-usuario">
-                                <div id="avatar-usuario" class="avatar avatar-3"></div>
+                                <div id="avatar-usuario" class="avatar"></div>
                             </div>
                         </div>
                         <div class="media-body">
@@ -93,19 +99,20 @@
                     </div>
                 </div>
             </div>
+
             <nav class="nav-roundslide">
-                <!--<a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="leccion2.html">
-<span class="icon-wrap">
-<i class="fa fa-arrow-left"></i></span>
-<h3>Leer un dato</h3>
-</a>-->
-                <a class="next animsition-link" data-animsition-in="fade-in-right" data-animsition-out="fade-out-left" href="secuencia e instrucciones.html">
+                <a class="prev animsition-link" data-animsition-in="fade-in-left" data-animsition-out="fade-out-right" href="Algoritmos y diagramas.html">
+                    <span class="icon-wrap">
+                        <i class="fa fa-arrow-left"></i></span>
+                    <div class="roundslide-label">¿Qué es un algoritmo?</div>
+                </a>
+                <!--<a class="next animsition-link" data-animsition-in="fade-in-right" data-animsition-out="fade-out-left" href="https://contenidos.sucerman.com/nivel1/programacion/unidad1/leccion3.html">
                     <span class="icon-wrap">
                         <i class="fa fa-arrow-right"></i></span>
-                    <div class="roundslide-label">Secuencia e instrucciones</div>
-                </a>
+                    <div class="roundslide-label">los lenguajes de programación</div>
+                </a>-->
             </nav>
-            <div class="boton-fijo volver">  <!--de acá elimine style=""-->
+            <div class="boton-fijo volver">
                 <a href="javascript:void(0);" id="volver" title="Volver al inicio">
                     <span class="fa-stack">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -113,34 +120,333 @@
                     </span>
                 </a>
             </div>
-            <article class="contenido col-xs-12">
-                <div class="page-header">
-                    <h1>
-                        <small>Lección 1</small><br>
-                        Pensamiento computacional
-                    </h1>
+            <section>
+    <article class="contenido col-xs-12">
+        <div class="page-header">
+            <h1>
+                <small>Lección 1</small><br>
+                Mensajes y eventos
+            </h1>
+        </div>
+
+        <p>
+            Los <strong>eventos</strong> permiten que un programa
+            ejecute acciones cuando ocurre algo específico, como presionar una tecla,
+            hacer clic en un objeto o recibir un mensaje.
+        </p>
+
+        <p>
+            En Scratch, los <strong>mensajes</strong> se utilizan para que distintos personajes
+            se comuniquen entre sí, coordinando acciones sin necesidad de que estén conectados
+            directamente por bloques.
+        </p>
+
+        <div class="imagen izq col-sm-6">
+            <div class="thumbnail">
+                <img src="img/bloques-eventos.png" alt="Bloques de eventos en Scratch">
+                <div class="caption">
+                    Bloques de eventos y mensajes en Scratch
                 </div>
-                <div class="imagen der col-sm-6">
-                    <div class="thumbnail">
-                        <img src="img/pensamiento_computac.gif" alt="El pensamiento númerico">
-                        <div class="caption">
-                            Pensamiento computacional
+            </div>
+        </div>
+
+        <p>
+            Los eventos más comunes en Scratch son aquellos que se activan
+            <strong>al presionar la bandera verde</strong>, <strong>al presionar una tecla</strong>
+            o <strong>al hacer clic sobre un objeto</strong>. Estos bloques indican el momento exacto
+            en el que inicia una acción.
+        </p>
+
+        <p>
+            Los mensajes permiten que un personaje envíe una señal a otros personajes
+            para que ejecuten instrucciones al mismo tiempo o en un orden específico,
+            favoreciendo el trabajo colaborativo dentro del programa.
+        </p>
+
+        <p>
+            Gracias a los mensajes, es posible sincronizar sonidos, movimientos,
+            animaciones y cambios de escenario sin que el código se vuelva repetitivo
+            o difícil de entender.
+        </p>
+
+        <p>
+            El uso adecuado de eventos y mensajes hace que los programas sean más
+            organizados, claros y fáciles de mantener, especialmente en proyectos
+            con varios personajes.
+        </p>
+
+        <p class="limpiador"></p>
+
+        <div class="recurso der">
+            <a href="javascript:void(0)" data-toggle="recurso" data-target="#recurso1Content">
+                <div class="thumbnail lanzador">
+                    <div class="recurso-nina"></div>
+                    <div class="lanzador-icono">
+                        <div class="thumbnail">
+                            <img width="100px" src="img/eventos-icono.png" alt="">
                         </div>
                     </div>
                 </div>
-<p>El pensamiento computacional es el proceso que permite formular y resolver problemas del mundo que nos rodea haciendo uso de habilidades y técnicas, como las secuencias y las instrucciones ordenadas (algoritmos), con el fin de llegar a una solución de manera lógica y estructurada.</p>
+            </a>
+            <div class="recurso-pie">
+                <strong>Actividad:</strong> Ordena eventos para crear una secuencia lógica
+            </div>
+        </div>
+
+        <p>
+            Al trabajar con eventos, es importante identificar claramente
+            <strong>qué acción inicia el programa</strong> y <strong>qué respuestas deben ejecutar
+            los personajes</strong> cuando reciben un mensaje.
+        </p>
+
+        <ul>
+            <li>Los eventos definen cuándo inicia una acción.</li>
+            <li>Los mensajes permiten la comunicación entre personajes.</li>
+            <li>Un mismo mensaje puede activar varios personajes al mismo tiempo.</li>
+            <li>El uso de mensajes evita repetir bloques innecesarios.</li>
+        </ul>
+    </article>
+</section>
+
+<!-- ================= RECURSO 1 ================= -->
+
+
+<!-- RECURSO EVENTOS Y MENSAJES -->
+<div class="backdrop" id="recurso1Content">
+    <a href="javascript:void(0)" data-backdropdismiss="true">
+        <span class="icono-salir"><i class="fa fa-times"></i></span>
+    </a>
+
+    <h2 class="text-center">🎮 Eventos y Mensajes en Scratch</h2>
+
+    <p class="instrucciones">
+        En este recurso aprenderás cómo los <strong>eventos</strong> y los
+        <strong>mensajes</strong> permiten que los personajes se comuniquen
+        y coordinen acciones dentro de un proyecto Scratch.
+    </p>
+
+    <!-- NIVEL 1 -->
+    <h3>🟢 Nivel 1: Comprender el evento</h3>
+    <p>
+        Un <strong>evento</strong> indica cuándo debe iniciar una acción.
+        El evento más común en Scratch es:
+    </p>
+
+    <div class="thumbnail text-center">
+        <img src="img/presionar-bandera.png" class="img-responsive" style="max-width:280px; margin:auto;">
+        <div class="caption">
+            Evento <em>al presionar bandera verde</em>
+        </div>
+    </div>
+
+    <p class="alert alert-info">
+        👉 Este bloque indica que el programa comienza cuando el usuario
+        hace clic en la bandera verde.
+    </p>
+
+    <button class="btn btn-primary" onclick="mostrarNivel2()">
+        Continuar
+    </button>
+
+    <!-- NIVEL 2 -->
+    <div id="nivel2" style="display:none;">
+        <hr>
+        <h3>🟡 Nivel 2: Enviar y recibir mensajes</h3>
+
+        <p>
+            Los <strong>mensajes</strong> permiten que un personaje avise a otro
+            que algo ocurrió.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <img src="img/enviar-mensaje.png" class="img-responsive">
+                    <div class="caption">
+                        Enviar mensaje
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="thumbnail">
+                    <img src="img/recibir-mensaje.png" class="img-responsive">
+                    <div class="caption">
+                        Al recibir mensaje
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="alert alert-success">
+            ✅ Cuando un personaje envía un mensaje, todos los que estén
+            escuchando ese mensaje ejecutan su código.
+        </p>
+
+        <button class="btn btn-warning" onclick="mostrarNivel3()">
+            Probar lo aprendido
+        </button>
+    </div>
+
+    <!-- NIVEL 3 -->
+    <div id="nivel3" style="display:none;">
+        
+<hr>
+<h3>🔴 Nivel 3: Reto guiado – Conversación entre dos personajes</h3>
+
+<p>
+En este reto aprenderás cómo dos personajes pueden <strong>comunicarse entre sí</strong>
+utilizando <strong>mensajes</strong>, simulando una conversación sencilla.
+</p>
+
+<p>
+Trabajaremos con <strong>dos personajes</strong>:
+</p>
 
 <ul>
-    <li><strong>Descomposición:</strong> Dividir un problema o sistema complejo en partes más pequeñas que se pueden examinar y resolver o diseñar individualmente, ya que resultan más manejables y sencillas.</li>
-    <li><strong>Reconocimiento de patrones:</strong> Encontrar similitudes o características comunes que comparten los problemas, lo que facilita su comprensión y solución.</li>
-    <li><strong>Abstracción:</strong> Seleccionar la información relevante, filtrando lo esencial e ignorando detalles no relacionados o irrelevantes para el problema.</li>
-    <li><strong>Realización de algoritmos:</strong> Diseñar un plan o conjunto de instrucciones que se deben seguir paso a paso para resolver un problema, identificando cada acción y organizando el orden en que se deben ejecutar.</li>
+    <li>🧑 Personaje 1: inicia la conversación.</li>
+    <li>🤖 Personaje 2: responde cuando recibe el mensaje.</li>
 </ul>
 
-<p>El pensamiento computacional implica identificar, representar, organizar y analizar lógicamente la información, implementando posibles soluciones con el objetivo de lograr la combinación más efectiva y eficiente entre los pasos y los recursos disponibles.</p>
+<p class="alert alert-info">
+👉 Observa que la ejecución al iniciar se controla directamente con una tecla.
+El resto de programa ocurre gracias a los <strong>eventos y mensajes</strong>.
+</p>
 
-<p>El pensamiento computacional es una de las destrezas clave del siglo XXI, que desarrolla habilidades efectivas para resolver problemas para aplicar a cualquier ámbito de la vida.</p>
-</article>
-        </div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
-    
-<div style="display:none;" id="audio"><audio controls="controls" id="player" preload="auto"></audio></div></body></html>
+<h4>Paso 1: Iniciar el programa</h4>
+<p>
+En el <strong>Personaje 1</strong>, agrega el siguiente evento:
+</p>
+
+<ul>
+    <li><strong>al presionar la barra espaciadora o tecla espacio</strong></li>
+</ul>
+
+<p>
+Debajo del evento, programa el bloque:
+</p>
+
+<ul>
+    <li><strong>enviar mensaje</strong> → <em>"¡Hola Kiran! ¿Qué haces?"</em></li>
+</ul>
+
+<p class="alert alert-success">
+✅ Esto indica que el Personaje 1 (Robot) inicia la conversación.
+</p>
+
+<h4>Paso 2: Responder al mensaje</h4>
+<p>
+En el <strong>Personaje 2</strong>, agrega el bloque:
+</p>
+
+<ul>
+    <li><strong>al recibir</strong> → <em>"mensaje 1"</em></li>
+</ul>
+
+<p>
+Debajo de ese bloque, programa una acción, por ejemplo:
+</p>
+
+<ul>
+    <li>decir <em>"¡Hola Bot! Estoy en el espacio"</em> por 2 segundos</li>
+</ul>
+
+<p class="alert alert-warning">
+💡 Nota: El mensaje debe llamarse exactamente igual en ambos personajes.
+</p>
+
+<h4>Paso 3: Continuar la conversación</h4>
+<p>
+Ahora el <strong>Personaje 2</strong> enviará una respuesta.
+</p>
+
+<ul>
+    <li>enviar mensaje 2 → <em>"respuesta"</em></li>
+</ul>
+
+<p>
+En el <strong>Personaje 1</strong>, agrega:
+</p>
+
+<ul>
+    <li><strong>al recibir mensaje 2</strong> → <em>"respuesta"</em></li>
+    <li>decir <em>"¡Estoy bien, gracias!"</em> por 2 segundos</li>
+</ul>
+
+<h4>Resultado esperado</h4>
+<p class="alert alert-info">
+🎯 Al presionar la tecla espacio:
+</p>
+
+<ul>
+    <li>El Personaje 1 envía un saludo.</li>
+    <li>El Personaje 2 responde al recibir el mensaje.</li>
+    <li>La conversación se completa sin usar teclado ni clics.</li>
+</ul>
+
+<div class="thumbnail text-center">
+    <img src="img/conversacion-scratch.png"
+         class="img-responsive"
+         style="max-width:auto; margin:auto;">
+    <div class="caption">
+        Conversación entre personajes usando mensajes
+    </div>
+</div>
+
+<p class="alert alert-success">
+✔ Si la conversación ocurre en orden, comprendiste correctamente
+el uso de <strong>eventos y mensajes</strong>.
+<br>
+</p>
+
+
+        <p>
+            Ahora abre un nuevo proyecto en Scratch y replica este comportamiento con otros personajes y continua explorando el uso de mensajes y eventos.
+        </p>
+
+        <div class="text-center">
+            <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" target="_blank"
+               class="btn btn-success">
+                Abrir nuevo proyecto en Scratch
+            </a>
+        </div>
+
+        <p id="feedbackFinal" class="text-center"></p>
+
+        <div class="text-center" style="margin-top:15px;">
+            <button class="btn btn-info" onclick="retroalimentacion(true)">
+                Lo logré
+            </button>
+            <button class="btn btn-danger" onclick="retroalimentacion(false)">
+                Necesito ayuda
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+function mostrarNivel2() {
+    document.getElementById('nivel2').style.display = 'block';
+}
+
+function mostrarNivel3() {
+    document.getElementById('nivel3').style.display = 'block';
+}
+
+function retroalimentacion(exito) {
+    const feedback = document.getElementById('feedbackFinal');
+    if (exito) {
+        feedback.innerHTML =
+            '🎉 ¡Excelente! Comprendiste cómo usar eventos y mensajes para coordinar personajes.';
+        feedback.className = 'alert alert-success';
+    } else {
+        feedback.innerHTML =
+            '🔁 Revisa que el mensaje enviado y el mensaje recibido tengan el mismo nombre como se muestra en la imagen.';
+        feedback.className = 'alert alert-danger';
+    }
+}
+</script>
+
+</div><footer class="container animsition" style="animation-duration: 1.5s; opacity: 1;"><p class="text-right">Plataforma educativa GJ</p></footer>
+
+</body></html>
